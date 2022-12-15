@@ -1,0 +1,38 @@
+.products__subtitle {
+    display: block;
+    color: #FFA5BA;
+    font-family: $second-font;
+    font-size: 20px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.products__title {
+    display: block;
+    color: #D41443;
+    font-family: $second-font;
+    font-size: 34px;
+    line-height: 1.144;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.products__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.products__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $first-background;
+}
+.products-item--pink {
+    background-color: $first-background;
+}
+.products-item--orange {
+    background-color: $second-background;
+}
+.products-item--green {
+    background-color: $third-background;
+}
