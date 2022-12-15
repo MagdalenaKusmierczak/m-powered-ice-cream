@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------FONTS------- */
+/* ------COLORS------ */
+/* buttons background and brand text color, active page */
+/* ---background colors--- */
+/* header and first product card */
+/* second product card, contacts category */
+/* third product card, contacts category */
+/* about, advantages, contacts and footer */
+/* buttons, contacts cards */
+/* customer reviev */
+/* hover */
+/* fonts color */
+/* brand color*/
+/* contrast text in: header, mobile menu, products card, contacts category */
+/* section title label */
+/* black text in: about, advantages, customer reviev, contacts, footer */
+/* minor text in: about, contacts, footer */
+/* ------MIXIN------ */
+/* reminder how to use mixin in media queries:
+.products {
+  gap: 20px;
+
+  @include desktop {
+    gap: 24px;
+  }
+} 
+*/
+.container {
+  padding: 0 20px;
+  margin: auto;
+  min-width: 290px;
+  max-width: 480px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 34px;
+    max-width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 115px;
+    max-width: 1280px;
+  }
+}/*# sourceMappingURL=main.css.map */
