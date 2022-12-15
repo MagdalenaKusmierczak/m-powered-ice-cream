@@ -1,6 +1,6 @@
 .products__subtitle {
     display: block;
-    color: #FFA5BA;
+    color: $third-font-color;
     font-family: $second-font;
     font-size: 20px;
     line-height: 1.145;
@@ -9,7 +9,7 @@
 }
 .products__title {
     display: block;
-    color: #D41443;
+    color: $first-font-color;
     font-family: $second-font;
     font-size: 34px;
     line-height: 1.144;
@@ -34,4 +34,22 @@
 }
 .products-item--green {
     background-color: $third-background;
+}
+.products__name {
+    display: block;
+    font-family: $second-font;
+    color: $second-font-color;
+    font-size: 20px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.products__text {
+    display: block;
+    color: $second-font-color;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.52;
+    letter-spacing: 0.04em;
+    text-align: center;
 }
