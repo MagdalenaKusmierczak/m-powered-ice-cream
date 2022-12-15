@@ -55,4 +55,22 @@
     gap: 24px;
   }
 } 
-*//*# sourceMappingURL=main.css.map */
+*/
+.container {
+  padding: 0 20px;
+  margin: auto;
+  min-width: 290px;
+  max-width: 480px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 34px;
+    max-width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 115px;
+    max-width: 1280px;
+  }
+}/*# sourceMappingURL=main.css.map */
