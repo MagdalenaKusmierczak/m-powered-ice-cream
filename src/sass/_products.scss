@@ -44,6 +44,13 @@
     letter-spacing: 0.04em;
     text-align: center;
 }
+.products__name::after {
+    display: block;
+    content: "";
+    width: 26px;
+    height: 6px;
+    bottom: 30px;
+}
 .products__text {
     display: block;
     color: $second-font-color;
@@ -66,9 +73,11 @@
     content: "";
     display: block;
     position: absolute;
+    position: top;
     width: 249px;
     height: 252px;
     background-image: url();
+    background-size: contain;
 }
 .products__background--two {
     background-color: $second-background;
@@ -77,9 +86,11 @@
     content: "";
     display: block;
     position: absolute;
+    position: top;
     width: 249px;
     height: 252px;
     background-image: url();
+    background-size: contain;
 }
 .products__background--three {
     background-color: $third-background;
@@ -88,7 +99,10 @@
     content: "";
     display: block;
     position: absolute;
+    top: 0;
+    left: 2vw;
     width: 249px;
     height: 252px;
     background-image: url();
+    background-size: contain;
 }
