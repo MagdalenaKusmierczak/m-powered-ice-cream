@@ -6,6 +6,8 @@
     line-height: 1.145;
     letter-spacing: 0.04em;
     text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
 }
 .products__title {
     display: block;
@@ -15,21 +17,23 @@
     line-height: 1.144;
     letter-spacing: 0.04em;
     text-align: center;
+    margin: 0;
 }
 .products__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
     list-style-type: none;
     gap: 130px;
+    padding: 0;
 }
 .products__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 485px;
-    
+    max-width: 100%;
+    height: auto;
 }
 .products__name {
     display: block;
@@ -48,16 +52,43 @@
     line-height: 1.52;
     letter-spacing: 0.04em;
     text-align: center;
+    padding: 0 40px;
 }
 .products__background {
     border-radius: 24px;
+    width: 100%;
+    position: relative;
 }
 .products__background--one {
     background-color: $first-background;
 }
+.products__background--one::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    background-image: url();
+}
 .products__background--two {
     background-color: $second-background;
 }
+.products__background--two::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    background-image: url();
+}
 .products__background--three {
     background-color: $third-background;
+}
+.products__background--three::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    background-image: url();
 }
