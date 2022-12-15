@@ -1,0 +1,39 @@
+.mobile-menu {
+  position: fixed;
+  display: none;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 23px 24px;
+  background-color: #e17992;
+  transform: translateX(100%);
+  will-change: transform;
+  transition: transform 250ms;
+
+  &.is-open {
+    display: block;
+    translate: transformx(0%);
+  }
+}
+
+.mobile-menu__toggle {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  color: #fff;
+  border: 0;
+}
+
+.mobile-menu__button {
+  font-family: 'DM sans';
+  color: #D41443;
+  padding: 
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-menu {
+    width: 254px;
+  }
+}
