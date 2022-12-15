@@ -1,20 +1,18 @@
 .hamburger {
   display: block;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .hamburger__icon {
-  fill: #d41443;
+  fill: $first-font-color;
   will-change: fill;
   transition: fill 250ms;
 
   &:hover,
   &:focus {
-    fill: #c7133e;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hamburger {
-    display: none;
+    fill: $first-button-hover;
   }
 }
