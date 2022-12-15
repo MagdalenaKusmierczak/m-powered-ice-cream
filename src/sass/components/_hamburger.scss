@@ -1,0 +1,20 @@
+.hamburger {
+  display: block;
+}
+
+.hamburger__icon {
+  fill: #d41443;
+  will-change: fill;
+  transition: fill 250ms;
+
+  &:hover,
+  &:focus {
+    fill: #c7133e;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
