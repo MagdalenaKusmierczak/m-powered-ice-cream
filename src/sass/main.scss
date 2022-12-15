@@ -1,5 +1,7 @@
 /*
  * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
  */
-@import './container';
-@import './variables';
+
+// Style dla pliku z przykładem HTML fragmentu
+@import './example';
