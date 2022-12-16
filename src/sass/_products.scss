@@ -22,6 +22,7 @@
 }
 .products__list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style-type: none;
@@ -53,10 +54,7 @@
     width: 26px;
     height: 6px;
     top: 220px;
-    left: 25vw;
-    fill: white;
-    stroke: white;
-    z-index: 99;
+    left: 100px;
     background-image: url(./../images/icons.svg#icon-products__icon-3dots);
 }
 .products__text {
@@ -81,7 +79,7 @@
     content: "";
     position: absolute;
     top: -110px;
-    left: 25px;
+    left: 8%;
     width: 249px;
     height: 252px;
     background-image: url(./../images/products__product1-mobile.png);
