@@ -127,8 +127,8 @@
   }
 
   &__block-text {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 46p;
 
     @media screen and (min-width:768px) {
@@ -182,10 +182,18 @@
       letter-spacing: 4%;
     }
   }
-
+  &__block-text3{
+     margin:0;
+     color: $fifth-font-color;
+     margin: 0;
+     max-width: 100%;
+     text-align: left;
+     padding-top:10px;
+  }
 
   &__block-button {
     margin: 0;
+    margin-left:-40px;
   }
 
   &__button {
@@ -196,7 +204,7 @@
     line-height: 18px;
     text-decoration: none;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
