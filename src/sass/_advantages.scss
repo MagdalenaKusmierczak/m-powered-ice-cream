@@ -1,21 +1,59 @@
 .advantages {
+  font-family: $main-font; /* do usunięcia*/
   background-color: $fourth-background;
+  padding-top: 39px;
+  padding-bottom: 97px;
+  @include tablet {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+  @include desktop {
+    padding-top: 39px;
+  }
 }
-// ukryty nagłówek - do wyjaśnienia
 .advantages__title {
-  display: none;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
 }
 .advantages__list {
   list-style-type: none;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+  padding: 0;
+  margin: 0;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
+  }
+  @include desktop {
+    gap: 30px;
+  }
+}
+.advantages__item {
+  width: 230px;
+  @include tablet {
+    width: 180px;
+  }
+  @include desktop {
+    width: 330px;
+  }
 }
 .advantages__quantity {
+  display: block;
   font-family: $second-font;
   color: $first-font-color;
   font-size: 36px;
   line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
   @include tablet {
     font-size: 48px;
     line-height: 55px;
@@ -23,12 +61,15 @@
   @include desktop {
     font-size: 58px;
     line-height: 66px;
+    margin-bottom: 15px;
   }
 }
 .advantages__text {
+  display: block;
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
+  margin: 0;
   @include tablet {
     font-size: 14px;
     line-height: 24px;
