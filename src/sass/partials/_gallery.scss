@@ -1,0 +1,32 @@
+.gallery {
+  &__wrapper {
+    width: 100%;
+    height: 122px;
+    background-size: 364px 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient (180deg, $fourth-background 48px, $base-body-background 48px);
+    background-image: url('../images/gallery-mobile.jpg');
+    @include mobile-retina {
+      background-image: url('../images/gallery-mobile@2x.jpg');
+    }
+    @include tablet {
+      height: 264px;
+      background-size: 786px 264px;
+      background: linear-gradient (180deg, $fourth-background 103px, $base-body-background 103px);
+      background-image: url('../images/gallery-tablet.jpg');
+    }
+    @include tablet-retina {
+      background-image: url('../images/gallery-tablet@2x.jpg');
+    }
+    @include desktop {
+      background-size: 1280px 430px;
+      height: 430px;
+      background: linear-gradient (180deg, $fourth-background 171px, $base-body-background 171px);
+      background-image: url('../images/gallery-desktop.jpg');
+    }
+    @include desktop-retina {
+      background-image: url('../images/gallery-desktop@2x.jpg');
+    }
+  }
+}
