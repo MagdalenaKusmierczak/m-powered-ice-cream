@@ -5,6 +5,15 @@
   justify-content: center;
   align-items: center;
   background-color: $fifth-background;
+  padding: 80px 86px;
+
+  @include tablet {
+    padding: 121px 40px 119px;
+  }
+
+  @include desktop {
+    padding: 123px 61px 132px;
+  }
 }
 
 .customer-reviews__header {
@@ -12,13 +21,31 @@
   visibility: hidden;
 }
 
-// .customer-reviews__picture {
+.customer-reviews__picture {
+  margin-bottom: 29px;
 
-// }
+  @include tablet {
+    margin-bottom: 19px;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+  }
+}
 
 .customer-reviews__review {
   background-color: $sixth-background;
   padding: 43px 50px 19px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin: 0 38px 24px;
+    padding: 47px 80px 34px;
+  }
+
+  @include desktop {
+    margin: 0 62px 34px;
+  }
 }
 
 .customer-reviews__text {
