@@ -1,7 +1,40 @@
 .footer {
-    background-color: $fourth-background;
+  background-color: $fourth-background;
 }
 
-.footer__box-title{
-    display: flex;
+.footer__box-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__subtitle {
+  font-family: $second-font;
+  color: $third-font-color;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.166;
+  padding-right: 66px;
+}
+.footer__title {
+  display: block;
+  font-family: $second-font;
+  color: $brand-color;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 1.147;
+  padding-bottom: 43px;
+}
+.footer__social-list {
+  list-style: none;
+}
+.footer__contact {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: $fourth-font-color;
+}
+.footer__phone {
+  text-decoration: none;
+  color: $brand-color;
 }
