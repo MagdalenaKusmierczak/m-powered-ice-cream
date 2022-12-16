@@ -1,0 +1,41 @@
+.advantages {
+  background-color: $fourth-background;
+}
+// ukryty nagłówek - do wyjaśnienia
+.advantages__title {
+  display: none;
+}
+.advantages__list {
+  list-style-type: none;
+  display: grid;
+}
+.advantages__quantity {
+  font-family: $second-font;
+  color: $first-font-color;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  @include tablet {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+}
