@@ -69,13 +69,74 @@
   }
   &::before {
     content: '';
-    position: absolute;
-    background-image: url(../images/advantages__icon-milk-mobile.png);
+    display: block;
     height: 50px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+  &--first::before {
+    background-image: url(../images/advantages__icon-milk-mobile.png);
+    @include mobile-retina {
+      background-image: url(../images/advantages__icon-milk-mobile@2x.png);
+    }
+    @include tablet {
+      background-image: url(../images/advantages__icon-milk-tablet.png);
+    }
+    @include tablet-retina {
+      background-image: url(../images/advantages__icon-milk-tablet@2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/advantages__icon-milk-desktop.png);
+    }
+    @include desktop-retina {
+      background-image: url(../images/advantages__icon-milk-desktop@2x.png);
+    }
+  }
+  &--second::before {
+    background-image: url(../images/advantages__icon-fruit-mobile.png);
+    @include mobile-retina {
+      background-image: url(../images/advantages__icon-fruit-mobile@2x.png);
+    }
+    @include tablet {
+      background-image: url(../images/advantages__icon-fruit-tablet.png);
+    }
+    @include tablet-retina {
+      background-image: url(../images/advantages__icon-fruit-tablet@2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/advantages__icon-fruit-desktop.png);
+    }
+    @include desktop-retina {
+      background-image: url(../images/advantages__icon-fruit-desktop@2x.png);
+    }
+  }
+  &--third::before {
+    background-image: url(../images/advantages__icon-lollipop-mobile.png);
+    @include mobile-retina {
+      background-image: url(../images/advantages__icon-lollipop-mobile@2x.png);
+    }
+    @include tablet {
+      background-image: url(../images/advantages__icon-lollipop-tablet.png);
+    }
+    @include tablet-retina {
+      background-image: url(../images/advantages__icon-lollipop-tablet@2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/advantages__icon-lollipop-desktop.png);
+    }
+    @include desktop-retina {
+      background-image: url(../images/advantages__icon-lollipop-desktop@2x.png);
+    }
   }
 }
 .advantages__text {
-  position: relative;
   display: block;
   font-weight: 700;
   font-size: 12px;
