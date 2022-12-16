@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+.header__btn-container {
+  display: flex;
+
+  align-items: center;
+  gap: 30px;
+}
+.header__burger {
+  fill: #d41443;
+}
+.header {
+  width: 100%;
+  max-width: 1600px;
+  background-color: #ffb8ca;
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__background-image {
+  position: absolute;
+  right: 15%;
+  z-index: -1;
+}
+
+.header__background-image--circle {
+  bottom: 65px;
+  right: calc(-15%);
+  & img {
+    width: 346px;
+  }
+}
+.header__background-image--icecream {
+  bottom: -3px;
+  right: calc(-15% + 171px / 2);
+  & img {
+    width: 171px;
+  }
+}
+.header__background-image--lady {
+  visibility: hidden;
+  position: fixed;
+}
+.header__coffe-info {
+  visibility: hidden;
+  position: fixed;
+}
+.header__truck-info {
+  visibility: hidden;
+  position: fixed;
+}
+.header__coffe-amount {
+  color: #d41443;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32 px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+.header__coffe-describe {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.header__truck-amount {
+  color: #d41443;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    position: absolute;
+    right: -7px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+.header__truck-describe {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.header__bar-wrapper {
+  display: flex;
+  width: 100vw;
+  max-width: 1600px;
+  justify-content: space-between;
+  padding: 5px 20px 0 20px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 199px;
+  cursor: pointer;
+  z-index: 2;
+}
+.header__menu {
+  display: none;
+}
+
+.header__main-button {
+  display: none;
+}
+.header__leftside {
+  width: 220px;
+  margin-top: 137px;
+  display: flex;
+  flex-direction: column;
+}
+.header__title {
+  max-width: 220px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 20px;
+}
+.header__title--describe {
+  font-size: 48px;
+  line-height: 96.5%;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  padding: 0;
+}
+.header__buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 18px;
+}
+.header__left-button {
+  background-color: #d41443;
+  padding: 3px 14px;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    background-color: #c7133e;
+  }
+}
+
+.header__right-button {
+  background-color: #ffffff;
+  padding: 3px 14px;
+  border-radius: 22px;
+  color: #d41443;
+  cursor: pointer;
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+.header__deco-image {
+  visibility: hidden;
+  max-width: 124px;
+  margin-top: 19px;
+  margin-bottom: 28px;
+  margin-left: 34px;
+}
+.header__describe-text {
+  visibility: hidden;
+  max-width: 115px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 140%;
+  /* or 20px */
+
+  color: #ffffff;
+}
+.header__left-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  max-width: 270px;
+}
+.header__btn-arrow {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__background-image--circle {
+    bottom: 46px;
+    right: 19%;
+    & img {
+      width: 324px;
+    }
+  }
+  .header__background-image--icecream {
+    right: calc(16% + 143px);
+    & img {
+      width: 143px;
+    }
+  }
+  .header__background-image--lady {
+    visibility: visible;
+    position: absolute;
+    bottom: -3px;
+    right: 6%;
+    & img {
+      width: 168px;
+    }
+  }
+  .header__coffe-info {
+    visibility: visible;
+    position: absolute;
+    top: 95px;
+    right: 6%;
+    text-align: right;
+  }
+  .header__truck-info {
+    visibility: visible;
+    position: absolute;
+    top: 150px;
+    right: 6%;
+    text-align: right;
+  }
+
+  .header__bar-wrapper {
+    padding: 37px 34px 0px 34px;
+  }
+
+  .header__main-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 35px;
+    background-color: white;
+    border-radius: 22px;
+    color: #d41443;
+    cursor: pointer;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    z-index: 12;
+    &:hover {
+      background-color: #ecebeb;
+    }
+    .header__button-ico {
+      fill: #c7133e;
+    }
+  }
+  .header__leftside {
+    width: 418px;
+    margin-top: 15px;
+  }
+  .header__title {
+    max-width: 180px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    padding-left: 34px;
+  }
+  .header__title--describe {
+    font-size: 34px;
+    line-height: 90.5%;
+    padding: 0;
+  }
+  .header__buttons {
+    gap: 15px;
+    margin-left: 38px;
+  }
+
+  .header__deco-image {
+    visibility: visible;
+  }
+  .header__describe-text {
+    visibility: visible;
+  }
+  .header__left-bar-wrapper {
+    align-items: flex-end;
+  }
+  .header__btn-arrow {
+    display: flex;
+    margin-top: 7px;
+    width: 18px;
+  }
+  .header__lorem-wrapper {
+    margin-bottom: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__burger {
+    display: none;
+  }
+
+  .header__background-image--circle {
+    top: 55px;
+    right: 20%;
+    width: 538px;
+    & img {
+      width: 538px;
+    }
+  }
+  .header__background-image--icecream {
+    right: calc(20% + 183px);
+    & img {
+      width: 236px;
+    }
+  }
+  .header__background-image--lady {
+    right: 10%;
+    & img {
+      width: 293px;
+    }
+  }
+  .header__coffe-info {
+    top: 156px;
+    right: 10%;
+  }
+  .header__truck-info {
+    top: 256px;
+    right: 10%;
+  }
+  .header__coffe-amount {
+    font-size: 46px;
+    line-height: 53px;
+  }
+  .header__coffe-describe {
+    font-size: 14px;
+  }
+
+  .header__truck-amount {
+    font-size: 46px;
+    line-height: 53px;
+  }
+  .header__truck-describe {
+    font-size: 14px;
+  }
+
+  .header__coffe-amount::after {
+    content: '';
+    right: -15px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+  }
+  .header__truck-amount::after {
+    content: '';
+    right: -15px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__bar-wrapper {
+    padding: 37px 115px 37px 46px;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 35px;
+    z-index: 2;
+  }
+
+  .header__element {
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    z-index: 2;
+  }
+
+  .header__element--active {
+    color: #d41443;
+  }
+
+  .header__main-button {
+    gap: 13px;
+    padding: 12px 37px;
+  }
+  .header__leftside {
+    margin-left: 77px;
+    margin-top: 47px;
+  }
+  .header__title {
+    max-width: 300px;
+    font-size: 38px;
+    line-height: 44px;
+    padding-left: 38px;
+  }
+  .header__title--describe {
+    font-size: 58px;
+    padding: 0;
+  }
+  .header__buttons {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  .header__left-button {
+    padding: 10px 24px;
+  }
+
+  .header__right-button {
+    padding: 10px 20px;
+  }
+  .header__deco-image {
+    max-width: 188px;
+    margin-top: 56px;
+    margin-bottom: 45px;
+    margin-left: 0;
+  }
+  .header__describe-text {
+    max-width: 200px;
+    font-size: 14px;
+  }
+  .header__left-bar-wrapper {
+    gap: 30px;
+    max-width: 600px;
+  }
+  .header__btn-arrow {
+    margin-top: 20px;
+    width: 26px;
+  }
+  .header__lorem-wrapper {
+    margin-bottom: 56px;
+  }
+}
