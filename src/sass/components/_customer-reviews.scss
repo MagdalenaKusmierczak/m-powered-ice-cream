@@ -1,0 +1,17 @@
+.customer-reviews {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $base-body-background;
+}
+
+.customer-reviews__header {
+  position: absolute;
+  visibility: hidden;
+}
+
+// .customer-reviews__picture {
+
+// }
