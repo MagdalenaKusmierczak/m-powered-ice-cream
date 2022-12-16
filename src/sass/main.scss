@@ -1,7 +1,14 @@
 /*
- * Główny plik dla stylów.
+ * Main stylesheet
  */
-@import './container';
-@import './variables';
+/*
+//  Components
+*/
+@import './components/variables';
+@import './components/container';
 @import './components/hamburger';
 @import './components/mobile-menu';
+/*
+// Partials
+*/
+@import './partials/gallery';
