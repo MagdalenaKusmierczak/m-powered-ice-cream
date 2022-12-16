@@ -54,6 +54,8 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 13px;
+  transition: transform 1500ms linear;
+  transform-origin: center left;
   @include tablet {
     font-size: 48px;
     line-height: 55px;
@@ -63,8 +65,18 @@
     line-height: 66px;
     margin-bottom: 15px;
   }
+  .advantages__item:hover & {
+    transform: scale(1.2);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/advantages__icon-milk-mobile.png);
+    height: 50px;
+  }
 }
 .advantages__text {
+  position: relative;
   display: block;
   font-weight: 700;
   font-size: 12px;
