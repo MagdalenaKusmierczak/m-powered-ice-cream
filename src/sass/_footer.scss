@@ -28,6 +28,9 @@
 }
 .footer__social-list {
   list-style: none;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .footer__contact {
   font-family: $main-font;
@@ -36,6 +39,7 @@
   font-size: 12px;
   color: $fourth-font-color;
   margin-bottom: 43px;
+  margin-left: 70px;
 }
 .footer__phone {
   text-decoration: none;
