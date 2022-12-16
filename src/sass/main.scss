@@ -1,8 +1,7 @@
-/*
- * Główny plik dla stylów.
- */
-@import './container';
+/* ------Styles main file------ */
 @import './variables';
+@import './body';
+@import './container';
 @import './footer';
 @import './components/hamburger';
 @import './components/mobile-menu';
