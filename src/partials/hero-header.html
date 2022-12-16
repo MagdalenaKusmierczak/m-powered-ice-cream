@@ -3,23 +3,33 @@
 <!-- hamburger -->
 <button type="button" class="hamburger menu-toggle js-open-menu">
   <svg class="hamburger__icon" width="20" height="12">
-    <use href=""></use>
+    <use href="./images/icons.svg#icon-burger"></use>
   </svg>
 </button>
 
 <!-- mobile menu -->
 <div class="mobile-menu js-menu-container">
-  <svg class="mobile-menu__toggle js-close-menu" width="14" height="14"><use src=""></use></svg>
+  <button type="button" class="mobile-menu__toggle menu-toggle js-close-menu">
+    <svg class="mobile-menu__icon" width="14" height="14">
+      <use src="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
   <a href="#" class=""
     ><button type="button" class="mobile-menu__button">
-      Buy now <svg class="button__arrow"><use src=""></use></svg></button
+      Buy now  > <svg class="button__arrow"><use src="../images/icons.svg#"></use></svg></button
   ></a>
   <ul class="mobile-menu__list">
-    <li><a class="mobile-menu__link mobile-menu__link--active">Home</a></li>
-    <li><a class="mobile-menu__link">About us</a></li>
-    <li><a class="mobile-menu__link">How it's made?</a></li>
-    <li><a class="mobile-menu__link">Our products</a></li>
-    <li><a class="mobile-menu__link">Contact</a></li>
+    <li class="mobile-menu__item">
+      <a href="#home" class="mobile-menu__link mobile-menu__link--active">Home</a>
+    </li>
+    <li class="mobile-menu__item"><a href="#about-us" class="mobile-menu__link">About us</a></li>
+    <li class="mobile-menu__item">
+      <a href="#how-its-made" class="mobile-menu__link">How it's made?</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#our-products" class="mobile-menu__link">Our products</a>
+    </li>
+    <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link">Contact</a></li>
   </ul>
 </div>
 
