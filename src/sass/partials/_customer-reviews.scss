@@ -45,6 +45,7 @@
 
   @include desktop {
     margin: 0 62px 34px;
+    width: 926px;
   }
 }
 
@@ -64,11 +65,34 @@
   font-weight: 500;
   text-align: center;
 
-  // &::before {
-  //   position: absolute;
-  //   content: '';
-  //   width: 54px;
-  //   height: 60px;
-  //   background-image: url();
-  // }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 54px;
+    height: 60px;
+    background-image: url('../images/icons.svg#customer-reviews__icon-quotation-mark');
+    fill: $seventh-background;
+  }
+}
+
+.custom-reviews__dots-icon {
+  fill: $third-icon-color;
+}
+
+.customer-reviews__signature {
+  margin: 18px 0 30px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  @include tablet {
+    margin: 14px 0 35px;
+    font-size: 16px;
+  }
+
+  @include desktop {
+    margin: 15px 0 35px;
+    font-size: 20px;
+  }
 }
