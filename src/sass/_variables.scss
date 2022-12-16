@@ -35,13 +35,37 @@ $second-icon-color: #d9d9d9;
 $third-icon-color: #c7133e;
 
 /* ------MIXIN------ */
+@mixin mobile-retina {
+  @media (min-width: 480px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    @content;
+  }
+}
 @mixin tablet {
   @media (min-width: 768px) {
     @content;
   }
 }
+@mixin tablet-retina {
+  @media (min-width: 768px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    @content;
+  }
+}
 @mixin desktop {
   @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin desktop-retina {
+  @media (min-width: 1280px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     @content;
   }
 }
