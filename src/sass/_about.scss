@@ -14,11 +14,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // position:absolute;
     text-align: center;
     background: $fourth-background;
-    
   }
+
   &__tittle-style{
     list-style: none;
     display: flex;
@@ -52,7 +51,6 @@
       font-size: 30px;
       line-height: 34px;
       padding-bottom:15px;
-      // box-sizing: border-box;
     }
   }
 
@@ -76,14 +74,8 @@
       width: 429px;
       height: 55px;
       max-width: 100%;
-      // text-transform: none;
       margin-top:16px;
-      // display:flex;
-      // flex-direction: row;
-      // justify-content: center;
-      // align-items: center;
       margin-bottom:0;
-      // text-transform: uppercase;
     }
 
     @media screen and (min-width:1280px) {
@@ -92,10 +84,6 @@
       max-width: 100%;
       width: 534px;
       height: 66px;
-      // display: flex;
-      // flex-direction: row;
-      // justify-content: center;
-      // align-items: center;
       padding-top:15px;
       letter-spacing: 0.06em;
       
