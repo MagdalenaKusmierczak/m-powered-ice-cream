@@ -381,10 +381,11 @@
     }
   
     .modal-text {
-      padding-top: 50px;
+      padding-top: 40px;
+      padding-bottom:40px;
       padding-left: 20px;
       padding-right: 20px;
-      // letter-spacing:5px;
+      letter-spacing:2px;
     
     &__first {
       color: $fourth-font-color;
