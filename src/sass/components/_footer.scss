@@ -82,9 +82,9 @@
   width: 32px;
   height: 32px;
   background-color: $social-media-background;
-}
 
-.footer__href:hover,
-.footer__href:focus {
-  background-color: $social-media-hover;
+  &:hover,
+  &:focus {
+    background-color: $social-media-hover;
+  }
 }
