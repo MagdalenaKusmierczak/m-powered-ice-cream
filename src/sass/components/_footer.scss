@@ -15,6 +15,19 @@
   font-size: 18px;
   line-height: 1.166;
   width: 232px;
+
+  @include tablet {
+    font-size: 26px;
+    width: 340px;
+    line-height: 1.14;
+    padding-left: 36px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    width: 472px;
+    padding-left: 114px;
+  }
 }
 .footer__title {
   display: block;
@@ -26,6 +39,21 @@
   line-height: 1.147;
   padding-bottom: 43px;
   width: 200px;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.145;
+    padding-left: 36px;
+    padding-top: 16px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    width: 474px;
+    line-height: 1.145;
+    padding-left: 114px;
+    padding-top: 15px;
+  }
 }
 
 .footer__social-list {
@@ -33,6 +61,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  @include desktop {
+    justify-content: flex-end;
+  }
 }
 .footer__contact {
   font-family: $main-font;
@@ -42,6 +74,17 @@
   color: $fourth-font-color;
   margin-bottom: 43px;
   margin-left: 70px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.86;
+    padding-right: 116px;
+  }
 }
 .footer__phone {
   text-decoration: none;
@@ -86,5 +129,10 @@
   &:hover,
   &:focus {
     background-color: $social-media-hover;
+  }
+
+  @include tablet {
+    width: 34px;
+    height: 34px;
   }
 }
