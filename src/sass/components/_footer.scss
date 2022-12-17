@@ -107,9 +107,15 @@
   text-align: center;
   border-top: 1px solid #e1e1e1;
   padding: 22px 0 25px;
+
 }
 .footer__copyright span {
   display: block;
+
+  @include tablet {
+    display: inline;
+  }
+
 }
 .footer__box-social {
   display: flex;
