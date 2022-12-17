@@ -33,12 +33,15 @@
 .container {
   padding: 0;
 }
+
 .contacts {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $fourth-background;
   @include desktop {
+    max-width: 100%;
     background-image: url('../images/contacts__background-desktop.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -46,6 +49,7 @@
       background-image: url('../images/contacts__background-desktop@2x.png');
     }
   }
+
   &__titel {
     visibility: hidden;
     position: absolute;
@@ -222,6 +226,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     @include tablet {
       flex-direction: row;
@@ -241,7 +246,7 @@
     transition: background-color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
       color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
     &--red {
-      background-color:  ;
+      background-color: #d41342;
       color: $fifth-background;
       @include tablet {
         width: 191px;
@@ -268,17 +273,29 @@
   }
   .contacts__button--white:hover,
   .contacts__button--white:focus {
-    background-color:#d41342;
+    background-color: #d41342;
     color: $fifth-background;
   }
 
-  // .contacts__button:hover .contacts__icon,
-  // .contacts__button:focus .contacts__icon {
-  //   fill: #ffffff;
-  // }
-  // .contacts__icon {
-  //   fill: #d41443;
-  //   margin-left: 13.5px;
-  //   transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  // }
+  .contacts__button--red:hover .contacts__icon--red,
+  .contacts__button--red:focus .contacts__icon--red {
+    fill: $fifth-background;
+    stroke: #d41342;
+  }
+  .contacts__button--white:hover .contacts__icon--white,
+  .contacts__button--white:focus .contacts__icon--white {
+    fill: #d41342;
+    stroke: $fifth-background;
+  }
+
+  .contacts__icon--red {
+    fill: #d41342;
+    stroke: $fifth-background;
+
+    transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .contacts__icon--white {
+    fill: $fifth-background;
+    stroke: #d41342;
+  }
 }
