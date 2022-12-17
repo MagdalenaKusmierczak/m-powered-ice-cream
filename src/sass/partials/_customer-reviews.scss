@@ -70,7 +70,7 @@
 }
 
 .customer-reviews__text {
-  padding: 7px 3px;
+  padding: 6px 7px 0 16px;
   font-family: $main-font;
   letter-spacing: 0.04em;
   font-size: 12px;
@@ -79,11 +79,13 @@
   text-align: center;
 
   @include tablet {
+    padding: 6px 20px 0 44px;
     font-size: 14px;
     line-height: 2.16;
   }
 
   @include desktop {
+    padding: 6px 28px 0 35px;
     font-size: 16px;
     line-height: 1.86;
   }
