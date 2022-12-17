@@ -35,10 +35,12 @@
   position: absolute;
   top: 23px;
   right: 23px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   border: 0;
-  color: white;
-  fill: currentColor;
-  background-color: inherit;
+  background-color: #e179914a;
+  border-radius: 4px;
 }
 
 .buy-now-modal__header {
