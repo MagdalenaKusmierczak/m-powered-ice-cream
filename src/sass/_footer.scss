@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.166;
-  padding-right: 66px;
+  width: 232px;
 }
 .footer__title {
   display: block;
@@ -25,6 +25,7 @@
   font-size: 34px;
   line-height: 1.147;
   padding-bottom: 43px;
+  width:200px;
 }
 .footer__social-list {
   list-style: none;
@@ -63,7 +64,10 @@
 .footer__box-social {
   display: flex;
   flex-direction: column;
+  margin-left: 147px;
+  margin-bottom: 46px;
 }
 .footer__svg {
   fill: red;
+
 }
