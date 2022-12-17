@@ -37,7 +37,7 @@ $third-icon-color: #c7133e;
 
 /* ------MIXIN------ */
 @mixin mobile-retina {
-  @media (min-width: 480px),
+  @media (max-width: 767px),
     (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {

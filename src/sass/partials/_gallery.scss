@@ -1,32 +1,56 @@
+.gallery .container {
+  position: relative;
+  padding: 0 0;
+  scroll-margin-block: no;
+}
 .gallery {
-  &__wrapper {
-    width: 100%;
+  width: 100%;
+  height: 122px;
+  background-position: center;
+  background-color: $fourth-background;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    to bottom,
+    $fourth-background 48px,
+    $fifth-background 48px,
+    $fifth-background
+  );
+  @include tablet {
+    height: 264px;
+    background: linear-gradient(
+      to bottom,
+      $fourth-background 103px,
+      $fifth-background 103px,
+      $fifth-background
+    );
+  }
+  @include desktop {
+    height: 430px;
+    background: linear-gradient(
+      to bottom,
+      $fourth-background 171px,
+      $fifth-background 171px,
+      $fifth-background
+    );
+  }
+  &__image {
+    display: block;
+    min-width: 364px;
     height: 122px;
-    background-size: 364px 122px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: linear-gradient (180deg, $fourth-background 48px, $base-body-background 48px);
-    background-image: url('../images/gallery-mobile.jpg');
-    @include mobile-retina {
-      background-image: url('../images/gallery-mobile@2x.jpg');
-    }
+    position: absolute;
+    left: -18px;
+    top: -1px;
+
     @include tablet {
+      max-width: 692px;
       height: 264px;
-      background-size: 786px 264px;
-      background: linear-gradient (180deg, $fourth-background 103px, $base-body-background 103px);
-      background-image: url('../images/gallery-tablet.jpg');
-    }
-    @include tablet-retina {
-      background-image: url('../images/gallery-tablet@2x.jpg');
+      left: 85px;
     }
     @include desktop {
-      background-size: 1280px 430px;
+      max-width: 1280px;
       height: 430px;
-      background: linear-gradient (180deg, $fourth-background 171px, $base-body-background 171px);
-      background-image: url('../images/gallery-desktop.jpg');
-    }
-    @include desktop-retina {
-      background-image: url('../images/gallery-desktop@2x.jpg');
+      left: 0;
+      top: -2px;
     }
   }
 }
