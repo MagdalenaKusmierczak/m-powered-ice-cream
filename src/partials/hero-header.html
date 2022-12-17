@@ -41,3 +41,66 @@
 </div>
 
 <!-- mobile-header end -->
+    <h2 class="buy-now-modal__header">Ready to taste our goodies?</h2>
+    <p class="buy-now-modal__text">
+      Leave your contact information, we will answer as soon as possible
+    </p>
+    <form class="form">
+      <form class="modal__form" name="modal-form">
+        <label class="form__label">
+          Name
+          <fieldset class="form__fieldset">
+            <svg class="form__icon" width="18" height="18">
+              <use href=""></use>
+            </svg>
+            <input class="form__input" type="text" name="name" minlength="2" maxlength="50" />
+          </fieldset>
+        </label>
+        <label class="form__label">
+          Phone number
+          <fieldset class="form__fieldset">
+            <svg class="form__icon" width="18" height="18">
+              <use href=""></use>
+            </svg>
+            <input
+              class="form__input"
+              type="tel"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              title="Phone number type 123-456-789"
+            />
+          </fieldset>
+        </label>
+        <label class="form__label">
+          E-mail
+          <fieldset class="form__fieldset">
+            <svg class="form__icon" width="18" height="18">
+              <use href=""></use>
+            </svg>
+            <input class="form__input" type="email" name="mail" />
+          </fieldset>
+        </label>
+        <label class="form__label form__comment-field">
+          Comment
+          <textarea
+            class="form__textarea"
+            name="comment"
+            rows="5"
+            maxlength="500"
+            placeholder="What are you interested in?"
+          ></textarea>
+        </label>
+        <fieldset class="form__checkbox-fieldset">
+          <label>
+            <input class="form__checkbox" type="checkbox" name="agreements" required />
+            I accept <a href="#" class="form__link">Terms</a> i
+            <a href="#" class="form__link">Privacy policy</a>.
+          </label>
+        </fieldset>
+        <button type="submit" class="button form__button">Send!</button>
+      </form>
+    </form>
+  </div>
+</div>
+
+<!-- Buy now modal end -->
