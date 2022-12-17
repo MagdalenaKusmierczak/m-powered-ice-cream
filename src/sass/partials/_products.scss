@@ -1,3 +1,7 @@
+.products {
+    padding-top: 120px;
+    padding-bottom: 98px;
+}
 .products__subtitle {
     display: block;
     color: $third-font-color;
@@ -157,13 +161,13 @@
         gap: 30px;
     }
     .products__name {
-        padding-top: 160px;
+        padding-top: 130px;
     }
     .products__background--one::before {
         content: "";
         position: absolute;
         left: calc(50% - 167.5px);
-        top: -180px;
+        top: -210px;
         width: 335px;
         height: 335px;
         background-image: url(./../images/products__product1-desktop.png);
@@ -172,7 +176,7 @@
         content: "";
         position: absolute;
         left: calc(50% - 167.5px);
-        top: -180px;
+        top: -210px;
         width: 335px;
         height: 335px;
         background-image: url(./../images/products__product2-desktop.png);
@@ -181,17 +185,18 @@
         content: "";
         position: absolute;
         left: calc(50% - 167.5px);
-        top: -180px;
+        top: -210px;
         width: 335px;
         height: 335px;
         background-image: url(./../images/products__product3-desktop.png);
     }
     .products__subtitle {
         font-size: 30px;
+        margin-bottom: 15px;
     }
     .products__title {
         font-size: 58px;
-        margin-bottom: 70px;
+        margin-bottom: 130px;
     }
     .products__name {
         font-size: 30px;
@@ -201,6 +206,6 @@
     }
     .products__image-box {
         padding-bottom: 60px;
-        padding-top: 50px;
+        padding-top: 40px;
     }
 }
