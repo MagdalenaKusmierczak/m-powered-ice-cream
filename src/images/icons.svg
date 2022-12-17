@@ -43,5 +43,8 @@
 <symbol id="icon-greater-value-sign" viewBox="0 0 8 10">
 <path d="M1.61633 1L6.04401 5L1.61633 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+<symbol id="icon-greater-value-sign" viewBox="0 0 8 10">
+<path d="M1.61633 1L6.04401 5L1.61633 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 </defs>
 </svg>
