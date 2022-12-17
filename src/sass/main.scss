@@ -1,7 +1,11 @@
-/* ------Styles main file------ */
-@import './variables';
-@import './body';
-@import './container';
+/* Main stylesheet*/
+
+/* Components */
+@import './components/variables';
+@import './components/body';
+@import './components/container';
 @import './components/hamburger';
 @import './components/mobile-menu';
-@import './hero-header';
+/* Partials*/
+@import './partials/gallery';
+@import './partials/advantages';

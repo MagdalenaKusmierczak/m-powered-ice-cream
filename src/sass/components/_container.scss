@@ -1,13 +1,13 @@
 .container {
   padding: 0 20px;
-  margin: auto;
-  min-width: 290px;
-  max-width: 480px;
-  @media (min-width: 768px) {
+  margin: 0 auto;
+  min-width: 320px;
+
+  @include tablet {
     padding: 0 34px;
     max-width: 768px;
   }
-  @media (min-width: 1280px) {
+  @include desktop {
     padding: 0 115px;
     max-width: 1280px;
   }
