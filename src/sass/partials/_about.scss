@@ -1,30 +1,32 @@
 .about {
   background: $fourth-background;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  margin-left:0;
+  // text-decoration: none;
+  // display: flex;
+  // flex-direction: column;
+  // margin-left:0;
   
 
   &__tittle {
-    font-family: "Titan One";
+    font-family: $second-font;
     font-style: normal;
     font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
     text-align: center;
-    background: $fourth-background;
+    text-transform: uppercase;
+   
   }
 
   &__tittle-style{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // list-style: none;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
+    list-style-type: none;
   }
 
   &__tittle-second {
@@ -35,23 +37,36 @@
     padding-bottom: 15x;
     margin-bottom:0;
     margin-top:0;
+    margin:0;
+
+
+    @include tablet {
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 130px;
+        padding-bottom: 16px;
+      }
     
+      @include desktop {
+        font-size: 30px;
+        line-height: 34px;
+        padding-bottom: 15px;
+      }
+    // @media screen and (min-width:768px) {
+    //   width: 285px;
+    //   height: 30px;
+    //   font-size: 26px;
+    //   line-height: 30px;
+    //   padding-bottom:16px;
+    // }
 
-    @media screen and (min-width:768px) {
-      width: 285px;
-      height: 30px;
-      font-size: 26px;
-      line-height: 30px;
-      padding-bottom:16px;
-    }
-
-    @media screen and (min-width:1280px) {
-      width: 351px;
-      height: 34px;
-      font-size: 30px;
-      line-height: 34px;
-      padding-bottom:15px;
-    }
+    // @media screen and (min-width:1280px) {
+    //   width: 351px;
+    //   height: 34px;
+    //   font-size: 30px;
+    //   line-height: 34px;
+    //   padding-bottom:15px;
+    // }
   }
 
   &__tittle-main {
@@ -59,36 +74,48 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     color: $first-font-color;
-    width: 200px;
-    height: 76px;
+    // width: 200px;
+    // height: 76px;
+    // max-width: 100%;
+    // padding-top: 15px;
+    // margin-top:0;
+    margin:0 auto;
+    max-width:200px;
+    
+
+  @include tablet {
+    font-size: 45px;
+    line-height: 55px;
     max-width: 100%;
-    padding-top: 15px;
-    margin-top:0;
-    
-    
+  }
 
+  @include desktop {
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    overflow: visible;
+  }
+    // @media screen and (min-width:768px) {
+    //   font-size: 48px;
+    //   line-height: 55px;
+    //   width: 429px;
+    //   height: 55px;
+    //   max-width: 100%;
+    //   margin-top:16px;
+    //   margin-bottom:0;
+    // }
 
-    @media screen and (min-width:768px) {
-      font-size: 48px;
-      line-height: 55px;
-      width: 429px;
-      height: 55px;
-      max-width: 100%;
-      margin-top:16px;
-      margin-bottom:0;
-    }
-
-    @media screen and (min-width:1280px) {
-      font-size: 58px;
-      line-height: 66px;
-      max-width: 100%;
-      width: 534px;
-      height: 66px;
-      padding-top:15px;
-      letter-spacing: 0.06em;
-      overflow:visible;
+    // @media screen and (min-width:1280px) {
+    //   font-size: 58px;
+    //   line-height: 66px;
+    //   max-width: 100%;
+    //   width: 534px;
+    //   height: 66px;
+    //   padding-top:15px;
+    //   letter-spacing: 0.06em;
+    //   overflow:visible;
       
-    }
+    // }
   }
 
   &__block {
@@ -107,7 +134,7 @@
     
 
 
-    @media screen and (min-width:768px) {
+    @include tablet {
       flex-direction: row;
       padding-top: 50px;
       padding-left:5px;
@@ -115,15 +142,14 @@
       align-items: flex-start;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop {
       // padding-top: -50px;
     }
   }
 
   &__block-picture {
     // position: relative;
-    padding-top: 26px;
-    margin: 0;
+    margin-top: 26px;
     width:280px;
     height: 279px;
 
@@ -135,13 +161,13 @@
       align-items: center;
     }
 
-    @media screen and (min-width:768px) {
+    @include tablet {
       width: 340px;
       height: 339px;
       padding-top:0;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop {
       width: 516px;
       height: 516px;
     }
@@ -152,13 +178,13 @@
     padding-right: 30px;
     padding-top:50px;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
       // margin-top: 100px;
       padding-left: 0;
       padding-right: 16px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop {
       margin-top: 40px;
       
     }
@@ -170,14 +196,14 @@
     text-align: left;
     
 
-    @media screen and (min-width:768px) {
+    @include tablet {
       padding: 0;
       margin-left: 17px;
       padding-bottom:30px;
       line-height: 25px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop{
       margin-left: 74px;
       width: 463px;
       height: 79px;
@@ -195,14 +221,14 @@
     text-align: left;
     
 
-    @media screen and (min-width:768px) {
+    @include tablet {
       padding: 0;
       margin-left: 17px;
       padding-bottom:10px;
       line-height: 25px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop {
       margin-left: 74px;
       width: 463px;
       height: 79px;
@@ -220,14 +246,14 @@
      text-align: left;
      padding-top:10px;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
       padding: 0;
       margin-left: 17px;
       padding-bottom: 47px;
       line-height: 25px;
       }
     
-    @media screen and (min-width:1280px) {
+    @include desktop {
       margin-left: 74px;
       line-height: 28px;
       padding-top:10px;
@@ -237,11 +263,11 @@
   &__block-button {
     text-align: left;
 
-    @media screen and (min-width:768px){
+    @include tablet{
       margin-left:0;
       padding-left:17px;
     }
-    @media screen and (min-width:1280px){
+    @include desktop{
       padding-left:60px;
     }
 
@@ -263,7 +289,7 @@
     height: 44px;
 
     background: #ffffff;
-    margin-bottom: 39px;
+    margin-bottom:0;
     margin-top: 17px;
     cursor: pointer;
     border-color: #ffffff;
@@ -272,12 +298,12 @@
     
   }
 
-  @media screen and (min-width:768px) {
+  @include tablet {
     margin-left: 55px;
     margin-top: 44px;
   }
 
-  @media screen and (min-width:1280px) {
+  @include desktop {
     margin-left: 74px;
     margin-top: 27px;
   }
