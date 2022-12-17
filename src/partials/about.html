@@ -5,7 +5,8 @@
         <h2 class="about__tittle-main">how it's made?</h2></div>
 
         <div class="about__block">
-            <img src="../images/about__cow-mobile.png" class="about__block-picture" scr="" width="280" height="279">
+           <img class="about__block-picture" src=""  
+             width="280" height="279">
             <div class="about__block-text">
 
                 <p class="about__block-text1">Fusce ut nvelit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
@@ -25,10 +26,37 @@
             
         
         <div class="about__block-button">
-            <button class="about__button" type="button">Read more ></button>
+         <button class="about__button" type="button" data-modal-open=".">Read more>
+         </button>
         </div>
     </div>
     </div>
     </div>
-
+<div class="is-hidden" data-modal>
+    <div class="backdrop">
+        <div class="modal">
+            <div>
+                <form name="icecream">
+                    <button class="modal__button-close" type="reset" data-modal-close>X</button>
+                </form>
+            </div>
+            <div class=" modal-text">
+                <p class="modal-text__first">Fusce ut nvelit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus,
+                    faucibus lorem
+                    eget, egestas eros.
+                    Maecenas eleifend erat at justo fringilla.</p>
+            
+                <p class="modal-text__second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris
+                    rhoncus orci in
+                    imperdiet placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.</p>
+            
+                <p class="modal-text__third">Aliquam erat volutpat. Aenean accumsan.</p>
+        </div>
+    </div>
+ </div>
 </section>
+<script src="../modal.js"></script>
