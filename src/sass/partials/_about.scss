@@ -1,6 +1,23 @@
 .about {
   background: $fourth-background;
   
+  &::before{
+  background-image: url(../images/about__background-mobile.png);
+  
+  @include mobile-retina {
+    background-image: url(../images/about__background-mobile@2x.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/about__background-desktop.png);
+  }
+
+  @include desktop-retina {
+    background-image: url(../images/about__background-desktop@2x.png);
+  }
+
+  }
+
   &__tittle {
     font-family: $second-font;
     font-style: normal;
@@ -369,4 +386,6 @@
       padding-top: 10px;
     }
     }
+
+   
   
