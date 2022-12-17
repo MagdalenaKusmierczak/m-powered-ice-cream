@@ -28,8 +28,13 @@
   position: absolute;
   top: 23px;
   right: 28px;
-  color: $second-font-color;
+  fill: $second-font-color;
+  stroke: $second-font-color;
+  color: white;
+  fill: currentColor;
+  background-color: inherit;
   border: 0;
+  cursor: pointer;
 }
 
 .mobile-menu__button {
