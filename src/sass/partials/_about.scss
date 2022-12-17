@@ -9,18 +9,22 @@
     // right: 0;
 
     &::after {
-      background-image: url(../images/about__background-mobile.png)}
-
+        background-image: url(../images/about__background-mobile.png)
+      }
+    
+      //  width:320px;
+      //  height:133px;
+    
       @include desktop {
         background-image: url(../images/about__background-desktop.png);
-        height:534px;
-        min-width:1280px;
+        // height:534px;
+        // max-width:100%;
+    
       }
-
+    
       @include desktop {
         background-image: url(../images/about__background-desktop@2x.png)
       }
-    
   
 
 
@@ -98,7 +102,7 @@
     justify-content: center;
     align-items: center;
     
-
+    
 
     @include tablet {
       flex-direction: row;
