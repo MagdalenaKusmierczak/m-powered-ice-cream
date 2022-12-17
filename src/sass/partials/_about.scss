@@ -1,31 +1,17 @@
 .about {
   background: $fourth-background;
-  // text-decoration: none;
-  // display: flex;
-  // flex-direction: column;
-  // margin-left:0;
   
-
   &__tittle {
     font-family: $second-font;
     font-style: normal;
     font-weight: 400;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
     text-align: center;
     text-transform: uppercase;
    
   }
 
   &__tittle-style{
-    // list-style: none;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     text-align: center;
-    // text-transform: uppercase;
     list-style-type: none;
   }
 
@@ -52,21 +38,6 @@
         line-height: 34px;
         padding-bottom: 15px;
       }
-    // @media screen and (min-width:768px) {
-    //   width: 285px;
-    //   height: 30px;
-    //   font-size: 26px;
-    //   line-height: 30px;
-    //   padding-bottom:16px;
-    // }
-
-    // @media screen and (min-width:1280px) {
-    //   width: 351px;
-    //   height: 34px;
-    //   font-size: 30px;
-    //   line-height: 34px;
-    //   padding-bottom:15px;
-    // }
   }
 
   &__tittle-main {
@@ -74,11 +45,6 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     color: $first-font-color;
-    // width: 200px;
-    // height: 76px;
-    // max-width: 100%;
-    // padding-top: 15px;
-    // margin-top:0;
     margin:0 auto;
     max-width:200px;
     
@@ -95,27 +61,6 @@
     letter-spacing: 0.06em;
     overflow: visible;
   }
-    // @media screen and (min-width:768px) {
-    //   font-size: 48px;
-    //   line-height: 55px;
-    //   width: 429px;
-    //   height: 55px;
-    //   max-width: 100%;
-    //   margin-top:16px;
-    //   margin-bottom:0;
-    // }
-
-    // @media screen and (min-width:1280px) {
-    //   font-size: 58px;
-    //   line-height: 66px;
-    //   max-width: 100%;
-    //   width: 534px;
-    //   height: 66px;
-    //   padding-top:15px;
-    //   letter-spacing: 0.06em;
-    //   overflow:visible;
-      
-    // }
   }
 
   &__block {
@@ -146,7 +91,6 @@
   }
 
   &__block-picture {
-    // position: relative;
     margin-top: 26px;
     width:280px;
     height: 279px;
@@ -177,7 +121,6 @@
     padding-top:50px;
 
     @include tablet {
-      // margin-top: 100px;
       padding-left: 0;
       padding-right: 16px;
     }
@@ -293,7 +236,6 @@
   }
 
   @include tablet {
-    // margin-left: 55px;
     margin-top: 62px;
   }
 
