@@ -1,8 +1,6 @@
 /* ------Styles main file------ */
-@import './variables';
-@import './body';
-@import './container';
-@import './footer';
+
+
 /* Main stylesheet*/
 
 /* Components */
@@ -11,6 +9,7 @@
 @import './components/container';
 @import './components/hamburger';
 @import './components/mobile-menu';
+@import './components/footer';
 
 /* Partials*/
 @import './partials/gallery';
