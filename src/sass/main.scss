@@ -3,5 +3,14 @@
 @import './body';
 @import './container';
 @import './footer';
+/* Main stylesheet*/
+
+/* Components */
+@import './components/variables';
+@import './components/body';
+@import './components/container';
 @import './components/hamburger';
 @import './components/mobile-menu';
+
+/* Partials*/
+@import './partials/gallery';
