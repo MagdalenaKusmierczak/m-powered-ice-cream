@@ -54,7 +54,11 @@
 
 .mobile-menu__icon {
   background-color: inherit;
-  fill: $second-font-color;
+  stroke: $brand-color;
+}
+
+.mobile-menu__icon-arrow {
+  stroke: $brand-color;
 }
 
 .mobile-menu__list {
