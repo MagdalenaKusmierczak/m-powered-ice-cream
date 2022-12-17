@@ -6,8 +6,6 @@
     line-height: 1.145;
     letter-spacing: 0.04em;
     text-align: center;
-    margin: 0;
-    padding-bottom: 15px;
 }
 .products__title {
     display: block;
@@ -30,13 +28,11 @@
 .products__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 100%;
     height: auto;
     position: relative;
 }
 .products__name {
-    display: block;
     font-family: $second-font;
     color: $second-font-color;
     font-size: 20px;
@@ -44,14 +40,14 @@
     letter-spacing: 0.04em;
     text-align: center;
     padding-top: 150px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .products__icon {
+    fill: $second-font-color;
+}
+.products__icon-box {
     display: flex;
-    align-items: center;
     justify-content: center;
-    fill: #fff;
-    stroke: #fff;
 }
 .products__text {
     display: block;
@@ -61,7 +57,7 @@
     line-height: 1.52;
     letter-spacing: 0.04em;
     text-align: center;
-    padding: 0 40px;
+    padding: 15px 40px;
 }
 .products__image-box {
     display: flex;
