@@ -1,22 +1,28 @@
 .about {
   background: $fourth-background;
+
+    // width: 320px;
+    // height: 133px;
+    // padding-bottom: 60px;
+    // // position: absolute;
+    // left: 0;
+    // right: 0;
+
+    &::after {
+      background-image: url(../images/about__background-mobile.png)}
+
+      @include desktop {
+        background-image: url(../images/about__background-desktop.png);
+        height:534px;
+        min-width:1280px;
+      }
+
+      @include desktop {
+        background-image: url(../images/about__background-desktop@2x.png)
+      }
+    
   
-  &::before{
-  background-image: url(../images/about__background-mobile.png);
-  
-  @include mobile-retina {
-    background-image: url(../images/about__background-mobile@2x.png);
-  }
 
-  @include desktop {
-    background-image: url(../images/about__background-desktop.png);
-  }
-
-  @include desktop-retina {
-    background-image: url(../images/about__background-desktop@2x.png);
-  }
-
-  }
 
   &__tittle {
     font-family: $second-font;
@@ -136,6 +142,8 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top:50px;
+    
+
 
     @include tablet {
       padding-left: 0;
@@ -386,6 +394,7 @@
       padding-top: 10px;
     }
     }
+
 
    
   
