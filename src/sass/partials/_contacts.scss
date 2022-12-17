@@ -1,0 +1,284 @@
+@mixin font-styles($family, $style, $weight, $size, $lheight, $spacing) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lheight;
+  letter-spacing: $spacing;
+}
+//------ Do usunięcia --------//
+.test {
+  display: flex;
+  width: 30px;
+  height: 200px;
+}
+// wymagane miejsce we wcześniejszej sekcji
+// mobil 84 px
+// tablet 78px
+// desktop 102px
+
+// ---------------------------//
+
+// @include font-styles('DM Sans', normal, 700, 24px, 28px, 0.03em);
+// .container {
+//   width: 100%;
+//   @include tablet {
+//   }
+
+.contacts__media > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 0;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $fourth-background;
+  @include desktop {
+    background-image: url('../images/contacts__background-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts__background-desktop@2x.png');
+    }
+  }
+  &__titel {
+    visibility: hidden;
+    position: absolute;
+  }
+  &__list {
+    min-width: 220px;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    margin-top: -84px;
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    @include tablet {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      padding: 0 36px 0 36px;
+      margin-top: -78px;
+    }
+    @include desktop {
+      gap: 30px;
+      margin-top: -102px;
+      padding: 0 115px 0 115px;
+    }
+  }
+  &__item {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    background-color: $fifth-background;
+    padding: 43px 21px;
+    position: relative;
+    border-radius: 24px;
+    min-width: 220px;
+    width: 100%;
+    height: 427px;
+    @include tablet {
+      padding: 50px 31px;
+      height: 544px;
+    }
+    @include desktop {
+      padding: 50px 43px;
+      height: 572px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin: 0;
+    // position: absolute;
+    text-align: center;
+    @include font-styles('DM Sans', normal, 500, 12px, 186%, 0.04em);
+    color: $second-font-color;
+    border-radius: 4px;
+    &--cafe {
+      width: 80px;
+      background-color: #f0d1a5;
+      @include tablet {
+        width: 73px;
+        font-size: 16px;
+      }
+      @include desktop {
+      }
+    }
+    &--foodtruck {
+      width: 130px;
+      background-color: #c2e297;
+      @include tablet {
+        width: 138px;
+        font-size: 16px;
+      }
+      @include desktop {
+      }
+    }
+  }
+  &__address {
+    padding-top: 25px;
+    min-width: 179px;
+    display: flex;
+    flex-direction: column;
+    @include font-styles('DM Sans', normal, 500, 12px, 186%, 0.04em);
+    color: $fourth-font-color;
+    // @include tablet {
+    //   width: 148px;
+    // }
+    @include tablet {
+      padding-top: 30px;
+      font-size: 14px;
+      max-height: 157px;
+    }
+    @include desktop {
+      padding-top: 32px;
+      font-size: 16px;
+      max-height: 234px;
+    }
+  }
+  &__city {
+    margin: 0 0 10px 0;
+  }
+  &__desc {
+    display: flex;
+    @include font-styles('DM Sans', normal, 500, 12px, 18px, 0.03em);
+    width: 100%;
+    color: $fifth-font-color;
+    flex-direction: column;
+    margin: 0;
+    &::after {
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #e1e1e1;
+      padding-bottom: 25px;
+      @include tablet {
+        padding-bottom: 30px;
+      }
+      @include desktop {
+        padding-bottom: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+  &__open {
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    @include font-styles('DM Sans', normal, 500, 12px, 22px, 0.04em);
+    &::after {
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #e1e1e1;
+      padding-bottom: 15px;
+      margin: 0 0 25px 0;
+      @include tablet {
+        margin: 5px 0 30px 0;
+      }
+    }
+    @include tablet {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 186%;
+    }
+    @include desktop {
+      padding-bottom: 32px;
+      font-size: 16px;
+    }
+  }
+  &__days {
+    margin: 0;
+  }
+  &__hours {
+    margin: 0 0 10px 0;
+    color: $third-font-color;
+  }
+  &__media {
+    @include font-styles('DM Sans', normal, 500, 12px, 18px, 0.04em);
+    color: $fifth-font-color;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      font-size: 14px;
+      line-height: 186%;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  &__box-buttons {
+    background-color: #fff5f6;
+    padding-top: 54px;
+    padding-bottom: 113px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    @include tablet {
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+  &__button {
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: background-color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+      color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    &--red {
+      background-color: #d41342;
+      color: $fifth-background;
+      @include tablet {
+        width: 191px;
+      }
+      @include desktop {
+        width: 198px;
+      }
+    }
+    &--white {
+      background-color: $fifth-background;
+      color: $brand-color;
+      @include tablet {
+        width: 175px;
+      }
+      @include desktop {
+        width: 180px;
+      }
+    }
+  }
+  .contacts__button--red:hover,
+  .contacts__button--red:focus {
+    background-color: $fifth-background;
+    color: $brand-color;
+  }
+  .contacts__button--white:hover,
+  .contacts__button--white:focus {
+    background-color: #ecebeb;
+    color: $brand-color;
+  }
+
+  // .contacts__button:hover .contacts__icon,
+  // .contacts__button:focus .contacts__icon {
+  //   fill: #ffffff;
+  // }
+  // .contacts__icon {
+  //   fill: #d41443;
+  //   margin-left: 13.5px;
+  //   transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  // }
+}
