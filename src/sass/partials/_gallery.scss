@@ -4,7 +4,7 @@
 }
 .gallery {
   width: 100%;
-  height: 122px;
+  min-height: 122px;
   background-position: center;
   background-color: $fourth-background;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
     $fifth-background
   );
   @include tablet {
-    height: 264px;
+    min-height: 264px;
     background: linear-gradient(
       to bottom,
       $fourth-background 103px,
@@ -24,7 +24,7 @@
     );
   }
   @include desktop {
-    height: 430px;
+    min-height: 430px;
     background: linear-gradient(
       to bottom,
       $fourth-background 171px,
@@ -34,8 +34,8 @@
   }
   &__image {
     display: block;
-    max-width: 364px;
-    height: auto;
+    min-width: 364px;
+    min-height: 122px;
     position: absolute;
     left: -18px;
     top: -1px;
