@@ -63,6 +63,12 @@
     text-align: center;
     padding: 0 40px;
 }
+.products__image-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
 .products__background {
     border-radius: 24px;
     width: 100%;
@@ -145,6 +151,10 @@
     .products__title {
         font-size: 48px;
     }
+    .products__image-box {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .products__list {
@@ -185,11 +195,16 @@
     }
     .products__title {
         font-size: 58px;
+        margin-bottom: 70px;
     }
     .products__name {
         font-size: 30px;
     }
     .products__text {
         font-size: 16px
+    }
+    .products__image-box {
+        padding-bottom: 60px;
+        padding-top: 50px;
     }
 }
