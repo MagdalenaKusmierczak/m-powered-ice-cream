@@ -25,15 +25,14 @@
   font-size: 34px;
   line-height: 1.147;
   padding-bottom: 43px;
-  width:200px;
+  width: 200px;
 }
-
 
 .footer__social-list {
   list-style: none;
   display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .footer__contact {
   font-family: $main-font;
@@ -48,7 +47,13 @@
   text-decoration: none;
   color: $brand-color;
   font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: $second-button-hover;
+  }
 }
+
 .footer__copyright {
   font-family: $main-font;
   font-style: normal;
@@ -69,7 +74,17 @@
   margin-left: 147px;
   margin-bottom: 46px;
 }
-.footer__svg {
-  fill: red;
+.footer__href {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: $social-media-background;
+}
 
+.footer__href:hover,
+.footer__href:focus {
+  background-color: $social-media-hover;
 }
