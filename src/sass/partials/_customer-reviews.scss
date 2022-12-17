@@ -35,7 +35,7 @@
 
 .customer-reviews__review {
   background-color: $sixth-background;
-  padding: 23px 50px 7px;
+  padding: 28px 50px 7px;
   margin-bottom: 30px;
 
   @include tablet {
@@ -45,7 +45,7 @@
 
   @include desktop {
     margin: 0 62px 15px;
-    padding: 27px 54px 13px 59px;
+    padding: 33px 54px 13px 59px;
     width: 926px;
   }
 }
@@ -72,7 +72,7 @@
 
 .customer-reviews__text {
   position: relative;
-  padding: 6px 7px 0 16px;
+  padding: 4px 16px 0 7px;
   font-family: $main-font;
   font-size: 12px;
   line-height: 2.55;
@@ -81,13 +81,13 @@
 
   @include tablet {
     letter-spacing: 0.04em;
-    padding: 6px 44px 0 20px;
+    padding: 3px 44px 0 20px;
     font-size: 14px;
     line-height: 2.16;
   }
 
   @include desktop {
-    padding: 6px 35px 0 26px;
+    padding: 2px 35px 0 28px;
     font-size: 16px;
     line-height: 1.86;
   }
@@ -95,8 +95,8 @@
 
 .customer-reviews__quotation-icon {
   position: absolute;
-  top: -11px;
-  left: 20px;
+  top: -13px;
+  left: 11px;
   fill: $seventh-background;
 
   @include tablet {
@@ -106,12 +106,14 @@
 
   @include desktop {
     top: -12px;
-    left: -9px;
+    left: -11px;
   }
 }
 
 .custom-reviews__dots-icon {
   fill: $third-icon-color;
+  padding: 0;
+  margin: 0;
 }
 
 .customer-reviews__signature {
