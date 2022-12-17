@@ -2,7 +2,7 @@
     display: block;
     color: $third-font-color;
     font-family: $second-font;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.145;
     letter-spacing: 0.04em;
     text-align: center;
@@ -14,17 +14,15 @@
     color: $first-font-color;
     font-family: $second-font;
     font-size: 34px;
-    line-height: 1.144;
+    line-height: 1.145;
     letter-spacing: 0.04em;
     text-align: center;
     margin: 0;
     padding-bottom: 140px;
 }
 .products__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     list-style-type: none;
     gap: 130px;
     padding: 0;
@@ -106,4 +104,15 @@
     height: 252px;
     background-image: url(./../images/products__product3-mobile.png);
 }
-
+@media screen and (min-width: 768px) {
+    .products__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 29px;
+    }
+    .products__subtitle {
+        font-size: 26px;
+    }
+    .products__title {
+        font-size: 48px;
+    }
+}
