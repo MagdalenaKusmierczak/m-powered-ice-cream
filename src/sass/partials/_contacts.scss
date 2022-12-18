@@ -1,36 +1,17 @@
-@mixin font-styles($family, $style, $weight, $size, $lheight, $spacing) {
-  font-family: $family;
-  font-style: $style;
+@mixin font-styles($weight, $size, $lheight, $spacing) {
   font-weight: $weight;
   font-size: $size;
   line-height: $lheight;
   letter-spacing: $spacing;
 }
-//------ Do usunięcia --------//
-.test {
-  display: flex;
-  width: 30px;
-  height: 200px;
-}
-// wymagane miejsce we wcześniejszej sekcji
-// mobil 84 px
-// tablet 78px
-// desktop 102px
 
-// ---------------------------//
-
-// @include font-styles('DM Sans', normal, 700, 24px, 28px, 0.03em);
-// .container {
-//   width: 100%;
-//   @include tablet {
-//   }
 
 .contacts__media > a {
   text-decoration: none;
   color: inherit;
 }
 
-.container {
+.contacts .container {
   padding: 0;
 }
 
@@ -50,7 +31,7 @@
     }
   }
 
-  &__titel {
+  &__title {
     visibility: hidden;
     position: absolute;
   }
@@ -103,9 +84,8 @@
   }
   &__heading {
     margin: 0;
-    // position: absolute;
     text-align: center;
-    @include font-styles('DM Sans', normal, 500, 12px, 186%, 0.04em);
+    @include font-styles(500, 12px, 186%, 0.04em);
     color: $second-font-color;
     border-radius: 4px;
     &--cafe {
@@ -115,8 +95,6 @@
         width: 73px;
         font-size: 16px;
       }
-      @include desktop {
-      }
     }
     &--foodtruck {
       width: 130px;
@@ -125,8 +103,6 @@
         width: 138px;
         font-size: 16px;
       }
-      @include desktop {
-      }
     }
   }
   &__address {
@@ -134,11 +110,8 @@
     min-width: 179px;
     display: flex;
     flex-direction: column;
-    @include font-styles('DM Sans', normal, 500, 12px, 186%, 0.04em);
+    @include font-styles(500, 12px, 186%, 0.04em);
     color: $fourth-font-color;
-    // @include tablet {
-    //   width: 148px;
-    // }
     @include tablet {
       padding-top: 30px;
       font-size: 14px;
@@ -155,7 +128,7 @@
   }
   &__desc {
     display: flex;
-    @include font-styles('DM Sans', normal, 500, 12px, 18px, 0.03em);
+    @include font-styles(500, 12px, 18px, 0.03em);
     width: 100%;
     color: $fifth-font-color;
     flex-direction: column;
@@ -178,7 +151,7 @@
     margin: 25px 0 0 0;
     display: flex;
     flex-direction: column;
-    @include font-styles('DM Sans', normal, 500, 12px, 22px, 0.04em);
+    @include font-styles(500, 12px, 22px, 0.04em);
     &::after {
       content: '';
       width: 100%;
@@ -207,7 +180,7 @@
     color: $third-font-color;
   }
   &__media {
-    @include font-styles('DM Sans', normal, 500, 12px, 18px, 0.04em);
+    @include font-styles(500, 12px, 18px, 0.04em);
     color: $fifth-font-color;
     display: flex;
     flex-direction: column;
@@ -238,7 +211,6 @@
     height: 44px;
     border-radius: 22px;
     border: none;
-    font-family: 'DM Sans';
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -248,6 +220,7 @@
     &--red {
       background-color: #d41342;
       color: $fifth-background;
+
       @include tablet {
         width: 191px;
       }
@@ -291,11 +264,12 @@
   .contacts__icon--red {
     fill: #d41342;
     stroke: $fifth-background;
-
+    padding-left: 4px;
     transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   .contacts__icon--white {
     fill: $fifth-background;
     stroke: #d41342;
+    padding-left: 4px;
   }
 }
