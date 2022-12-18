@@ -5,12 +5,6 @@
   letter-spacing: $spacing;
 }
 
-
-.contacts__media > a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .contacts .container {
   padding: 0;
 }
@@ -24,8 +18,11 @@
   @include desktop {
     max-width: 100%;
     background-image: url('../images/contacts__background-desktop.png');
-    background-position: center;
+    background-position-x: center;
+    background-position-y: top;
     background-repeat: no-repeat;
+    background-size: 1280px 380px;
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/contacts__background-desktop@2x.png');
     }
@@ -46,6 +43,10 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
 
     @include tablet {
       justify-content: space-between;
@@ -53,11 +54,13 @@
       flex-direction: row;
       padding: 0 36px 0 36px;
       margin-top: -78px;
+      font-size: 14px;
     }
     @include desktop {
       gap: 30px;
       margin-top: -102px;
       padding: 0 115px 0 115px;
+      font-size: 16px;
     }
   }
   &__item {
@@ -68,7 +71,7 @@
     border-radius: 24px;
     min-width: 220px;
     width: 100%;
-    height: 427px;
+
     @include tablet {
       padding: 50px 31px;
       height: 544px;
@@ -85,7 +88,6 @@
   &__heading {
     margin: 0;
     text-align: center;
-    @include font-styles(500, 12px, 186%, 0.04em);
     color: $second-font-color;
     border-radius: 4px;
     &--cafe {
@@ -110,16 +112,13 @@
     min-width: 179px;
     display: flex;
     flex-direction: column;
-    @include font-styles(500, 12px, 186%, 0.04em);
     color: $fourth-font-color;
     @include tablet {
       padding-top: 30px;
-      font-size: 14px;
       max-height: 157px;
     }
     @include desktop {
       padding-top: 32px;
-      font-size: 16px;
       max-height: 234px;
     }
   }
@@ -128,7 +127,6 @@
   }
   &__desc {
     display: flex;
-    @include font-styles(500, 12px, 18px, 0.03em);
     width: 100%;
     color: $fifth-font-color;
     flex-direction: column;
@@ -140,10 +138,12 @@
       padding-bottom: 25px;
       @include tablet {
         padding-bottom: 30px;
+        line-height: 1.66;
       }
       @include desktop {
         padding-bottom: 32px;
         font-size: 16px;
+        line-height: 1.83;
       }
     }
   }
@@ -151,7 +151,6 @@
     margin: 25px 0 0 0;
     display: flex;
     flex-direction: column;
-    @include font-styles(500, 12px, 22px, 0.04em);
     &::after {
       content: '';
       width: 100%;
@@ -164,12 +163,7 @@
     }
     @include tablet {
       margin-top: 30px;
-      font-size: 14px;
       line-height: 186%;
-    }
-    @include desktop {
-      padding-bottom: 32px;
-      font-size: 16px;
     }
   }
   &__days {
@@ -180,18 +174,32 @@
     color: $third-font-color;
   }
   &__media {
-    @include font-styles(500, 12px, 18px, 0.04em);
     color: $fifth-font-color;
     display: flex;
     flex-direction: column;
-    @include tablet {
-      font-size: 14px;
-      line-height: 186%;
-    }
+
     @include desktop {
-      font-size: 16px;
     }
   }
+  &__tel {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    line-height: 1.5;
+    @include tablet {
+      line-height: 1.83;
+    }
+  }
+  &__mail {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    line-height: 1.5;
+    @include tablet {
+      line-height: 1.83;
+    }
+  }
+
   &__box-buttons {
     background-color: #fff5f6;
     padding-top: 54px;
