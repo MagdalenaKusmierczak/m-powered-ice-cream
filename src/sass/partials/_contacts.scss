@@ -1,10 +1,3 @@
-@mixin font-styles($weight, $size, $lheight, $spacing) {
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $lheight;
-  letter-spacing: $spacing;
-}
-
 .contacts .container {
   padding: 0;
 }
