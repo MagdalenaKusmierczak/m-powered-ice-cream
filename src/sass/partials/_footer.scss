@@ -1,14 +1,32 @@
 .footer {
-  display: flex;
-  flex-direction: row;
-  //   flex-wrap: wrap;
   background-color: $fourth-background;
+  position: relative;
+  &::after {
+content: "";
+position: absolute;
+bottom: 89px;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $first-border-color;
+//  border-top: 1px solid $first-border-color;
+//  top: 0;
+  @include tablet {
+    bottom: 114px;
+  }
+    @include desktop {
+    bottom: 93px;
+  }
+}
 }
 
 .footer__title-division {
   display: flex;
-  flex-direction: column;
   margin-block: 0px;
+
+  @include tablet {
+    display: inline-block;
+  }
 }
 
 .footer__title {
@@ -24,9 +42,9 @@
   max-width: 232px;
 
   @include tablet {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
     font-size: 26px;
     // max-width: 340px;
     line-height: 1.14;
@@ -35,8 +53,8 @@
 
   @include desktop {
     font-size: 30px;
-    width: 472px;
-    padding-left: 114px;
+    // width: 472px;
+    // padding-left: 114px;
   }
 }
 .footer__title--different-part {
@@ -51,20 +69,20 @@
   padding-bottom: 43px;
 
   @include tablet {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     font-size: 48px;
     line-height: 1.145;
     // padding-left: 36px;
-    padding-top: 16px;
+    // padding-top: 16px;
   }
 
   @include desktop {
     font-size: 58px;
-    width: 474px;
+    // width: 474px;
     line-height: 1.145;
-    padding-left: 114px;
-    padding-top: 15px;
+    // padding-left: 114px;
+    // padding-top: 15px;
   }
 }
 
@@ -83,7 +101,7 @@
   margin-block: 0;
 
   @include desktop {
-    justify-content: flex-end;
+    // justify-content: flex-end;
   }
 }
 
@@ -137,7 +155,7 @@
   @include desktop {
     font-size: 16px;
     line-height: 1.86;
-    padding-right: 116px;
+    // padding-right: 116px;
   }
 }
 .footer__contact-phone {
@@ -158,11 +176,13 @@
   @include desktop {
     font-size: 16px;
     line-height: 1.86;
-    padding-right: 116px;
+    // padding-right: 116px;
   }
 }
 
 .footer__copyright {
+  display: flex;
+  justify-content: center;
   font-family: $main-font;
   font-style: normal;
   font-weight: 700;
@@ -170,18 +190,24 @@
   line-height: 1.52;
   color: $fifth-font-color;
   text-align: center;
-  border-top: 1px solid #e1e1e1;
+  // border-top: 1px solid red; // wywalić
   padding: 22px 10px 25px 0;
+  // position: relative;
 }
 
+
 .footer__copyright-list {
-  margin-block: 0;
   list-style-type: none;
+  margin-block: 0;
   padding-left: 0px;
 
   @include tablet {
     display: flex;
     flex-direction: row;
     gap: 3px;
+    padding: 29px 0 18px 0;
+  }
+  @include desktop {
+    padding: 9px 0 10px 0;
   }
 }
