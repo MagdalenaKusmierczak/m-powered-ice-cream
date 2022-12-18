@@ -8,12 +8,17 @@ top: 766px;
 width:100%;
 z-index: 6;
 
+@include tablet{
+  display:none;
+}
 @include desktop{
-  top:342px;
+top:342px;
+display: flex;
 }
 }
 .about-milk-image{
 width:100%;
+
 @include desktop{
 z-index:6;
 }
