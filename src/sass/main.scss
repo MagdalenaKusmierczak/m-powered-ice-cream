@@ -5,9 +5,14 @@
 @import './components/body';
 @import './components/container';
 @import './components/hamburger';
-@import './components/mobile-menu';
+@import './components/slider';
 /* Partials*/
+@import './partials/products';
 @import './partials/gallery';
 @import './partials/advantages';
 
+
 @import './partials/hero-header';
+
+@import './partials/mobile-menu';
+@import './partials/customer-reviews';
