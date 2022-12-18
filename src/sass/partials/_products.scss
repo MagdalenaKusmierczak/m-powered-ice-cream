@@ -51,8 +51,9 @@
     font-size: 58px;
   }
 }
-.products__title:hover, .products__title:focus {
-    transform: scale(1.2);
+.products__title:hover,
+.products__title:focus {
+  transform: scale(1.2);
 }
 .products__list {
   display: grid;
@@ -106,8 +107,9 @@
     font-size: 30px;
   }
 }
-.products__name:hover, .products__name:focus {
-    transform: scale(1.1);
+.products__name:hover,
+.products__name:focus {
+  transform: scale(1.1);
 }
 .products__icon {
   fill: $second-font-color;
@@ -168,17 +170,20 @@
   top: -110px;
   width: 249px;
   height: 252px;
-  background-image: url(./../images/products__product1-mobile.png);
+  background-image: url(../images/products__product1-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @include mobile-retina {
-    background-image: url(./../images/products__product1-mobile@2x.png);
+    background-image: url(../images/products__product1-mobile@2x.png);
     background-size: contain;
   }
   @include tablet {
     left: calc(50% - 110px);
     width: 220px;
     height: 224px;
-    background-image: url(./../images/products__product1-tablet.png);
+    background-image: url(../images/products__product1-tablet.png);
   }
   @include tablet-retina {
     background-image: url(./../images/products__product1-tablet@2x.png);
@@ -188,10 +193,10 @@
     top: -210px;
     width: 335px;
     height: 335px;
-    background-image: url(./../images/products__product1-desktop.png);
+    background-image: url(../images/products__product1-desktop.png);
   }
   @include desktop-retina {
-    background-image: url(./../images/products__product1-desktop@2x.png);
+    background-image: url(../images/products__product1-desktop@2x.png);
   }
 }
 .products__background--two {
@@ -204,30 +209,33 @@
   left: calc(50% - 125px);
   width: 249px;
   height: 252px;
-  background-image: url(./../images/products__product2-mobile.png);
+  background-image: url(../images/products__product2-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @include mobile-retina {
-    background-image: url(./../images/products__product2-mobile@2x.png);
+    background-image: url(../images/products__product2-mobile@2x.png);
     background-size: contain;
   }
   @include tablet {
     left: calc(50% - 110px);
     width: 220px;
     height: 230px;
-    background-image: url(./../images/products__product2-tablet.png);
+    background-image: url(../images/products__product2-tablet.png);
   }
   @include tablet-retina {
-    background-image: url(./../images/products__product2-tablet@2x.png);
+    background-image: url(../images/products__product2-tablet@2x.png);
   }
   @include desktop {
     left: calc(50% - 167.5px);
     top: -210px;
     width: 335px;
     height: 335px;
-    background-image: url(./../images/products__product2-desktop.png);
+    background-image: url(../images/products__product2-desktop.png);
   }
   @include desktop-retina {
-    background-image: url(./../images/products__product2-desktop@2x.png);
+    background-image: url(../images/products__product2-desktop@2x.png);
   }
 }
 .products__background--three {
@@ -240,29 +248,32 @@
   left: calc(50% - 125px);
   width: 249px;
   height: 252px;
-  background-image: url(./../images/products__product3-mobile.png);
+  background-image: url(../images/products__product3-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @include mobile-retina {
-    background-image: url(./../images/products__product3-mobile@2x.png);
+    background-image: url(../images/products__product3-mobile@2x.png);
     background-size: contain;
   }
   @include tablet {
     left: calc(50% - 110px);
     width: 220px;
     height: 224px;
-    background-image: url(./../images/products__product3-tablet.png);
+    background-image: url(../images/products__product3-tablet.png);
   }
   @include tablet-retina {
-    background-image: url(./../images/products__product3-tablet@2x.png);
+    background-image: url(../images/products__product3-tablet@2x.png);
   }
   @include desktop {
     left: calc(50% - 167.5px);
     top: -210px;
     width: 335px;
     height: 335px;
-    background-image: url(./../images/products__product3-desktop.png);
+    background-image: url(../images/products__product3-desktop.png);
   }
   @include desktop-retina {
-    background-image: url(./../images/products__product3-desktop@2x.png);
+    background-image: url(../images/products__product3-desktop@2x.png);
   }
 }
