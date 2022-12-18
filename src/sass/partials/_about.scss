@@ -1,32 +1,32 @@
+.background{
+background-image: url(../images/about__background-mobile.png);
+background-repeat: no-repeat;
+background-position:bottom;
+padding-left:0;
+padding-right:0;
+display:block;
+
+&::before{
+@include mobile-retina {
+    background-image: url(../images/about__background-mobile@2x.png);
+    
+    margin-left:-50px;
+  }
+
+  @include tablet {
+    background-image: none;
+  }
+
+  @include desktop {
+    background-image: url(../images/about__background-desktop.png);
+  }
+
+  @include desktop-retina {
+    background-image: url(../images/about__background-desktop@2x.png);
+  }}}
+
 .about {
   background: $fourth-background;
-
-    // width: 320px;
-    // height: 133px;
-    // padding-bottom: 60px;
-    // // position: absolute;
-    // left: 0;
-    // right: 0;
-
-    &::after {
-        background-image: url(../images/about__background-mobile.png)
-      }
-    
-      //  width:320px;
-      //  height:133px;
-    
-      @include desktop {
-        background-image: url(../images/about__background-desktop.png);
-        // height:534px;
-        // max-width:100%;
-    
-      }
-    
-      @include desktop {
-        background-image: url(../images/about__background-desktop@2x.png)
-      }
-  
-
 
   &__tittle {
     font-family: $second-font;
@@ -34,7 +34,6 @@
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-   
   }
 
   &__tittle-style{
@@ -102,8 +101,6 @@
     justify-content: center;
     align-items: center;
     
-    
-
     @include tablet {
       flex-direction: row;
       padding-top: 50px;
@@ -146,25 +143,19 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top:50px;
-    
-
-
+  
     @include tablet {
       padding-left: 0;
       padding-right: 16px;
     }
-
     @include desktop {
-      margin-top: 40px;
-      
+      margin-top: 40px; 
     }
-  }
-
+ }
   &__block-text1 {
     color: $fourth-font-color;
     margin: 0;
     text-align: left;
-    
 
     @include tablet {
       padding: 0;
@@ -240,7 +231,6 @@
     @include desktop{
       padding-left:70px;
     }
-
   }
 
   &__button {
@@ -261,7 +251,11 @@
     border-color: #ffffff;
     border-radius: 22px;
     border: 0;
-    padding-top:12px;
+    // padding-top:12px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   @include tablet {
@@ -273,7 +267,15 @@
     margin-top: 27px;
   }
 
+  &__icon{
+  width:4.4px;
+  height:8px;
+  margin-left:13.6px;
+  padding-bottom:16px;
+  }
 }
+
+
 
 .is-hidden {
   // visibility: hidden;
@@ -305,7 +307,7 @@
   position: relative;
   opacity: inherit;
   visibility: inherit;
-
+  
   position: absolute;
   border-radius: 4px;
   background-color:$first-background;
@@ -318,6 +320,8 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in cubic-bezier(0.71, 1.51, 0.4, 2);
   transition-delay: 0s;
+  max-width:90%;
+  
 
   &__button-close {
       position: absolute;
