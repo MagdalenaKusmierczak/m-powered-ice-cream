@@ -252,6 +252,11 @@ display:flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+&:hover{
+  background-color: $brand-color;
+  color:$base-body-background;
+  transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 @include tablet {
