@@ -73,7 +73,11 @@ letter-spacing: 0.04em;
 color: $first-font-color;
 margin:0 auto;
 max-width:200px;
-    
+transition: transform 1.1s ease-in-out;
+&:hover,
+&:focus{
+transform:scale(1.2)
+}
 
 @include tablet {
 font-size: 48px;
@@ -301,15 +305,15 @@ visibility: hidden;
 }
 
 .modal {
-min-width: 320px;
-min-height: 581px;
+min-width: 300px;
+min-height: 570px;
 position: relative;
 opacity: inherit;
 visibility: inherit;
   
 position: absolute;
-border-radius: 4px;
-background-color:$first-background;
+border-radius: 8px;
+background-color:$fourth-background;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 1px 1px rgba(0, 0, 0, 0.14),
 0px 2px 1px rgba(0, 0, 0, 0.2);;
@@ -329,7 +333,7 @@ width: 30px;
 height: 30px;
 border: 1px solid $third-font-color;
 border-radius: 50%;
-background-color: $first-background;
+background-color: $fourth-background;
 right: 8px;
 top: 8px;
 color:$first-button-hover;
