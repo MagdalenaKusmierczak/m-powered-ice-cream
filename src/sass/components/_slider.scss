@@ -21,3 +21,10 @@
     fill: $first-icon-color;
   }
 }
+.swiper-pagination-bullet {
+  background-color: $second-icon-color;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: $first-icon-color;
+}
