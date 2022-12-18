@@ -88,7 +88,7 @@ overflow: visible;
 }
 
 &__block {
-font-family: "DM Sans", sans-serif;
+font-family: $main-font;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -233,7 +233,7 @@ padding-left:70px;
 }
 
 &__button {
-font-family: "DM Sans", sans-serif;
+font-family: $main-font;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -243,11 +243,11 @@ color: $first-font-color;
 width: 176px;
 height: 44px;
 
-background: #ffffff;
+background: $fifth-background;
 margin-bottom:0;
 margin-top: 17px;
 cursor: pointer;
-border-color: #ffffff;
+border-color: $fifth-background;
 border-radius: 22px;
 border: 0;
 display:flex;
@@ -354,7 +354,7 @@ padding-bottom:40px;
 padding-left: 20px;
 padding-right: 20px;
 letter-spacing:2px;
-font-family: "DM Sans", sans-serif;
+font-family: $main-font;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
