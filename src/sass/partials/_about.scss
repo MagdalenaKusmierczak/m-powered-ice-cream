@@ -436,7 +436,7 @@ z-index: 12;
     
 
 &__second{
-color: $first-button-hover;
+color: $fifth-font-color;
 margin: 0;
 padding-top: 27px;
 max-width: 100%;
@@ -476,6 +476,32 @@ background-position: center;
 }
 @include desktop {
 top:180px;
+}
+}
+.about-milk-icon-box{
+width:75%;
+height:50px;
+padding-left:100px;
+padding-top:400px;
+
+@include tablet{
+padding-top:400px;    
+}
+  
+}
+.about-milk-icon-modal{
+z-index:11;
+position: absolute;
+display: flex;
+visibility: visible;
+transition: transform 1s ease-in-out;
+
+&:hover,
+&:focus {
+transform: scale(1.2);
+}
+@include tablet{
+  position:absolute; 
 }
 }
 
