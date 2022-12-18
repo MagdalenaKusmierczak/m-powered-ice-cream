@@ -33,12 +33,14 @@
       $fifth-background
     );
   }
+
   &__image {
     display: block;
-    width: 320px;
-    height: 122px;
+    min-width: 320px;
+    height: auto;
     position: absolute;
     top: -1px;
+    left: calc(50% - 160px);
 
     @include tablet {
       width: 692px;
