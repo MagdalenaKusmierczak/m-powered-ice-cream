@@ -1,0 +1,280 @@
+.contacts .container {
+  padding: 0;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $fourth-background;
+  @include desktop {
+    max-width: 100%;
+    background-image: url('../images/contacts__background-desktop.png');
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: 1280px 380px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts__background-desktop@2x.png');
+    }
+  }
+
+  &__title {
+    visibility: hidden;
+    position: absolute;
+  }
+  &__list {
+    min-width: 220px;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    margin-top: -84px;
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    @include tablet {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      padding: 0 36px 0 36px;
+      margin-top: -78px;
+      font-size: 14px;
+    }
+    @include desktop {
+      gap: 30px;
+      margin-top: -102px;
+      padding: 0 115px 0 115px;
+      font-size: 16px;
+    }
+  }
+  &__item {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    background-color: $fifth-background;
+    padding: 43px 21px;
+    position: relative;
+    border-radius: 24px;
+    min-width: 220px;
+    width: 100%;
+
+    @include tablet {
+      padding: 50px 31px;
+      height: 544px;
+    }
+    @include desktop {
+      padding: 50px 43px;
+      height: 572px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin: 0;
+    text-align: center;
+    color: $second-font-color;
+    border-radius: 4px;
+    &--cafe {
+      width: 80px;
+      background-color: #f0d1a5;
+      @include tablet {
+        width: 73px;
+        font-size: 16px;
+      }
+    }
+    &--foodtruck {
+      width: 130px;
+      background-color: #c2e297;
+      @include tablet {
+        width: 138px;
+        font-size: 16px;
+      }
+    }
+  }
+  &__address {
+    padding-top: 25px;
+    min-width: 179px;
+    display: flex;
+    flex-direction: column;
+    color: $fourth-font-color;
+    @include tablet {
+      padding-top: 30px;
+      max-height: 157px;
+    }
+    @include desktop {
+      padding-top: 32px;
+      max-height: 234px;
+    }
+  }
+  &__city {
+    margin: 0 0 10px 0;
+  }
+  &__desc {
+    display: flex;
+    width: 100%;
+    color: $fifth-font-color;
+    flex-direction: column;
+    margin: 0;
+    &::after {
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #e1e1e1;
+      padding-bottom: 25px;
+      @include tablet {
+        padding-bottom: 30px;
+        line-height: 1.66;
+      }
+      @include desktop {
+        padding-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.83;
+      }
+    }
+  }
+  &__open {
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    &::after {
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #e1e1e1;
+      padding-bottom: 15px;
+      margin: 0 0 25px 0;
+      @include tablet {
+        margin: 5px 0 30px 0;
+      }
+    }
+    @include tablet {
+      margin-top: 30px;
+      line-height: 186%;
+    }
+  }
+  &__days {
+    margin: 0;
+  }
+  &__hours {
+    margin: 0 0 10px 0;
+    color: $third-font-color;
+  }
+  &__media {
+    color: $fifth-font-color;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+    }
+  }
+  &__tel {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    line-height: 1.5;
+    @include tablet {
+      line-height: 1.83;
+    }
+  }
+  &__mail {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    line-height: 1.5;
+    @include tablet {
+      line-height: 1.83;
+    }
+  }
+
+  &__box-buttons {
+    background-color: #fff5f6;
+    padding-top: 54px;
+    padding-bottom: 113px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    @include tablet {
+      flex-direction: row;
+      gap: 15px;
+      padding-bottom: 158px;
+    }
+    @include desktop {
+      padding-bottom: 165px;
+    }
+  }
+  &__button {
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: background-color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+      color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    &--red {
+      background-color: #d41342;
+      color: $fifth-background;
+
+      @include tablet {
+        width: 191px;
+      }
+      @include desktop {
+        width: 198px;
+      }
+    }
+    &--white {
+      background-color: $fifth-background;
+      color: $brand-color;
+      @include tablet {
+        width: 175px;
+      }
+      @include desktop {
+        width: 180px;
+      }
+    }
+  }
+  .contacts__button--red:hover,
+  .contacts__button--red:focus {
+    background-color: $fifth-background;
+    color: $brand-color;
+  }
+  .contacts__button--white:hover,
+  .contacts__button--white:focus {
+    background-color: #d41342;
+    color: $fifth-background;
+  }
+
+  .contacts__button--red:hover .contacts__icon--red,
+  .contacts__button--red:focus .contacts__icon--red {
+    fill: $fifth-background;
+    stroke: #d41342;
+  }
+  .contacts__button--white:hover .contacts__icon--white,
+  .contacts__button--white:focus .contacts__icon--white {
+    fill: #d41342;
+    stroke: $fifth-background;
+  }
+
+  .contacts__icon--red {
+    fill: #d41342;
+    stroke: $fifth-background;
+    padding-left: 4px;
+    transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .contacts__icon--white {
+    fill: $fifth-background;
+    stroke: #d41342;
+    padding-left: 4px;
+  }
+}

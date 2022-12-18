@@ -14,19 +14,29 @@ $third-background: #c2e297; /* third product card, contacts category */
 $fourth-background: #fff5f6; /* about, advantages, contacts and footer */
 $fifth-background: #ffffff; /* buttons, contacts cards */
 $sixth-background: #fafafa; /* customer reviev */
+$seventh-background: #e1e1e1;
 $social-media-background: #fea5bb;
 
-/* hover */
+/* ---border colors--- */
+$first-border-color: #e1e1e1;
+
+/* ---hover--- */
 $first-button-hover: #c7133e;
 $second-button-hover: #ecebeb;
 $social-media-hover: #d41443;
 
-/* fonts color */
+/* ---fonts color--- */
 $first-font-color: #d41443; /* brand color*/
 $second-font-color: #ffffff; /* contrast text in: header, mobile menu, products card, contacts category */
 $third-font-color: #ffa5ba; /* section title label */
 $fourth-font-color: #000000; /* black text in: about, advantages, customer reviev, contacts, footer */
 $fifth-font-color: #907e82; /* minor text in: about, contacts, footer */
+
+/* icon colors */
+
+$first-icon-color: #d31342;
+$second-icon-color: #d9d9d9;
+$third-icon-color: #c7133e;
 
 /* ------MIXIN------ */
 @mixin mobile-retina {
