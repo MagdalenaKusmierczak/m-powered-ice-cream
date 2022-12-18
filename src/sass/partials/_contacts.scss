@@ -205,6 +205,10 @@
     @include tablet {
       flex-direction: row;
       gap: 15px;
+      padding-bottom: 158px;
+    }
+    @include desktop {
+      padding-bottom: 165px;
     }
   }
   &__button {
