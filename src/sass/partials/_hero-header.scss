@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
 }
-.container {
+.hero-header .container {
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
@@ -35,6 +35,7 @@
 
 .header__background-image--circle {
   bottom: 65px;
+  overflow: hidden;
   right: calc(-15%);
   & img {
     width: 346px;
@@ -125,7 +126,7 @@
 
 .header__bar-wrapper {
   display: flex;
-  width: 100vw;
+  width: 100%;
   max-width: 1600px;
   justify-content: space-between;
   padding: 5px 20px 0 20px;
