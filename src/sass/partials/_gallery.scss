@@ -35,19 +35,18 @@
   }
   &__image {
     display: block;
-    min-width: 364px;
+    width: 320px;
     height: 122px;
     position: absolute;
-    left: -18px;
     top: -1px;
 
     @include tablet {
-      max-width: 692px;
+      width: 692px;
       height: 264px;
       left: 85px;
     }
     @include desktop {
-      max-width: 1280px;
+      width: 1280px;
       height: 430px;
       left: 0;
       top: -2px;
