@@ -1,0 +1,135 @@
+.customer-reviews {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $fifth-background;
+  padding: 80px 86px 170px;
+
+  @include tablet {
+    padding: 121px 40px 197px;
+  }
+
+  @include desktop {
+    padding: 123px 61px 234px;
+  }
+}
+
+.customer-reviews__header {
+  position: absolute;
+  visibility: hidden;
+}
+
+.customer-reviews__picture {
+  margin-bottom: 29px;
+
+  @include tablet {
+    margin-bottom: 19px;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+  }
+}
+
+.customer-reviews__review {
+  background-color: $sixth-background;
+  padding: 28px 50px 0;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin: 0 38px 24px;
+    padding: 32px 38px 0 60px;
+  }
+
+  @include desktop {
+    margin: 0 62px 15px;
+    padding: 33px 54px 0 59px;
+    width: 926px;
+  }
+}
+
+.customer-reviews__linear-background {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    $sixth-background,
+    $sixth-background 30px,
+    $seventh-background 30px,
+    $seventh-background 31px
+  );
+  width: 180px;
+
+  @include tablet {
+    width: 524px;
+  }
+
+  @include desktop {
+    width: 813px;
+  }
+}
+
+.customer-reviews__text {
+  position: relative;
+  padding: 4px 16px 0 7px;
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 2.55;
+  font-weight: 500;
+  text-align: center;
+
+  @include tablet {
+    letter-spacing: 0.04em;
+    padding: 3px 44px 0 20px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @include desktop {
+    padding: 2px 35px 0 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.customer-reviews__quotation-icon {
+  position: absolute;
+  top: -13px;
+  left: 11px;
+  fill: $seventh-background;
+
+  @include tablet {
+    left: -20px;
+    top: -15px;
+  }
+
+  @include desktop {
+    top: -12px;
+    left: -11px;
+  }
+}
+
+.custom-reviews__dots-icon {
+  fill: $third-icon-color;
+  padding: 0;
+  margin: 0;
+}
+
+.customer-reviews__signature {
+  margin: 18px 0 30px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  @include tablet {
+    margin: 14px 0 35px;
+    font-size: 16px;
+  }
+
+  @include desktop {
+    margin: 15px 0 35px;
+    font-size: 20px;
+  }
+}
