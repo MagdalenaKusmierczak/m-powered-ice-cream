@@ -334,6 +334,44 @@ color:$first-button-hover;
 border-color:$first-button-hover;
 }
 }
+
+
+&__tittle {
+font-family: $second-font;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+text-transform: uppercase;
+}
+
+&__tittle-style {
+text-align: center;
+list-style-type: none;
+}
+
+&__tittle-txt {
+color: $brand-color;
+font-size: 18px;
+line-height: 21px;
+margin-bottom: 0;
+margin-top: 0;
+margin: 0;
+
+
+@include tablet {
+font-size: 26px;
+line-height: 30px;
+// padding-top: 130px;
+padding-bottom: 16px;
+}
+
+@include desktop {
+font-size: 30px;
+line-height: 34px;
+// padding-bottom: 15px;
+padding-bottom:0;;
+}
+}
 }
 .backdrop {
 position: fixed;
@@ -370,10 +408,11 @@ z-index: 12;
 @include desktop{
 letter-spacing:0.06em;
 line-height:27px;
-padding-left:40px;
-padding-right:40px;
+padding-left:60px;
+padding-right:60px;
 font-size:14px;
 z-index: 12;
+
 }
 
 &__first {
@@ -411,7 +450,7 @@ width: 100%;
 z-index: 11;
 
 @include desktop {
-top: 342px;
+top: 344px;
 }
 }
 
@@ -420,9 +459,11 @@ width: 100%;
 z-index: 11;
 position:fixed;
 background-position: center;
+@include tablet{
+  top:300px;
+}
 @include desktop {
 top:180px;
-
 }
 }
 
