@@ -121,22 +121,39 @@
   padding-top: 161px;
   border-radius: 24px;
 
-  transform: translateY(-100%);
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
-
   &--one {
     background-color: #ffb8cad4;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
 
   &--two {
     background-color: #f0d1a5d3;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
 
   &--three {
     background-color: #c1e297d7;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
+}
+
+.products__button--one:hover .products__onlay--one {
+  transform: translateY(0);
+}
+.products__button--two:hover .products__onlay--two {
+  transform: translateY(0);
+}
+.products__button--three:hover .products__onlay--three {
+  transform: translateY(0);
 }
 
 .products__onlay-description {
