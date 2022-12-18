@@ -12,10 +12,10 @@
     background-color: $first-border-color;
 
     @include tablet {
-      bottom: 114px;
+      bottom: 68px;
     }
     @include desktop {
-      bottom: 93px;
+      bottom: 40px;
     }
   }
 
@@ -102,8 +102,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 28px;
+    gap: 28.24px;
     margin-block: 0;
+    @include tablet {
+      gap: 30px;
+    }
+    @include desktop {
+      gap: 25px;
+    }
   }
 
   &__social-link {
@@ -161,6 +167,7 @@
     @include desktop {
       font-size: 16px;
       line-height: 1.86;
+      letter-spacing: 0.02em;
     }
   }
   &__contact-phone {
@@ -195,21 +202,25 @@
     color: $fifth-font-color;
     text-align: center;
     padding: 22px 10px 25px 0;
+
+    @include tablet {
+      padding: 29px 0 18px 0;
+    }
+    @include desktop {
+      padding: 9px 0 10px 0;
+    }
   }
 
   .footer__copyright-list {
     list-style-type: none;
     margin-block: 0;
     padding-left: 0px;
+    padding-block: 0;
 
     @include tablet {
       display: flex;
       flex-direction: row;
       gap: 3px;
-      padding: 29px 0 18px 0;
-    }
-    @include desktop {
-      padding: 9px 0 10px 0;
     }
   }
 }
