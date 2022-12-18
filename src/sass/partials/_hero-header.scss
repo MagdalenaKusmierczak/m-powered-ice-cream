@@ -14,13 +14,13 @@
   gap: 30px;
 }
 .header__burger {
-  fill: #d41443;
+  fill: $brand-color;
   cursor: pointer;
 }
 .header {
   width: 100%;
   max-width: 1600px;
-  background-color: #ffb8ca;
+  background-color: $first-background;
   position: relative;
   z-index: 0;
   margin-left: auto;
@@ -60,7 +60,7 @@
   position: fixed;
 }
 .header__coffe-amount {
-  color: #d41443;
+  color: $first-font-color;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -76,7 +76,7 @@
     top: 0;
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: $fifth-background;
     border-radius: 50%;
     z-index: -1;
   }
@@ -87,12 +87,12 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 18px;
-  color: #ffffff;
+  color: $second-font-color;
   text-align: right;
 }
 
 .header__truck-amount {
-  color: #d41443;
+  color: $first-font-color;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -108,7 +108,7 @@
     top: 0;
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: $fifth-background;
     border-radius: 50%;
     z-index: -1;
   }
@@ -119,7 +119,7 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 18px;
-  color: #ffffff;
+  color: $second-font-color;
   text-align: right;
 }
 
@@ -159,14 +159,14 @@
   line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $second-font-color;
   padding-left: 20px;
 }
 .header__title--describe {
   font-size: 48px;
   line-height: 96.5%;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: $first-font-color;
   padding: 0;
 }
 .header__buttons {
@@ -181,24 +181,24 @@
   line-height: 18px;
 }
 .header__left-button {
-  background-color: #d41443;
+  background-color: $brand-color;
   padding: 3px 14px;
   border-radius: 20px;
-  color: #ffffff;
+  color: $fifth-background;
   cursor: pointer;
   &:hover {
-    background-color: #c7133e;
+    background-color: $first-button-hover;
   }
 }
 
 .header__right-button {
-  background-color: #ffffff;
+  background-color: $fifth-background;
   padding: 3px 14px;
   border-radius: 22px;
-  color: #d41443;
+  color: $brand-color;
   cursor: pointer;
   &:hover {
-    background-color: #ecebeb;
+    background-color: $second-button-hover;
   }
 }
 .header__deco-image {
@@ -218,7 +218,7 @@
   line-height: 140%;
   /* or 20px */
 
-  color: #ffffff;
+  color: $second-font-color;
 }
 .header__left-bar-wrapper {
   display: flex;
@@ -277,9 +277,9 @@
     align-items: center;
     gap: 20px;
     padding: 12px 35px;
-    background-color: white;
+    background-color: $fifth-background;
     border-radius: 22px;
-    color: #d41443;
+    color: $brand-color;
     cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
@@ -288,10 +288,10 @@
     line-height: 21px;
     z-index: 12;
     &:hover {
-      background-color: #ecebeb;
+      background-color: $second-button-hover;
     }
     .header__button-ico {
-      fill: #c7133e;
+      fill: $first-button-hover;
     }
   }
   .header__leftside {
@@ -333,7 +333,7 @@
     margin-bottom: 34px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header__burger {
     display: none;
   }
@@ -411,7 +411,7 @@
   }
 
   .header__element {
-    color: white;
+    color: $second-font-color;
     cursor: pointer;
     z-index: 100;
     font-family: 'DM Sans';
@@ -423,7 +423,7 @@
   }
 
   .header__element--active {
-    color: #d41443;
+    color: $first-font-color;
   }
 
   .header__main-button {

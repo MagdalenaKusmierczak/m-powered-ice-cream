@@ -42,15 +42,84 @@
 
 <!-- mobile-header end -->
 
+<!-- header start -->
+
 <div class="header">
   <div class="header__background-image header__background-image--circle">
-    <img src="./images/header__big-circle-desktop.png" />
+    <picture>
+      <source
+        srcset="
+          ./images/header__big-circle-mobile.png    1x,
+          ./images/header__big-circle-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/header__big-circle-tablet.png    1x,
+          ./images/header__big-circle-tablet@2x.png 2x
+        "
+        media="(min-width: 768px) and (max-width:
+      1279px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/header__big-circle-desktop.png    1x,
+          ./images/header__big-circle-desktop@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <img src="./images/header__big-circle-mobile.png" alt="Background ice circle" />
+    </picture>
   </div>
   <div class="header__background-image header__background-image--icecream">
-    <img src="./images/header__ice-cream-desktop.png" />
+    <picture>
+      <source
+        srcset="
+          ./images/header__ice-cream-mobile.png    1x,
+          ./images/header__ice-cream-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/header__ice-cream-tablet.png    1x,
+          ./images/header__ice-cream-tablet@2x.png 2x
+        "
+        media="(min-width: 768px) and (max-width:
+      1279px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/header__ice-cream-desktop.png    1x,
+          ./images/header__ice-cream-desktop@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <img src="./images/header__ice-cream-mobile.png" alt="Smakowite i kolorowe lody" />
+    </picture>
   </div>
   <div class="header__background-image header__background-image--lady">
-    <img src="./images/header__girl-desktop.png" />
+    <picture>
+      <source
+        srcset="./images/header__girl-tablet.png 1x, ./images/header__girl-tablet@2x.png 2x"
+        media="(min-width: 768px) and (max-width:
+      1279px)"
+        type="image/png"
+      />
+      <source
+        srcset="./images/header__girl-desktop.png 1x, ./images/header__girl-desktop@2x.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <img src="./images/header__girl-tablet.png" alt="Dziewczyna zachwycona lodami" />
+    </picture>
   </div>
   <div class="header__coffe-info">
     <p class="header__coffe-amount">16</p>
@@ -62,7 +131,10 @@
   </div>
   <div class="header__bar-wrapper">
     <div class="header__logo">
-      <img src="./images/logo-all.png" />
+      <picture>
+        <source srcset="./images/logo-all.png 1x, ./images/logo-all@2x.png 2x" type="image/png" />
+        <img src="./images/logo-all.png" alt="Logo lodziarni" />
+      </picture>
     </div>
     <nav class="header__navbar">
       <ul class="header__menu">
@@ -97,7 +169,20 @@
       <div class="header__right-button">How it's made?</div>
     </div>
     <div class="header__left-bar-wrapper">
-      <img class="header__deco-image" src="./images/header__milk-desktop.png" alt="mleko" />
+      <picture class="header__deco-image">
+        <source
+          srcset="./images/header__milk-tablet.png 1x, ./images/header__milk-tablet@2x.png 2x"
+          media="(min-width: 768px) and (max-width:
+        1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/header__milk-desktop.png 1x, ./images/header__milk-desktop@2x.png 2x"
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img src="./images/header__milk-tablet.png" alt="Mleko się rozlało." />
+      </picture>
       <div class="header__lorem-wrapper">
         <p class="header__describe-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -111,3 +196,4 @@
   <div class="header__center"></div>
   <div class="header__rightside"></div>
 </div>
+<!-- header end -->
