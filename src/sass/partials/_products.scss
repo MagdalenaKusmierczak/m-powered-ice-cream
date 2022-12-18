@@ -82,6 +82,14 @@
 
   &:first-child {
     padding-top: 144px;
+
+    @include tablet {
+      padding-top: 150px;
+    }
+
+    @include desktop {
+      padding-top: 259px;
+    }
   }
 
   @include tablet {
@@ -208,6 +216,7 @@
   cursor: pointer;
   border: none;
   background: none;
+  padding: 0;
 
   @include tablet {
     padding-bottom: 30px;
