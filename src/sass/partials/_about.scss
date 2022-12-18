@@ -1,29 +1,45 @@
-.background{
-background-image: url(../images/about__background-mobile.png);
-background-repeat: no-repeat;
-background-position:bottom;
-padding-left:0;
-padding-right:0;
-display:block;
+.container{
+  position: relative;
+}
+.about-milk-background{
+position:absolute;
+left:0;
+top:700px;
+width:100%;
+}
 
-&::before{
-@include mobile-retina {
-    background-image: url(../images/about__background-mobile@2x.png);
+.about-milk-image{
+  width:100%;
+}
+
+
+// .about__background{
+// background-image: url(../images/about__background-mobile.png);
+// background-repeat: no-repeat;
+// width:100%;
+// position:absolute;
+// z-index: 10;
+
+// &::after{
+// background-image: url(../images/about__background-mobile.png);
+// }}
+// @include mobile-retina {
+//     background-image: url(./images/about__background-mobile@2x.png);
     
-    margin-left:-50px;
-  }
+//     margin-left:-50px;
+//   }
 
-  @include tablet {
-    background-image: none;
-  }
+//   @include tablet {
+//     background-image: none;
+//   }
 
-  @include desktop {
-    background-image: url(../images/about__background-desktop.png);
-  }
+//   @include desktop {
+//     background-image: url(./images/about__background-desktop.png);
+//   }
 
-  @include desktop-retina {
-    background-image: url(../images/about__background-desktop@2x.png);
-  }}}
+//   @include desktop-retina {
+//     background-image: url(./images/about__background-desktop@2x.png);
+//   }}}
 
 .about {
   background: $fourth-background;
@@ -100,6 +116,7 @@ display:block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 12;
     
     @include tablet {
       flex-direction: row;
