@@ -1,8 +1,14 @@
-<section class="about about__background" id="about">
+<section class="about" id="about">
     <div class="container">
         <div  class="about-milk-background">
-            <img  class="about-milk-image" src="./images/about__background-mobile.png">
-        </div>
+         <picture>  
+        <source srcset="./images/about__cow-mobile.png 1x, ./images/about__background-mobile@2x.png 2x" media="(max-width: 767px)"type="image/png" >
+        <source srcset="./images/about__background-desktop.png 1x, ./images/about__background-desktop@2x.png 2x"media="(min-width: 1280px)" type="image/png">
+        <img  
+         class="about-milk-image"
+         src="./images/about__background-mobile.png"
+         alt="spilled milk">
+       </picture>  </div>
         <div class="about__tittle about__tittle-style">
         <p class="about__tittle-second">TRADITION AND LOVE</p>
         <h2 class="about__tittle-main">how it's made?</h2></div>
