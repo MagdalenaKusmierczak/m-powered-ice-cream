@@ -1,0 +1,122 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $fifth-font-color;
+}
+
+.form__fieldset {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 4px 0 10px;
+  padding: 12px;
+  border: 1px solid $social-media-background;
+  border-radius: 24px;
+  transition: border 250ms ease-in-out;
+}
+
+.form__fieldset:has(.form__input:focus) {
+  border: 1px solid $mobile-menu-background;
+}
+
+.form__fieldset:has(.form__input:focus) .form__icon {
+  fill: $mobile-menu-background;
+}
+
+.form__icon {
+  fill: $social-media-background;
+}
+
+.form__input {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  border: 0;
+  background-color: inherit;
+}
+
+.form__input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.form__comment-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__textarea {
+  margin: 4px 0 20px;
+  padding: 12px 16px;
+  border: 1px solid $social-media-background;
+  resize: none;
+  border-radius: 24px;
+  transition: border 250ms ease-in-out;
+  background-color: inherit;
+
+  &:focus {
+    border: 1px solid $mobile-menu-background;
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: $fifth-font-color;
+    opacity: 0.5;
+  }
+}
+
+.form__checkbox-fieldset {
+  margin-bottom: 30px;
+  border: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-size: 14px;
+  color: $fifth-font-color;
+  line-height: 1.71;
+  margin: 0 auto 30px;
+  position: relative;
+  display: flex;
+}
+
+.form__checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
+  visibility: visible;
+  transition-property: visibility;
+  background-color: inherit;
+}
+
+.form__checkbox:not(:checked) .form__button {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.form__link {
+  color: $mobile-menu-background;
+}
+
+.form__button {
+  align-self: center;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  background-color: $brand-color;
+  color: $second-font-color;
+  border: 0;
+  border-radius: 22px;
+  padding: 12px 50px;
+}

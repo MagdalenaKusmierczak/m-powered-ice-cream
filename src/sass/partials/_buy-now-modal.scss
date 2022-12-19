@@ -1,0 +1,36 @@
+.buy-now-modal__content {
+  width: 450px;
+}
+
+.buy-now-modal__x-button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background-color: #e179914a;
+  border-radius: 4px;
+}
+
+.buy-now-modal__header {
+  font-family: $second-font;
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: $brand-color;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.buy-now-modal__text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $fifth-font-color;
+  text-align: center;
+}
