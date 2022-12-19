@@ -294,7 +294,8 @@
       background-color: $second-button-hover;
     }
     .header__button-ico {
-      fill: $first-button-hover;
+      fill: transparent;
+      stroke: $first-button-hover;
     }
   }
   .header__leftside {
