@@ -269,42 +269,22 @@ padding-bottom:16px;
 }
 
 .is-hidden {
-// visibility: hidden;
+transform: translateX(-100%);
+visibility: 0;
 opacity: 0;
-pointer-events: none;
-transform: translateX(-50%), translateY(-50%);
-transition-duration: 0.5s;
-transition-timing-function: ease-out;
-transition-delay: 0;
-}
-
-.is-hidden .modal {
-transform: scale(0);
-transition-property: transform;
-transition-duration: 0.5s;
-transition-delay: 0s;
-transition-timing-function: ease-out;
-transform: translateX(-50%), translateY(-50%);
-}
-
-.is-hidden .backdrop {
-transition-delay: 0.2s;
-visibility: hidden;
 }
 
 .modal {
 width: 300px;
 height: 570px;
 position: relative;
-opacity: inherit;
-visibility: inherit;
+// opacity: inherit;
+// visibility: inherit;
   
 position: absolute;
-border-radius: 15px;
+border-radius: 24px;
 background-color:$fourth-background;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-0px 1px 1px rgba(0, 0, 0, 0.14),
-0px 2px 1px rgba(0, 0, 0, 0.2);;
+box-shadow: 0px 8px 30px #d4144431;
 padding: 40px;
 transform: scale(1);
 transition-property: transform;
@@ -385,11 +365,17 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(0, 0, 0, 0.2);
+background-color: #e179914a;
 display: flex;
 justify-content: center;
 align-items: center;
 z-index:10;
+
+transform: translatex(0);
+transition-property: transform;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+display:flex;
 }
   
 .modal-text {
@@ -455,10 +441,6 @@ top: 266px;
 width: 100%;
 z-index: 11;
 background-repeat: no-repeat;
-
-// @include desktop {
-// top: 344px;
-// }
 }
 
 .about-milk-image-modal {
@@ -466,46 +448,34 @@ width: 100%;
 z-index: 11;
 position:fixed;
 background-position: center;
-
-// @include tablet{
-//   top:300px;
-// }
-// @include desktop {
-// top:180px;
-// }
 }
-.about-milk-icon-box{
-width:75%;
-height:50px;
-padding-left:110px;
-padding-top:400px;
-
-
-
-@include tablet{ 
-padding-left:275px;
-}
-@include desktop{
- padding-left:460px; 
-}
-  
-}
-.about-milk-icon-modal{
-z-index:11;
-position: absolute;
-display: flex;
-visibility: visible;
-transition: transform 1s ease-in-out;
-
-&:hover,
-&:focus {
-transform: scale(1.2);
-}
-// @include tablet{
-// position:absolute; 
-// }
+.about-milk-icon-box {
+  position: relative;
+  width: 75%;
+  height: 50px;
+  padding-top: 400px;
 }
 
+.about-milk-icon-modal {
+  z-index: 11;
+  position: absolute;
+  left: calc(50% - 17px);
+  visibility: visible;
+  transition: transform 1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  @include tablet {
+    bottom: -5px;
+  }
+
+  @include desktop {
+    bottom: -10px;
+  }
+}
 
    
   
