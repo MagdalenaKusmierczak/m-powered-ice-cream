@@ -7,11 +7,11 @@
   height: 502px;
   padding: 60px 24px;
   background-color: $mobile-menu-background;
-  transform: translateX(100%);
+  transform: translateX(0%);
   will-change: transform;
   transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 
   @include tablet {
     width: 254px;
@@ -19,9 +19,9 @@
   }
 }
 
-.is-open {
-  display: block;
-  transform: translateX(0%);
+.d-none {
+  display: none;
+  transform: translateX(100%);
 }
 
 .mobile-menu__x-button {
@@ -103,8 +103,9 @@
 
 .mobile-menu__link:hover,
 .mobile-menu__link:active {
-  text-shadow: -1px -1px 0 $brand-color, 1px -1px 0 $brand-color, -1px 1px 0 $brand-color;
-  scale: 200%;
+  text-shadow: -1px -1px 1px $fifth-font-color, 1px -1px 1px $fifth-font-color,
+    -1px 1px 1px $fifth-font-color;
+  scale: 120%;
   transform: translateX(20%);
 }
 
