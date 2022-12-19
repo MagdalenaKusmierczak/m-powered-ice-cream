@@ -45,12 +45,12 @@
     @include tablet {
       width: 692px;
       height: 264px;
-      left: 85px;
+      left: calc(50% - 346px);
     }
     @include desktop {
       width: 1280px;
       height: 430px;
-      left: 0;
+      left: calc(50% - 640px);
       top: -2px;
     }
   }
