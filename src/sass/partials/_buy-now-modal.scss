@@ -19,12 +19,20 @@
   width: 80%;
   margin: 0 auto;
   padding: 24px 0;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   color: $brand-color;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
+  line-height: 1.145;
   text-align: center;
+
+  @include tablet {
+    font-size: 28px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .buy-now-modal__text {
