@@ -2,39 +2,7 @@
   position: relative;
   padding:0;
   width:100%;
-  // display:flex;
-  // justify-content: center;
-  // align-items: center;
-  // margin: auto;
-  // max-width: 1280px;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // height: auto;
 }
-// .about-milk-background{
-// position:absolute;
-// left:0;
-// top: 3361px;
-// width:100%;
-// z-index: 6;
-
-// @include tablet{
-//   display:none;
-// }
-// @include desktop{
-// top:2152px;
-// display: flex;
-// justify-content: center;
-// }
-// }
-// .about-milk-image{
-// width:100%;
-// background-repeat: no-repeat;
-
-// @include desktop{
-// z-index:6;
-// }
-// }
 
 .about {
 background: $fourth-background;
@@ -54,7 +22,7 @@ background-image: url("../images/about__background-mobile@2x.png");
 }
 @include desktop{
 background-image: url("../images/about__background-desktop.png");
-background-position-y:400px;
+background-position-y:370px;
 }
 @include desktop-retina{
 background-image: url("../images/about__background-desktop@2x.png");
@@ -75,9 +43,6 @@ color: $third-font-color;
 font-size: 18px;
 line-height: 21px;
 padding-top: 125px;
-// padding-bottom: 15x;
-// margin-bottom:0;
-// margin-top:0;
 margin:0;
 
 @include tablet {
