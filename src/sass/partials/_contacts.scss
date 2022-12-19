@@ -1,3 +1,13 @@
+.cont {
+  background: linear-gradient(to bottom, $fifth-background 84px, $fourth-background 84px);
+  @include desktop {
+    background: linear-gradient(to bottom, $fifth-background 78px, $fourth-background 78px);
+  }
+  @include desktop {
+    background: linear-gradient(to bottom, $fifth-background 102px, $fourth-background 102px);
+  }
+}
+
 .contacts .container {
   padding: 0;
 }
@@ -7,20 +17,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: linear-gradient(to bottom, $fifth-background 84px, $fourth-background 84px);
-  @include tablet {
-    background-color: linear-gradient(to bottom, $fifth-background 78px, $fourth-background 78px);
-  }
+
   @include desktop {
     max-width: 100%;
-
     background-image: url('../images/contacts__background-desktop.png');
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: 102px;
     background-repeat: no-repeat;
     background-size: 1280px 380px;
-    z-index: 1;
-
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/contacts__background-desktop@2x.png');
     }
