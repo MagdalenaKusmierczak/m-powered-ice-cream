@@ -5,14 +5,14 @@
   justify-content: center;
   align-items: center;
   background-color: $fifth-background;
-  padding: 80px 86px 170px;
+  padding: 80px 86px 86px;
 
   @include tablet {
-    padding: 121px 40px 197px;
+    padding: 121px 40px 119px;
   }
 
   @include desktop {
-    padding: 123px 61px 234px;
+    padding: 123px 61px 132px;
   }
 }
 
