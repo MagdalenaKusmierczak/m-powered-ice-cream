@@ -1,39 +1,67 @@
 .container-background{
   position: relative;
+  padding:0;
+  width:100%;
+  // display:flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin: auto;
+  // max-width: 1280px;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // height: auto;
 }
-.about-milk-background{
-position:absolute;
-left:0;
-top: 3361px;
-width:100%;
-z-index: 6;
+// .about-milk-background{
+// position:absolute;
+// left:0;
+// top: 3361px;
+// width:100%;
+// z-index: 6;
 
-@include tablet{
-  display:none;
-}
-@include desktop{
-top:2152px;
-display: flex;
-justify-content: center;
-}
-}
-.about-milk-image{
-width:100%;
-background-repeat: no-repeat;
+// @include tablet{
+//   display:none;
+// }
+// @include desktop{
+// top:2152px;
+// display: flex;
+// justify-content: center;
+// }
+// }
+// .about-milk-image{
+// width:100%;
+// background-repeat: no-repeat;
 
-@include desktop{
-z-index:6;
-}
-}
+// @include desktop{
+// z-index:6;
+// }
+// }
 
 .about {
 background: $fourth-background;
+background-image: url("../images/about__background-mobile.png");
+background-repeat: no-repeat;
+background-size: contain;
+background-position-y: 755px;
 
+@include mobile-retina{
+background-image: url("../images/about__background-mobile@2x.png");
+}
+@include tablet{
+ background-image: none; 
+}
+@include tablet-retina{
+ background-image: none; 
+}
+@include desktop{
+background-image: url("../images/about__background-desktop.png");
+background-position-y:400px;
+}
+@include desktop-retina{
+background-image: url("../images/about__background-desktop@2x.png");
+}
 &__tittle {
 font-family: $second-font;
 font-style: normal;
-// font-weight: 400;
-// text-align: center;
 text-transform: uppercase;
 }
 
@@ -52,19 +80,19 @@ padding-top: 125px;
 // margin-top:0;
 margin:0;
 
-
 @include tablet {
 font-size: 26px;
 line-height: 30px;
 padding-top: 130px;
 padding-bottom: 16px;
 }
-    
+   
 @include desktop {
 font-size: 30px;
 line-height: 34px;
 padding-bottom: 15px;
-}}
+}
+}
 
 &__tittle-main {
 font-size: 34px;
@@ -104,7 +132,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-    
+padding-left: 50px;
+padding-right: 50px;
     
 @include tablet {
 flex-direction: row;
@@ -137,13 +166,14 @@ height: 516px;
 }
 
 &__block-text {
-padding-left: 30px;
-padding-right: 30px;
+// padding-left: 50px;
+// padding-right: 50px;
 padding-top:50px;
 z-index: 8;
+
 @include tablet {
 padding-left: 0;
-padding-right: 16px;
+// padding-right: 16px;
 font-size: 14px;
 }
 @include desktop {
@@ -165,11 +195,10 @@ line-height: 25px;
 }
 
 @include desktop{
-// margin-left: 74px;
 width: 463px;
 height: 79px;
 line-height: 28px;
-padding-right:97px;
+// padding-right:97px;
 margin-bottom:34px;
 padding-left:57px;
 }
@@ -196,7 +225,7 @@ width: 463px;
 height: 79px;
 letter-spacing: 4%;
 line-height: 28px;
-padding-right:97px;
+// padding-right:97px;
 margin-bottom:50px;
 padding-top:35px;
 }
@@ -220,6 +249,7 @@ line-height: 25px;
 margin-left: 74px;
 line-height: 28px;
 padding-top:55px;
+padding-bottom:45px;
 }
 }
 
@@ -269,8 +299,8 @@ margin-top: 62px;
 }
 
 @include desktop {
-margin-left: 74px;
-margin-top: 27px;
+// margin-left: 74px;
+margin-top: 0;
 }
 &__icon{
 width:4.4px;
@@ -312,7 +342,7 @@ opacity: inherit;
 visibility: inherit;
   
 position: absolute;
-border-radius: 15px;
+border-radius: 15npx;
 background-color:$fourth-background;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -460,6 +490,7 @@ left: 0;
 top: 266px;
 width: 100%;
 z-index: 11;
+background-repeat: no-repeat;
 
 @include desktop {
 top: 344px;
@@ -471,6 +502,7 @@ width: 100%;
 z-index: 11;
 position:fixed;
 background-position: center;
+
 @include tablet{
   top:300px;
 }
