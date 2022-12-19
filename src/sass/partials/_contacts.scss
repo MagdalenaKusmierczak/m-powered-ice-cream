@@ -7,14 +7,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $fourth-background;
+  background-color: linear-gradient(to bottom, $fifth-background 84px, $fourth-background 84px);
+  @include tablet {
+    background-color: linear-gradient(to bottom, $fifth-background 78px, $fourth-background 78px);
+  }
   @include desktop {
     max-width: 100%;
+
     background-image: url('../images/contacts__background-desktop.png');
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
     background-size: 1280px 380px;
+    z-index: 1;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/contacts__background-desktop@2x.png');
@@ -29,7 +34,6 @@
     min-width: 220px;
     width: 100%;
     padding: 0 50px 0 50px;
-    margin-top: -84px;
     list-style: none;
     gap: 20px;
     display: flex;
@@ -46,12 +50,10 @@
       flex-wrap: nowrap;
       flex-direction: row;
       padding: 0 36px 0 36px;
-      margin-top: -78px;
       font-size: 14px;
     }
     @include desktop {
       gap: 30px;
-      margin-top: -102px;
       padding: 0 115px 0 115px;
       font-size: 16px;
     }
@@ -194,7 +196,6 @@
   }
 
   &__box-buttons {
-    background-color: #fff5f6;
     padding-top: 54px;
     padding-bottom: 113px;
     display: flex;
@@ -246,24 +247,24 @@
   }
   .contacts__button--red:hover,
   .contacts__button--red:focus {
-    background-color: $fifth-background;
-    color: $brand-color;
+    background-color: $third-icon-color;
+    // color: $brand-color;
   }
   .contacts__button--white:hover,
   .contacts__button--white:focus {
-    background-color: #d41342;
-    color: $fifth-background;
+    background-color: $second-button-hover;
+    // color: $fifth-background;
   }
 
-  .contacts__button--red:hover .contacts__icon--red,
-  .contacts__button--red:focus .contacts__icon--red {
-    fill: $fifth-background;
-    stroke: #d41342;
-  }
+  // .contacts__button--red:hover .contacts__icon--red,
+  // .contacts__button--red:focus .contacts__icon--red {
+  //   fill: $fifth-background;
+  //   stroke: #d41342;
+  // }
   .contacts__button--white:hover .contacts__icon--white,
   .contacts__button--white:focus .contacts__icon--white {
-    fill: #d41342;
-    stroke: $fifth-background;
+    fill: $second-button-hover;
+    stroke: $social-media-hover;
   }
 
   .contacts__icon--red {
