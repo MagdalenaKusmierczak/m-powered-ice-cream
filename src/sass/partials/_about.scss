@@ -9,7 +9,7 @@ background: $fourth-background;
 background-image: url("../images/about__background-mobile.png");
 background-repeat: no-repeat;
 background-size: contain;
-background-position-y: 665px;
+background-position-y: 750px;
 
 @include mobile-retina{
 background-image: url("../images/about__background-mobile@2x.png");
@@ -131,14 +131,11 @@ height: 516px;
 }
 
 &__block-text {
-// padding-left: 50px;
-// padding-right: 50px;
 padding-top:50px;
 z-index: 8;
 
 @include tablet {
 padding-left: 0;
-// padding-right: 16px;
 font-size: 14px;
 }
 @include desktop {
@@ -163,7 +160,6 @@ line-height: 25px;
 width: 463px;
 height: 79px;
 line-height: 28px;
-// padding-right:97px;
 margin-bottom:34px;
 padding-left:57px;
 }
@@ -190,13 +186,11 @@ width: 463px;
 height: 79px;
 letter-spacing: 4%;
 line-height: 28px;
-// padding-right:97px;
 margin-bottom:50px;
 padding-top:35px;
 }
 }
 &__block-text3{
-// margin:0;
 color: $fifth-font-color;
 margin: 0;
 max-width: 100%;
@@ -264,7 +258,6 @@ margin-top: 62px;
 }
 
 @include desktop {
-// margin-left: 74px;
 margin-top: 0;
 }
 &__icon{
@@ -300,14 +293,14 @@ visibility: hidden;
 }
 
 .modal {
-min-width: 300px;
-min-height: 570px;
+width: 300px;
+height: 570px;
 position: relative;
 opacity: inherit;
 visibility: inherit;
   
 position: absolute;
-border-radius: 15npx;
+border-radius: 15px;
 background-color:$fourth-background;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -320,7 +313,14 @@ transition-timing-function: ease-in cubic-bezier(0.71, 1.51, 0.4, 2);
 transition-delay: 0s;
 max-width:90%;
 z-index:10;
-
+@include tablet {
+width: 300px;
+height: 570px;
+}
+@include tablet{
+width: 300px;
+height: 570px;
+}
 &__button-close {
 position: absolute;
 cursor: pointer;
@@ -337,7 +337,6 @@ color:$first-button-hover;
 border-color:$first-button-hover;
 }
 }
-
 
 &__tittle {
 font-family: $second-font;
@@ -365,19 +364,19 @@ transition: transform 1.1s ease-in-out;
 &:focus {
 transform: scale(1.2);}
 
-@include tablet {
-font-size: 26px;
-line-height: 30px;
-// padding-top: 130px;
-padding-bottom: 16px;
-}
+// @include tablet {
+// font-size: 26px;
+// line-height: 30px;
+// // padding-top: 130px;
+// padding-bottom: 16px;
+// }
 
-@include desktop {
-font-size: 30px;
-line-height: 34px;
-// padding-bottom: 15px;
-padding-bottom:0;;
-}
+// @include desktop {
+// font-size: 30px;
+// line-height: 34px;
+// // padding-bottom: 15px;
+// padding-bottom:0;;
+// }
 }
 }
 .backdrop {
@@ -405,22 +404,22 @@ font-weight: 500;
 font-size: 12px;
 z-index: 12;
 
-@include tablet {
-letter-spacing:0.04em;
-line-height:25px;
-font-size:14px;
-z-index: 12;
-}
+// @include tablet {
+// letter-spacing:0.04em;
+// line-height:25px;
+// font-size:14px;
+// z-index: 12;
+// }
 
-@include desktop{
-letter-spacing:0.06em;
-line-height:27px;
-padding-left:60px;
-padding-right:60px;
-font-size:14px;
-z-index: 12;
+// @include desktop{
+// letter-spacing:0.06em;
+// line-height:27px;
+// padding-left:60px;
+// padding-right:60px;
+// font-size:14px;
+// z-index: 12;
 
-}
+// }
 
 &__first {
 color: $first-button-hover;
@@ -457,9 +456,9 @@ width: 100%;
 z-index: 11;
 background-repeat: no-repeat;
 
-@include desktop {
-top: 344px;
-}
+// @include desktop {
+// top: 344px;
+// }
 }
 
 .about-milk-image-modal {
@@ -468,21 +467,26 @@ z-index: 11;
 position:fixed;
 background-position: center;
 
-@include tablet{
-  top:300px;
-}
-@include desktop {
-top:180px;
-}
+// @include tablet{
+//   top:300px;
+// }
+// @include desktop {
+// top:180px;
+// }
 }
 .about-milk-icon-box{
 width:75%;
 height:50px;
-padding-left:100px;
+padding-left:110px;
 padding-top:400px;
 
-@include tablet{
-padding-top:400px;    
+
+
+@include tablet{ 
+padding-left:275px;
+}
+@include desktop{
+ padding-left:460px; 
 }
   
 }
@@ -497,9 +501,9 @@ transition: transform 1s ease-in-out;
 &:focus {
 transform: scale(1.2);
 }
-@include tablet{
-  position:absolute; 
-}
+// @include tablet{
+// position:absolute; 
+// }
 }
 
 
