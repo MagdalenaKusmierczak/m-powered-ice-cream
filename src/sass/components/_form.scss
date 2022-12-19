@@ -16,10 +16,18 @@
   align-items: center;
   width: 100%;
   margin: 4px 0 10px;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid $social-media-background;
   border-radius: 24px;
   transition: border 250ms ease-in-out;
+
+  @include tablet {
+    padding: 10px;
+  }
+
+  @include desktop {
+    padding: 12px;
+  }
 }
 
 .form__fieldset:has(.form__input:focus) {
@@ -36,12 +44,16 @@
 
 .form__input {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   padding-left: 12px;
   border: 0;
   background-color: inherit;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .form__input:focus {
@@ -80,12 +92,16 @@
   border: 0;
   padding: 0;
   font-family: $main-font;
-  font-size: 14px;
+  font-size: 12px;
   color: $fifth-font-color;
   line-height: 1.71;
   margin: 0 auto 30px;
   position: relative;
   display: flex;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .form__checkbox {
