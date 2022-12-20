@@ -64,11 +64,11 @@
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-gap: 20px;
   }
 
   @include desktop {
-    gap: 27.5px;
+    column-gap: 27.5px;
   }
 }
 
@@ -93,12 +93,10 @@
 
   @include tablet {
     padding-top: 150px;
-    padding-bottom: 40px;
   }
 
   @include desktop {
     padding-top: 259px;
-    padding-bottom: 50px;
   }
 }
 
@@ -243,7 +241,7 @@
   padding: 0 20px;
 }
 
-.products__button--one:hover + .products__overlay--one {
+.shown {
   visibility: visible;
   opacity: 1;
   transform: translatey(0);
