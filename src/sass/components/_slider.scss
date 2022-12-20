@@ -9,6 +9,15 @@
 }
 
 .slider__item {
+  content: ' ';
+  background-image: url('../images/icons.svg#customer-reviews__icon-slider-dot');
+  width: 12px;
+  height: 12px;
+  border: 0;
+  fill: $second-icon-color;
+  display: block;
+  cursor: pointer;
+
   &:not(:last-child) {
     margin-right: 18px;
   }
