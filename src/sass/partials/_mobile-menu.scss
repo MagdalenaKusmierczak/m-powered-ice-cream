@@ -17,7 +17,9 @@
     width: 254px;
   }
 }
-
+.form__checkbox {
+  accent-color: $first-icon-color;
+}
 .d-none {
   transform: translateX(100%);
 }

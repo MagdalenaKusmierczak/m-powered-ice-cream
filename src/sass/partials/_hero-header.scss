@@ -365,6 +365,32 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    padding-left: 10px;
+  }
+  // Overlay for milk
+
+  .overlaymilk {
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height: 60%;
+    transform: translateY(-200%);
+    transition: transform 1s;
+    font-family: $second-font;
+    font-size: 15px;
+    color: $first-font-color;
+    text-align: center;
+    cursor: default;
+  }
+
+  .header__lorem-wrapper:hover .overlaymilk {
+    transform: translateY(0);
+  }
+  .header__lorem-wrapper:hover .header__describe-text {
+    opacity: 0;
+  }
+  .header__lorem-wrapper:hover .header__btn-arrow {
+    opacity: 0;
   }
 }
 @include desktop {
@@ -532,6 +558,11 @@
     margin-left: 0;
     width: 26px;
   }
+  // Overlay for milk
+
+  .overlaymilk {
+    font-size: 20px;
+  }
 }
 
 // Snow animation
@@ -566,22 +597,4 @@
   100% {
     transform: translateY(0);
   }
-}
-
-// Overlay for milk
-
-.overlaymilk {
-  position: absolute;
-  width: 200px;
-  height: 60%;
-  background-color: $overlay-color-one;
-  transform: translateY(-100%);
-  transition: transform 0.5s;
-font-family: $second-font;
-color: $first-font-color;
-text-align: center;
-}
-
-.header__lorem-wrapper:hover .overlaymilk {
-  transform: translateY(0);
 }
