@@ -1,57 +1,103 @@
-.gallery .container {
-  position: relative;
-  padding: 0 0;
-  scroll-margin-block: no;
-}
 .gallery {
   width: 100%;
-  height: 122px;
   background-position: center;
   background-color: $fourth-background;
   background-repeat: no-repeat;
   background: linear-gradient(
     to bottom,
-    $fourth-background 48px,
-    $fifth-background 48px,
+    $fourth-background 68px,
+    $fifth-background 68px,
     $fifth-background
   );
   @include tablet {
-    height: 264px;
     background: linear-gradient(
       to bottom,
-      $fourth-background 103px,
-      $fifth-background 103px,
+      $fourth-background 113px,
+      $fifth-background 113px,
       $fifth-background
     );
+    @include desktop {
+      background: linear-gradient(
+        to bottom,
+        $fourth-background 171px,
+        $fifth-background 171px,
+        $fifth-background
+      );
+    }
+  }
+}
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.gallery__wrapper {
+  &:not(:last-child) {
+    margin-right: 3px;
+  }
+  @include tablet {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
   }
   @include desktop {
-    height: 430px;
-    background: linear-gradient(
-      to bottom,
-      $fourth-background 171px,
-      $fifth-background 171px,
-      $fifth-background
-    );
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
   }
+}
+.gallery__list {
+  list-style-type: none;
+  padding: 0;
+}
+.gallery__list-second-column {
+  padding-top: 24px;
+  @include tablet {
+    padding-top: 54px;
+  }
+  @include desktop {
+    padding-top: 86px;
+  }
+}
+.gallery__list-fourth-column {
+  padding-top: 28px;
+  @include tablet {
+    padding-top: 45px;
+  }
+  @include desktop {
+    padding-top: 98px;
+  }
+}
+.gallery__list-fifth-column {
+  padding-top: 14px;
+  @include tablet {
+    padding-top: 33px;
+  }
+  @include desktop {
+    padding-top: 50px;
+  }
+}
 
-  &__image {
-    display: block;
-    min-width: 320px;
-    height: auto;
-    position: absolute;
-    top: -1px;
-    left: calc(50% - 160px);
-
-    @include tablet {
-      width: 692px;
-      height: 264px;
-      left: calc(50% - 346px);
+.gallery__item {
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 4px;
     }
-    @include desktop {
-      width: 1280px;
-      height: 430px;
-      left: calc(50% - 640px);
-      top: -2px;
+  }
+  @include desktop {
+    &:not(:last-child) {
+      margin-bottom: 7px;
     }
+  }
+}
+.gallery__image {
+  transition: transform 1500ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
   }
 }
