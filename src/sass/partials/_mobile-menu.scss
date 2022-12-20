@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   width: 250px;
-  height: 502px;
+  height: 100vh;
   padding: 60px 24px;
   background-color: $mobile-menu-background;
   transform: translateX(0%);
@@ -15,12 +15,10 @@
 
   @include tablet {
     width: 254px;
-    height: 1020px;
   }
 }
 
 .d-none {
-  // display: none;
   transform: translateX(100%);
 }
 
@@ -87,7 +85,6 @@
   font-size: 14px;
   line-height: 1.31;
   padding-block: 6px;
-  // padding-inline: 0px;
   margin-block: 0;
   border-top: 1px solid $second-border-color;
   border-bottom: 1px solid $second-border-color;
