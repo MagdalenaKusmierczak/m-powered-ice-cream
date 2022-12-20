@@ -172,16 +172,14 @@
   transform: rotate(0);
   transition: transform 250ms ease-in-out;
 
+  @include mobile-retina {
+    background-image: url('../images/icon-arrow-in-circle-all@2x.png');
+  }
+
   &:hover,
   &:focus {
     transform: rotate(-90deg);
   }
-}
-
-.products__button--one:has(:hover) + .products__overlay--one {
-  visibility: 1;
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .products__overlay-background {
@@ -206,30 +204,28 @@
 
   &--one {
     background-color: $overlay-color-one;
-    visibility: 0;
-    opacity: 0;
-    transform: translatex(-100%);
-    transition-property: transform visibility opacity;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
-  }
-
-  &--two {
-    background-color: $overlay-color-two;
-    visibility: 0;
-    opacity: 0;
-    transform: translatex(-100%);
-    transition-property: transform visibility opacity;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
-  }
-
-  &--three {
-    background-color: $overlay-color-three;
-    visibility: 0;
+    visibility: hidden;
     opacity: 0;
     transform: translatey(-100%);
-    transition-property: transform visibility opacity;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+  &--two {
+    background-color: $overlay-color-two;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(-100%);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+  &--three {
+    background-color: $overlay-color-three;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(-100%);
+    transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
   }
@@ -246,13 +242,21 @@
   text-align: center;
   padding: 0 20px;
 }
+
 .products__button--one:hover + .products__overlay--one {
-  transform: translatex(0);
+  visibility: visible;
+  opacity: 1;
+  transform: translatey(0);
 }
 .products__button--two:hover + .products__overlay--two {
-  transform: translatex(0);
+  visibility: 1;
+  opacity: 1;
+  transform: translatey(0);
 }
-.products__button--three:hover + .products__overlay--three {
+
+.products__button:hover + .products__overlay--three {
+  visibility: 1;
+  opacity: 1;
   transform: translatey(0);
 }
 
