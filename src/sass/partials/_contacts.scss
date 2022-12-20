@@ -264,9 +264,13 @@
       }
     }
   }
+  .contacts__button--red,
+  .contacts__button--red {
+    background-color: $contacts-button-hover;
+  }
   .contacts__button--red:hover,
   .contacts__button--red:focus {
-    background-color: $third-icon-color;
+    background-color: $first-button-hover;
   }
   .contacts__button--white:hover,
   .contacts__button--white:focus {
