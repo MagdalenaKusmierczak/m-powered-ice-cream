@@ -1,5 +1,6 @@
 .cont {
   background: linear-gradient(to bottom, $fifth-background 84px, $fourth-background 84px);
+  // /tablet? czy desktop/?/
   @include desktop {
     background: linear-gradient(to bottom, $fifth-background 78px, $fourth-background 78px);
   }
@@ -21,9 +22,9 @@
     background-position-y: 102px;
     background-repeat: no-repeat;
     background-size: 1280px 380px;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/contacts__background-desktop@2x.png');
-    }
+  }
+  @include desktop-retina {
+    background-image: url('../images/contacts__background-desktop@2x.png');
   }
 
   &__title {
@@ -87,7 +88,7 @@
     border-radius: 4px;
     &--cafe {
       width: 80px;
-      background-color: #f0d1a5;
+      background-color: $second-background;
       @include tablet {
         width: 73px;
         font-size: 16px;
@@ -95,7 +96,7 @@
     }
     &--foodtruck {
       width: 130px;
-      background-color: #c2e297;
+      background-color: $third-background;
       @include tablet {
         width: 138px;
         font-size: 16px;
@@ -129,7 +130,7 @@
     &::after {
       content: '';
       width: 100%;
-      border-bottom: 2px solid #e1e1e1;
+      border-bottom: 2px solid $first-border-color;
       padding-bottom: 25px;
       @include tablet {
         padding-bottom: 30px;
@@ -149,7 +150,7 @@
     &::after {
       content: '';
       width: 100%;
-      border-bottom: 2px solid #e1e1e1;
+      border-bottom: 2px solid $first-border-color;
       padding-bottom: 15px;
       margin: 0 0 25px 0;
       @include tablet {
@@ -232,7 +233,7 @@
     transition-timing-function: ease-in-out;
 
     &--red {
-      background-color: #d41342; // brak koloru button red w _variables.scss - M. Bołtruczyk
+      background-color: $brand-color;
       color: $fifth-background;
       gap: 8px;
 
