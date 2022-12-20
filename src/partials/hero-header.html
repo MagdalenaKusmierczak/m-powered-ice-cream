@@ -69,7 +69,7 @@
         <label class="form__label">
           Phone number
           <fieldset class="form__fieldset">
-            <svg class="form__icon" width="18" height="18">
+            <svg class="form__icon" width="18" height="18" viewBox="0 0 18 18">
               <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
             <input
@@ -84,7 +84,7 @@
         <label class="form__label">
           E-mail
           <fieldset class="form__fieldset">
-            <svg class="form__icon" width="18" height="18">
+            <svg class="form__icon" width="18" height="18" viewBox="0 0 18 18">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
             <input class="form__input" type="email" name="mail" />
@@ -118,155 +118,240 @@
 <!-- header start -->
 
 <div class="header" id="hero-header">
-  <div class="header__background-image header__background-image--circle">
-    <picture>
-      <source
-        srcset="
-          ./images/header__big-circle-mobile.png    1x,
-          ./images/header__big-circle-mobile@2x.png 2x
-        "
-        media="(max-width: 767px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          ./images/header__big-circle-tablet.png    1x,
-          ./images/header__big-circle-tablet@2x.png 2x
-        "
-        media="(min-width: 768px) and (max-width:
-      1279px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          ./images/header__big-circle-desktop.png    1x,
-          ./images/header__big-circle-desktop@2x.png 2x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-      <img src="./images/header__big-circle-mobile.png" alt="Background ice circle" />
-    </picture>
+  <!-- SNOW ANIMATION -->
+  <div class="snow">
+    <svg viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+      <g fill="#FFF" fill-opacity=".35" transform="translate(55 42)">
+        <g id="snow-bottom-layer">
+          <ellipse cx="6" cy="1009.5" rx="6" ry="5.5" />
+          <ellipse cx="138" cy="1110.5" rx="6" ry="5.5" />
+          <ellipse cx="398" cy="1055.5" rx="6" ry="5.5" />
+          <ellipse cx="719" cy="1284.5" rx="6" ry="5.5" />
+          <ellipse cx="760" cy="1155.5" rx="6" ry="5.5" />
+          <ellipse cx="635" cy="1459.5" rx="6" ry="5.5" />
+          <ellipse cx="478" cy="1335.5" rx="6" ry="5.5" />
+          <ellipse cx="322" cy="1414.5" rx="6" ry="5.5" />
+          <ellipse cx="247" cy="1234.5" rx="6" ry="5.5" />
+          <ellipse cx="154" cy="1425.5" rx="6" ry="5.5" />
+          <ellipse cx="731" cy="773.5" rx="6" ry="5.5" />
+          <ellipse cx="599" cy="874.5" rx="6" ry="5.5" />
+          <ellipse cx="339" cy="819.5" rx="6" ry="5.5" />
+          <ellipse cx="239" cy="1004.5" rx="6" ry="5.5" />
+          <ellipse cx="113" cy="863.5" rx="6" ry="5.5" />
+          <ellipse cx="102" cy="1223.5" rx="6" ry="5.5" />
+          <ellipse cx="395" cy="1155.5" rx="6" ry="5.5" />
+          <ellipse cx="826" cy="943.5" rx="6" ry="5.5" />
+          <ellipse cx="626" cy="1054.5" rx="6" ry="5.5" />
+          <ellipse cx="887" cy="1366.5" rx="6" ry="5.5" />
+          <ellipse cx="6" cy="241.5" rx="6" ry="5.5" />
+          <ellipse cx="138" cy="342.5" rx="6" ry="5.5" />
+          <ellipse cx="398" cy="287.5" rx="6" ry="5.5" />
+          <ellipse cx="719" cy="516.5" rx="6" ry="5.5" />
+          <ellipse cx="760" cy="387.5" rx="6" ry="5.5" />
+          <ellipse cx="635" cy="691.5" rx="6" ry="5.5" />
+          <ellipse cx="478" cy="567.5" rx="6" ry="5.5" />
+          <ellipse cx="322" cy="646.5" rx="6" ry="5.5" />
+          <ellipse cx="247" cy="466.5" rx="6" ry="5.5" />
+          <ellipse cx="154" cy="657.5" rx="6" ry="5.5" />
+          <ellipse cx="731" cy="5.5" rx="6" ry="5.5" />
+          <ellipse cx="599" cy="106.5" rx="6" ry="5.5" />
+          <ellipse cx="339" cy="51.5" rx="6" ry="5.5" />
+          <ellipse cx="239" cy="236.5" rx="6" ry="5.5" />
+          <ellipse cx="113" cy="95.5" rx="6" ry="5.5" />
+          <ellipse cx="102" cy="455.5" rx="6" ry="5.5" />
+          <ellipse cx="395" cy="387.5" rx="6" ry="5.5" />
+          <ellipse cx="826" cy="175.5" rx="6" ry="5.5" />
+          <ellipse cx="626" cy="286.5" rx="6" ry="5.5" />
+          <ellipse cx="887" cy="598.5" rx="6" ry="5.5" />
+        </g>
+      </g>
+      <g fill="#FFF" fill-opacity=".55" transform="translate(65 63)">
+        <g id="snow-top-layer">
+          <circle cx="8" cy="776" r="8" />
+          <circle cx="189" cy="925" r="8" />
+          <circle cx="548" cy="844" r="8" />
+          <circle cx="685" cy="1115" r="8" />
+          <circle cx="858" cy="909" r="8" />
+          <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)" />
+          <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)" />
+          <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)" />
+          <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)" />
+          <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)" />
+          <circle cx="8" cy="8" r="8" />
+          <circle cx="189" cy="157" r="8" />
+          <circle cx="548" cy="76" r="8" />
+          <circle cx="685" cy="347" r="8" />
+          <circle cx="858" cy="141" r="8" />
+          <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)" />
+          <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)" />
+          <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)" />
+          <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)" />
+          <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)" />
+        </g>
+      </g>
+    </svg>
   </div>
-  <div class="header__background-image header__background-image--icecream">
-    <picture>
-      <source
-        srcset="
-          ./images/header__ice-cream-mobile.png    1x,
-          ./images/header__ice-cream-mobile@2x.png 2x
-        "
-        media="(max-width: 767px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          ./images/header__ice-cream-tablet.png    1x,
-          ./images/header__ice-cream-tablet@2x.png 2x
-        "
-        media="(min-width: 768px) and (max-width:
-      1279px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          ./images/header__ice-cream-desktop.png    1x,
-          ./images/header__ice-cream-desktop@2x.png 2x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-      <img src="./images/header__ice-cream-mobile.png" alt="Smakowite i kolorowe lody" />
-    </picture>
-  </div>
-  <div class="header__background-image header__background-image--lady">
-    <picture>
-      <source
-        srcset="./images/header__girl-tablet.png 1x, ./images/header__girl-tablet@2x.png 2x"
-        media="(min-width: 768px) and (max-width:
-      1279px)"
-        type="image/png"
-      />
-      <source
-        srcset="./images/header__girl-desktop.png 1x, ./images/header__girl-desktop@2x.png 2x"
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-      <img src="./images/header__girl-tablet.png" alt="Dziewczyna zachwycona lodami" />
-    </picture>
-  </div>
-  <div class="header__coffe-info">
-    <p class="header__coffe-amount">16</p>
-    <p class="header__coffe-describe">cafes</p>
-  </div>
-  <div class="header__truck-info">
-    <p class="header__truck-amount">23</p>
-    <p class="header__truck-describe">food trucks</p>
-  </div>
-  <div class="header__bar-wrapper">
-    <div class="header__logo">
-      <picture>
-        <source srcset="./images/logo-all.png 1x, ./images/logo-all@2x.png 2x" type="image/png" />
-        <img src="./images/logo-all.png" alt="Logo lodziarni" />
-      </picture>
-    </div>
-    <nav class="header__navbar">
-      <ul class="header__menu">
-        <li>
-          <a class="header__element header__element--active">Home</a>
-        </li>
-        <li><a class="header__element">About Us</a></li>
-        <li><a class="header__element">How it's made?</a></li>
-        <li><a class="header__element">Our products</a></li>
-        <li><a class="header__element">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header__btn-container">
-      <svg class="header__burger hamburger" width="20" height="12">
-        <use href="./images/icons.svg#icon-burger"></use>
-      </svg>
-      <button type="button" class="header__main-button" buy-now-modal-open>
-        Buy now
-        <svg class="header__button-ico" width="11" height="8" viewBox="0 0 8 10">
-          <use href="./images/icons.svg#icon-greater-value-sign"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="header__leftside">
-    <h1 class="header__title">
-      ICE CREAM MADE WITH
-      <p class="header__title header__title--describe">PASSION</p>
-    </h1>
-    <div class="header__buttons">
-      <div class="header__left-button">Products</div>
-      <div class="header__right-button">How it's made?</div>
-    </div>
-    <div class="header__left-bar-wrapper">
-      <picture class="header__deco-image">
+  <!-- END OF SNOW ANIMATION -->
+  <div class="container">
+    <div class="header__wrapper">
+      <picture class="header__background-image header__background-image-circle">
         <source
-          srcset="./images/header__milk-tablet.png 1x, ./images/header__milk-tablet@2x.png 2x"
-          media="(min-width: 768px) and (max-width:
-        1279px)"
+          srcset="
+            ./images/header__big-circle-mobile.png    1x,
+            ./images/header__big-circle-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
           type="image/png"
         />
         <source
-          srcset="./images/header__milk-desktop.png 1x, ./images/header__milk-desktop@2x.png 2x"
+          srcset="
+            ./images/header__big-circle-tablet.png    1x,
+            ./images/header__big-circle-tablet@2x.png 2x
+          "
+          media="(min-width: 768px) and (max-width:
+      1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header__big-circle-desktop.png    1x,
+            ./images/header__big-circle-desktop@2x.png 2x
+          "
           media="(min-width: 1280px)"
           type="image/png"
         />
-        <img src="./images/header__milk-tablet.png" alt="Mleko się rozlało." />
+        <img src="./images/header__big-circle-mobile.png" alt="Background ice circle" />
       </picture>
-      <div class="header__lorem-wrapper">
-        <p class="header__describe-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
-        </p>
-        <img class="header__btn-arrow" src="./images/icon-arrow-in-circle-all.png" />
+      <picture class="header__background-image header__background-image-ice-cream">
+        <source
+          srcset="
+            ./images/header__ice-cream-mobile.png    1x,
+            ./images/header__ice-cream-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header__ice-cream-tablet.png    1x,
+            ./images/header__ice-cream-tablet@2x.png 2x
+          "
+          media="(min-width: 768px) and (max-width:
+      1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/header__ice-cream-desktop.png    1x,
+            ./images/header__ice-cream-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img src="./images/header__ice-cream-mobile.png" alt="Smakowite i kolorowe lody" />
+      </picture>
+      <picture class="header__background-image header__background-image-lady">
+        <source
+          srcset="./images/header__girl-tablet.png 1x, ./images/header__girl-tablet@2x.png 2x"
+          media="(min-width: 768px) and (max-width:
+      1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/header__girl-desktop.png 1x, ./images/header__girl-desktop@2x.png 2x"
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img src="./images/header__girl-tablet.png" alt="Dziewczyna zachwycona lodami" />
+      </picture>
+      <div class="header__coffee-info">
+        <p class="header__coffee-amount">16</p>
+        <p class="header__coffee-describe">cafes</p>
       </div>
+      <div class="header__truck-info">
+        <p class="header__truck-amount">23</p>
+        <p class="header__truck-describe">food trucks</p>
+      </div>
+      <div class="header__bar-wrapper">
+        <picture class="header__logo">
+          <source srcset="./images/logo-all.png 1x, ./images/logo-all@2x.png 2x" type="image/png" />
+          <img src="./images/logo-all.png" alt="Logo lodziarni" />
+        </picture>
+        <nav class="header__navbar">
+          <ul class="header__nav">
+            <li class="header__nav-element">
+              <a href="#hero-header" class="header__nav-link header__nav-link--active">Home</a>
+            </li>
+            <li class="header__nav-element">
+              <a href="#advantages" class="header__nav-link">About Us</a>
+            </li>
+            <li class="header__nav-element">
+              <a href="#about" class="header__nav-link">How it's made?</a>
+            </li>
+            <li class="header__nav-element">
+              <a href="#products" class="header__nav-link">Our products</a>
+            </li>
+            <li class="header__nav-element">
+              <a href="#contacts" class="header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btn-container">
+          <button type="button" class="header__btn-hamburger toggle-menu">
+            <svg class="header__burger" width="20" height="12" viewBox="0 0 20 12">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="header__main-button toggle-menu" buy-now-modal-open2>
+            Buy now
+            <svg class="header__button-ico" width="11" height="8" viewBox="0 0 8 10">
+              <use href="./images/icons.svg#icon-greater-value-sign"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__left-side">
+        <h1 class="header__title">
+          ICE CREAM MADE WITH
+          <span class="header__title header__title--describe">PASSION</span>
+        </h1>
+        <div class="header__buttons">
+          <a href="#products" class="button-link"
+            ><button type="button" class="header__left-button">Products</button></a
+          >
+          <a href="#about" class="button-link"
+            ><button type="button" class="header__right-button">How it's made?</button></a
+          >
+        </div>
+        <div class="header__left-bar-wrapper">
+          <picture class="header__deco-image">
+            <source
+              srcset="./images/header__milk-tablet.png 1x, ./images/header__milk-tablet@2x.png 2x"
+              media="(min-width: 768px) and (max-width:
+        1279px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/header__milk-desktop.png 1x, ./images/header__milk-desktop@2x.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <img src="./images/header__milk-tablet.png" alt="Mleko się rozlało." />
+          </picture>
+          <div class="header__lorem-wrapper">
+            <p class="header__describe-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <div class="overlaymilk">Merry Christmas and Happy New Year 2023!!!</div>
+            <img class="header__btn-arrow" src="./images/icon-arrow-in-circle-all.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="header__center"></div>
+      <div class="header__rightside"></div>
     </div>
   </div>
-
-  <div class="header__center"></div>
-  <div class="header__rightside"></div>
 </div>
 <!-- header end -->
