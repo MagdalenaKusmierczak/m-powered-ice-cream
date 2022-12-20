@@ -60,15 +60,15 @@
   grid-template-columns: repeat(1, 1fr);
   list-style-type: none;
   padding: 0;
-  margin-top: 0;
+  margin: 0;
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-gap: 20px;
   }
 
   @include desktop {
-    gap: 27.5px;
+    column-gap: 27.5px;
   }
 }
 
@@ -77,7 +77,6 @@
   flex-direction: column;
   max-width: 100%;
   height: auto;
-  position: relative;
   padding-top: 130px;
 
   &:first-child {
@@ -94,78 +93,11 @@
 
   @include tablet {
     padding-top: 150px;
-    padding-bottom: 40px;
   }
 
   @include desktop {
     padding-top: 259px;
-    padding-bottom: 50px;
   }
-}
-
-.products__onlay-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: calc(100% - 85px);
-  overflow: hidden;
-}
-
-.products__onlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  padding-top: 161px;
-  border-radius: 24px;
-
-  &--one {
-    background-color: #ffb8cad4;
-    transform: translateY(-100%);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-  }
-
-  &--two {
-    background-color: #f0d1a5d3;
-    transform: translateY(-100%);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-  }
-
-  &--three {
-    background-color: #c1e297d7;
-    transform: translateY(-100%);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-  }
-}
-
-.products__button--one:hover + .products__onlay--one {
-  transform: translateY(0);
-}
-.products__button--two:hover + .products__onlay--two {
-  transform: translateY(0);
-}
-.products__button--three:hover + .products__onlay--three {
-  transform: translateY(0);
-}
-
-.products__onlay-description {
-  color: $second-font-color;
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 1.52;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-shadow: 0px 0px 5px $fifth-font-color;
-  text-align: center;
-  padding: 0 20px;
 }
 
 .products__name {
@@ -229,35 +161,107 @@
   align-items: center;
   width: 40px;
   height: 40px;
+  background-image: url('../images/icon-arrow-in-circle-all.png');
   margin: 0 auto;
   cursor: pointer;
-  border: none;
-  background: none;
+  border: 0;
+  border-radius: 50%;
   padding: 0;
+  transform: rotate(0);
+  transition: transform 250ms ease-in-out;
 
-  will-change: transform;
-  transition: transform 1s ease-in-out;
-
-  @include tablet {
-    padding-bottom: 30px;
-    padding-top: 10px;
+  @include mobile-retina {
+    background-image: url('../images/icon-arrow-in-circle-all@2x.png');
   }
 
-  @include desktop {
-    padding-bottom: 50px;
-    padding-top: 30px;
-  }
-
-  &:hover {
+  &:hover,
+  &:focus {
     transform: rotate(-90deg);
   }
+}
+
+.products__overlay-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  height: calc(100% - 90px);
+  overflow: hidden;
+}
+
+.products__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 161px;
+  border-radius: 24px;
+
+  &--one {
+    background-color: $overlay-color-one;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(-100%);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+  &--two {
+    background-color: $overlay-color-two;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(-100%);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+  &--three {
+    background-color: $overlay-color-three;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(-100%);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.products__overlay-description {
+  color: $second-font-color;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.52;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0px 0px 5px $fifth-font-color;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.shown {
+  visibility: visible;
+  opacity: 1;
+  transform: translatey(0);
+}
+.products__button--two:hover + .products__overlay--two {
+  visibility: 1;
+  opacity: 1;
+  transform: translatey(0);
+}
+
+.products__button:hover + .products__overlay--three {
+  visibility: 1;
+  opacity: 1;
+  transform: translatey(0);
 }
 
 .products__background {
   border-radius: 24px;
   width: 100%;
   position: relative;
-  z-index: -1;
   padding-bottom: 41px;
 
   @include tablet {
