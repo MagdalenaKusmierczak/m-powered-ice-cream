@@ -13,6 +13,7 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .header__btn-container {
@@ -437,21 +438,17 @@
   .header__nav-element {
     display: block;
     padding-block: 0;
-    transform: translateY(0%);
     scale: 100%;
-    will-change: transform scale;
-    transition-property: scale transform;
-    transition-duration: 100ms;
+    will-change: scale;
+    transition-property: scale;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header__nav-element:hover,
   .header__nav-element:active {
-    will-change: transform scale;
-    text-shadow: -1px -1px 1px $fifth-font-color, 1px -1px 1px $fifth-font-color,
-      -1px 1px 1px $fifth-font-color;
-    scale: 150%;
-    transform: translateY(40%);
+    will-change: scale;
+    scale: 120%;
   }
 
   .header__nav-link {
@@ -540,9 +537,7 @@
 // Snow animation
 .snow {
   position: absolute;
-  min-width: 100vw;
-  min-height: 100vh;
-  height: 100%;
+  max-height: 100%;
   width: 100%;
   top: 0;
   left: 0;

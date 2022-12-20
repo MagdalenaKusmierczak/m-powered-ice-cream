@@ -88,12 +88,12 @@
   margin-block: 0;
   border-top: 1px solid $second-border-color;
   border-bottom: 1px solid $second-border-color;
-  transform: translateX(0%);
   scale: 100%;
-  will-change: transform scale;
-  transition-property: scale transform;
-  transition-duration: 100ms;
+  will-change: scale;
+  transition-property: scale;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center left;
 }
 
 .mobile-menu__link {
@@ -104,11 +104,8 @@
 
 .mobile-menu__item:hover,
 .mobile-menu__item:active {
-  will-change: transform scale;
-  text-shadow: -1px -1px 1px $fifth-font-color, 1px -1px 1px $fifth-font-color,
-    -1px 1px 1px $fifth-font-color;
-  scale: 130%;
-  transform: translateX(10%);
+  will-change: scale;
+  scale: 120%;
 }
 
 .mobile-menu__link {
