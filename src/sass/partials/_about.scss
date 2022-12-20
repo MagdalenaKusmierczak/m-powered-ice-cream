@@ -116,30 +116,35 @@
   }
 
   &__block-picture {
-    display: block;
-    width: 280px;
-    height: 279px;
+  display: block;
+  width: 280px;
+  height: 279px;
 
-    @include tablet {
-      width: 340px;
-      height: 339px;
-      padding-top: 0;
-    }
-    @include desktop {
-      width: 516px;
-      height: 516px;
-    }
+  @include tablet {
+  width: 340px;
+  height: 339px;
+  padding-top: 0;
+  }
+  @include desktop {
+  width: 516px;
+  height: 516px;
+  }
   }
 
   &__block-text {
-    margin-top: 46px;
-    padding-left:30px;
-    padding-right: 30px;
+  width:220px;
+  margin-top: 46px;
+  justify-content: center;
+  align-items: center;
+
     @include tablet {
       margin-top: 50px;
+      width:340px;
     }
     @include desktop {
       margin-top: 51px;
+      width:463px;
+      
     }
   }
   &__block-text1 {
@@ -162,6 +167,7 @@
       max-width: 463px;
       line-height: 28px;
       padding-left: 57px;
+      padding-right: 0;
     }
   }
 
