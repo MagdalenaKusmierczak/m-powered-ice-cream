@@ -1,0 +1,88 @@
+/* ------FONTS------- */
+$main-font: 'DM Sans', sans-serif;
+$second-font: 'Titan One', cursive;
+
+/* ------COLORS------ */
+$brand-color: #d41443; /* buttons background and brand text color, active page */
+
+/* ---background colors--- */
+$base-body-background: #e5e5e5;
+$mobile-menu-background: #e17992;
+$first-background: #ffb8ca; /* header and first product card */
+$second-background: #f0d1a5; /* second product card, contacts category */
+$third-background: #c2e297; /* third product card, contacts category */
+$fourth-background: #fff5f6; /* about, advantages, contacts and footer */
+$fifth-background: #ffffff; /* buttons, contacts cards */
+$sixth-background: #fafafa; /* customer reviev */
+$seventh-background: #e1e1e1;
+$social-media-background: #fea5bb;
+$modal-background: #e179914a;
+$modal-box-shadow: #d4144431;
+
+/* ---border colors--- */
+$first-border-color: #e1e1e1;
+$second-border-color: #e18298;
+
+/* ---hover--- */
+$first-button-hover: #c7133e;
+$second-button-hover: #ecebeb;
+$social-media-hover: #d41443;
+$contacts-button-hover: #d41342;
+
+/* ---fonts color--- */
+$first-font-color: #d41443; /* brand color*/
+$second-font-color: #ffffff; /* contrast text in: header, mobile menu, products card, contacts category */
+$third-font-color: #ffa5ba; /* section title label */
+$fourth-font-color: #000000; /* black text in: about, advantages, customer reviev, contacts, footer */
+$fifth-font-color: #907e82; /* minor text in: about, contacts, footer */
+
+/* icon colors */
+
+$first-icon-color: #d31342;
+$second-icon-color: #d9d9d9;
+$third-icon-color: #c7133e;
+
+/* ------MIXIN------ */
+@mixin mobile-retina {
+  @media (max-width: 767px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin tablet-retina {
+  @media (min-width: 768px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin desktop-retina {
+  @media (min-width: 1280px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    @content;
+  }
+}
+/* reminder how to use mixin in media queries:
+.products {
+  gap: 20px;
+  
+  @include desktop {
+    gap: 24px;
+  }
+} 
+*/

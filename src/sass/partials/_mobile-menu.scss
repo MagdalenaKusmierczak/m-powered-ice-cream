@@ -1,0 +1,124 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 60px 24px;
+  background-color: $mobile-menu-background;
+  transform: translateX(0%);
+  will-change: transform;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+
+  @include tablet {
+    width: 254px;
+  }
+}
+
+.d-none {
+  transform: translateX(100%);
+}
+
+.mobile-menu__x-button {
+  cursor: pointer;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile-menu__button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  gap: 25px;
+  height: 44px;
+  width: 100%;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $brand-color;
+  background-color: $fifth-background;
+  border: 0;
+  border-radius: 22px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__button:hover {
+  background-color: $second-button-hover;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__icon-arrow {
+  margin-top: 1px;
+  stroke: $brand-color;
+  fill: transparent;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 0;
+  padding-top: 19px;
+}
+
+.mobile-menu__item {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.31;
+  padding-block: 6px;
+  margin-block: 0;
+  border-top: 1px solid $second-border-color;
+  border-bottom: 1px solid $second-border-color;
+  transform: translateX(0%);
+  scale: 100%;
+  will-change: transform scale;
+  transition-property: scale transform;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__link {
+  display: flex;
+  margin-block: 6px;
+  width: 100%;
+}
+
+.mobile-menu__item:hover,
+.mobile-menu__item:active {
+  will-change: transform scale;
+  text-shadow: -1px -1px 1px $fifth-font-color, 1px -1px 1px $fifth-font-color,
+    -1px 1px 1px $fifth-font-color;
+  scale: 130%;
+  transform: translateX(10%);
+}
+
+.mobile-menu__link {
+  font-family: $main-font;
+  color: $second-font-color;
+  text-decoration: none;
+  padding-block: 0;
+  margin-block: 0;
+
+  &--active {
+    color: $first-font-color;
+  }
+}

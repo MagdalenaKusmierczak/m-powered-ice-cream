@@ -1,0 +1,392 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  margin-block: 0;
+
+  @include tablet {
+    padding-bottom: 112px;
+    padding-top: 122px;
+  }
+
+  @include desktop {
+    padding-bottom: 119px;
+    padding-top: 127px;
+  }
+}
+.products__subtitle {
+  display: block;
+  color: $third-font-color;
+  font-family: $second-font;
+  font-size: 18px;
+  line-height: 1.145;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+
+  @include tablet {
+    font-size: 26px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
+}
+.products__title {
+  display: block;
+  color: $first-font-color;
+  font-family: $second-font;
+  font-size: 34px;
+  line-height: 1.145;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0;
+  transition: transform 1s ease-in-out;
+
+  @include tablet {
+    font-size: 48px;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
+}
+.products__title:hover,
+.products__title:focus {
+  transform: scale(1.2);
+}
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @include desktop {
+    gap: 27.5px;
+  }
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 130px;
+
+  &:first-child {
+    padding-top: 144px;
+
+    @include tablet {
+      padding-top: 150px;
+    }
+
+    @include desktop {
+      padding-top: 259px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 150px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-top: 259px;
+    padding-bottom: 50px;
+  }
+}
+
+.products__onlay-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: calc(100% - 85px);
+  overflow: hidden;
+}
+
+.products__onlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 161px;
+  border-radius: 24px;
+
+  &--one {
+    background-color: #ffb8cad4;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &--two {
+    background-color: #f0d1a5d3;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &--three {
+    background-color: #c1e297d7;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.products__button--one:hover + .products__onlay--one {
+  transform: translateY(0);
+}
+.products__button--two:hover + .products__onlay--two {
+  transform: translateY(0);
+}
+.products__button--three:hover + .products__onlay--three {
+  transform: translateY(0);
+}
+
+.products__onlay-description {
+  color: $second-font-color;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.52;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0px 0px 5px $fifth-font-color;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.products__name {
+  font-family: $second-font;
+  color: $second-font-color;
+  font-size: 20px;
+  line-height: 1.145;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding-top: 161px;
+  padding-bottom: 30px;
+  transition: transform 1s ease-in-out;
+
+  @include tablet {
+    padding-top: 152px;
+  }
+
+  @include desktop {
+    padding-top: 163px;
+    font-size: 32px;
+  }
+}
+
+.products__name:hover,
+.products__name:focus {
+  transform: scale(1.1);
+}
+.products__icon {
+  fill: $second-font-color;
+}
+.products__icon-box {
+  display: flex;
+  justify-content: center;
+  cursor: auto;
+}
+.products__text {
+  display: block;
+  color: $second-font-color;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.52;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 30px 40px;
+
+  @include tablet {
+    line-height: 1.76;
+    padding: 30px 11px 30px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    padding: 32px 44px 62px;
+  }
+}
+
+.products__button {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+
+  will-change: transform;
+  transition: transform 1s ease-in-out;
+
+  @include tablet {
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  @include desktop {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  &:hover {
+    transform: rotate(-90deg);
+  }
+}
+
+.products__background {
+  border-radius: 24px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  padding-bottom: 41px;
+
+  @include tablet {
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
+}
+
+.products__background--one {
+  background-color: $first-background;
+}
+
+.products__background--one::before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 125px);
+  top: -110px;
+  width: 249px;
+  height: 252px;
+  z-index: 2;
+  background-image: url(../images/products__product1-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mobile-retina {
+    background-image: url(../images/products__product1-mobile@2x.png);
+    background-size: contain;
+  }
+  @include tablet {
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 224px;
+    background-image: url(../images/products__product1-tablet.png);
+  }
+  @include tablet-retina {
+    background-image: url(./../images/products__product1-tablet@2x.png);
+  }
+  @include desktop {
+    left: calc(50% - 167.5px);
+    top: -210px;
+    width: 335px;
+    height: 335px;
+    background-image: url(../images/products__product1-desktop.png);
+  }
+  @include desktop-retina {
+    background-image: url(../images/products__product1-desktop@2x.png);
+  }
+}
+.products__background--two {
+  background-color: $second-background;
+}
+.products__background--two::before {
+  content: '';
+  position: absolute;
+  top: -110px;
+  left: calc(50% - 125px);
+  width: 249px;
+  height: 252px;
+  z-index: 2;
+  background-image: url(../images/products__product2-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mobile-retina {
+    background-image: url(../images/products__product2-mobile@2x.png);
+    background-size: contain;
+  }
+  @include tablet {
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 230px;
+    background-image: url(../images/products__product2-tablet.png);
+  }
+  @include tablet-retina {
+    background-image: url(../images/products__product2-tablet@2x.png);
+  }
+  @include desktop {
+    left: calc(50% - 167.5px);
+    top: -210px;
+    width: 335px;
+    height: 335px;
+    background-image: url(../images/products__product2-desktop.png);
+  }
+  @include desktop-retina {
+    background-image: url(../images/products__product2-desktop@2x.png);
+  }
+}
+.products__background--three {
+  background-color: $third-background;
+}
+.products__background--three::before {
+  content: '';
+  position: absolute;
+  top: -110px;
+  left: calc(50% - 125px);
+  width: 249px;
+  height: 252px;
+  z-index: 2;
+  background-image: url(../images/products__product3-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mobile-retina {
+    background-image: url(../images/products__product3-mobile@2x.png);
+    background-size: contain;
+  }
+  @include tablet {
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 224px;
+    background-image: url(../images/products__product3-tablet.png);
+  }
+  @include tablet-retina {
+    background-image: url(../images/products__product3-tablet@2x.png);
+  }
+  @include desktop {
+    left: calc(50% - 167.5px);
+    top: -210px;
+    width: 335px;
+    height: 335px;
+    background-image: url(../images/products__product3-desktop.png);
+  }
+  @include desktop-retina {
+    background-image: url(../images/products__product3-desktop@2x.png);
+  }
+}

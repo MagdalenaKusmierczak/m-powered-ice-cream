@@ -1,0 +1,20 @@
+.hamburger {
+  display: block;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.hamburger__icon {
+  background-color: inherit;
+  fill: $first-font-color;
+  border: 0;
+  will-change: fill;
+  transition: fill 250ms;
+
+  &:hover,
+  &:focus {
+    fill: $first-button-hover;
+  }
+}

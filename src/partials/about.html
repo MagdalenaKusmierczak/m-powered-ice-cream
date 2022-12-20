@@ -1,0 +1,82 @@
+<section class="about" id="about">
+    <div class="container container-background">
+        <div class="about__tittle about__tittle-style">
+        <p class="about__tittle-second">TRADITION AND LOVE</p>
+        <h2 class="about__tittle-main">how it's made?</h2></div>
+        <div class="about__block ">
+         <picture>
+            <source srcset="./images/about__cow-mobile.png 1x, ./images/about__cow-mobile@2x.png 2x" media="(max-width: 767px)"
+                type="image/png" />
+            <source srcset="./images/about__cow-tablet.png 1x, ./images/about__cow-tablet@2x.png 2x"
+                media="(min-width: 768px) and (max-width: 1279px)" type="image/png" />
+            <source srcset="./images/about__cow-desktop.png 1x, ./images/about__cow-desktop@2x.png 2x" media="(min-width: 1280px)"
+                type="image/png" />
+            <img 
+            width="280" height="279"
+            class="about__block-picture" 
+            src="./images/about__cow-mobile.png"
+            alt="Happy cow with milk" />
+        </picture> 
+            <div class="about__block-text">
+                <p class="about__block-text1">Fusce ut nvelit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus,
+                    faucibus lorem
+                    eget, egestas eros.
+                    Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about__block-text2">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris
+                    rhoncus orci in
+                    imperdiet placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.</p>
+                    <p class="about__block-text3">Aliquam erat volutpat. Aenean accumsan.</p>
+        <div class="about__block-button">
+         <button class="about__button" type="button" data-modal-open=".">Read more 
+            <p class="about__icon">></p>
+         </svg> </button> 
+        </div>
+    </div>
+    </div>
+    </div>
+<div class="is-hidden" data-modal>
+    <div class="backdrop">
+        <div class="modal">
+            <div class="about-milk-background-modal">
+                <picture>
+                    <img class="about-milk-image-modal" 
+                    src="./images/about__background-mobile.png" 
+                    alt="spilled milk">
+                </picture>
+            </div>
+            <div>
+                <form name="icecream">
+                    <button class="modal__button-close" type="reset" data-modal-close>X</button>
+                </form>
+            </div>
+            <div class="modal__tittle modal__tittle-style">
+                <p class="modal__tittle-txt">TRADITION AND LOVE</p>
+            </div>
+            <div class=" modal-text">
+                <p class="modal-text__first">Fusce ut nvelit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus,
+                    faucibus lorem
+                    eget, egestas eros.
+                    Maecenas eleifend erat at justo fringilla.</p>      
+                <p class="modal-text__second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris
+                    rhoncus orci in
+                    imperdiet placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.</p> 
+                <p class="modal-text__third">Aliquam erat volutpat. Aenean accumsan.</p>
+        </div>
+    </div>
+    <div class="about-milk-icon-box">
+        <picture>
+            <img width="33" height="50" class="about-milk-icon-modal" src="./images/advantages__icon-milk-mobile.png"
+                alt="icon-milk">
+        </picture>
+    </div>
+ </div>
+</section>
+<script src="../modal.js"></script>
