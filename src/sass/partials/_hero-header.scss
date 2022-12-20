@@ -13,6 +13,7 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .header__btn-container {
@@ -538,9 +539,7 @@
 // Snow animation
 .snow {
   position: absolute;
-  min-width: 100vw;
-  min-height: 100vh;
-  height: 100%;
+  max-height: 100%;
   width: 100%;
   top: 0;
   left: 0;
