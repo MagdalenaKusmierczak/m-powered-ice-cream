@@ -133,7 +133,8 @@
 
   &__block-text {
     margin-top: 46px;
-
+    padding-left:30px;
+    padding-right: 30px;
     @include tablet {
       margin-top: 50px;
     }
