@@ -8,10 +8,6 @@
   }
 }
 
-.contacts .container {
-  padding: 0;
-}
-
 .contacts {
   width: 100%;
   display: flex;
@@ -37,7 +33,7 @@
   &__list {
     min-width: 220px;
     width: 100%;
-    padding: 0 50px 0 50px;
+    padding: 0;
     list-style: none;
     gap: 20px;
     display: flex;
@@ -53,12 +49,12 @@
       justify-content: space-between;
       flex-wrap: nowrap;
       flex-direction: row;
-      padding: 0 36px 0 36px;
+      padding: 0;
       font-size: 14px;
     }
     @include desktop {
       gap: 30px;
-      padding: 0 115px 0 115px;
+      padding: 0;
       font-size: 16px;
     }
   }
@@ -162,7 +158,7 @@
     }
     @include tablet {
       margin-top: 30px;
-      line-height: 186%;
+      line-height: 1.86;
     }
   }
   &__days {
@@ -210,61 +206,73 @@
     @include tablet {
       flex-direction: row;
       gap: 15px;
+      padding-top: 81px;
       padding-bottom: 158px;
     }
     @include desktop {
+      padding-top: 86px;
       padding-bottom: 165px;
     }
   }
   &__button {
-    width: 161px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 161.45px;
     height: 44px;
     border-radius: 22px;
     border: none;
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 1.31;
     cursor: pointer;
-    transition: background-color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
-      color 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-property: background-color color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+
     &--red {
-      background-color: #d41342;
+      background-color: #d41342; // brak koloru button red w _variables.scss - M. Bołtruczyk
       color: $fifth-background;
+      gap: 8px;
 
       @include tablet {
-        width: 191px;
+        width: 191.45px;
+        height: 44px;
+        gap: 13px;
       }
       @include desktop {
         width: 198px;
+        height: 44px;
+        gap: 14px;
       }
     }
     &--white {
       background-color: $fifth-background;
       color: $brand-color;
+      gap: 12px;
+
       @include tablet {
-        width: 175px;
+        width: 174.05px;
+        height: 44px;
+        gap: 13px;
       }
       @include desktop {
         width: 180px;
+        height: 44px;
+        gap: 14px;
       }
     }
   }
   .contacts__button--red:hover,
   .contacts__button--red:focus {
     background-color: $third-icon-color;
-    // color: $brand-color;
   }
   .contacts__button--white:hover,
   .contacts__button--white:focus {
     background-color: $second-button-hover;
-    // color: $fifth-background;
   }
 
-  // .contacts__button--red:hover .contacts__icon--red,
-  // .contacts__button--red:focus .contacts__icon--red {
-  //   fill: $fifth-background;
-  //   stroke: #d41342;
-  // }
   .contacts__button--white:hover .contacts__icon--white,
   .contacts__button--white:focus .contacts__icon--white {
     fill: $second-button-hover;
@@ -272,14 +280,14 @@
   }
 
   .contacts__icon--red {
-    fill: #d41342;
+    fill: transparent;
     stroke: $fifth-background;
-    padding-left: 4px;
+    margin-top: 4px;
     transition: fill 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   .contacts__icon--white {
-    fill: $fifth-background;
-    stroke: #d41342;
-    padding-left: 4px;
+    fill: transparent;
+    stroke: $first-font-color;
+    margin-top: 4px;
   }
 }
