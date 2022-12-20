@@ -157,18 +157,23 @@
 }
 
 .products__button {
-  display: flex;
+  display: block;
   align-items: center;
   width: 40px;
   height: 40px;
   background-image: url('../images/icon-arrow-in-circle-all.png');
+  background-color: transparent;
   margin: 0 auto;
   cursor: pointer;
   border: 0;
   border-radius: 50%;
   padding: 0;
   transform: rotate(0);
-  transition: transform 250ms ease-in-out;
+  opacity: 1;
+  border: 0;
+  transition-property: transform opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 
   @include mobile-retina {
     background-image: url('../images/icon-arrow-in-circle-all@2x.png');
@@ -176,6 +181,9 @@
 
   &:hover,
   &:focus {
+    opacity: 0.9;
+    background-image: linear-gradient(rgba(236, 235, 235, 0.3), rgba(236, 235, 235, 0.3)),
+      url('../images/icon-arrow-in-circle-all.png');
     transform: rotate(-90deg);
   }
 }
@@ -184,8 +192,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
   width: 100%;
+  height: 100%;
+  z-index: 0;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   height: calc(100% - 90px);
@@ -196,15 +205,22 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  bottom: 0;
+  left: 0;
   z-index: 1;
   padding-top: 161px;
   border-radius: 24px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &--one {
     background-color: $overlay-color-one;
-    visibility: hidden;
-    opacity: 0;
-    transform: translatey(-100%);
+
+    // transform: translateY(-100%);
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
@@ -213,7 +229,7 @@
     background-color: $overlay-color-two;
     visibility: hidden;
     opacity: 0;
-    transform: translatey(-100%);
+    // transform: translateY(-100%);
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
@@ -222,7 +238,7 @@
     background-color: $overlay-color-three;
     visibility: hidden;
     opacity: 0;
-    transform: translatey(-100%);
+    // transform: translateY(-100%);
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
@@ -241,21 +257,29 @@
   padding: 0 20px;
 }
 
+.products__background:has(.products__button:hover)
+  .products__overlay-background
+  .products__overlay {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .shown {
   visibility: visible;
   opacity: 1;
-  transform: translatey(0);
+  transform: translateY(0);
 }
 .products__button--two:hover + .products__overlay--two {
   visibility: 1;
   opacity: 1;
-  transform: translatey(0);
+  transform: translateY(0);
 }
 
 .products__button:hover + .products__overlay--three {
   visibility: 1;
   opacity: 1;
-  transform: translatey(0);
+  transform: translateY(0);
 }
 
 .products__background {
