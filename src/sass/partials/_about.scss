@@ -358,6 +358,7 @@
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
   display: flex;
+  z-index: 10;
 }
 
 .modal-text {
