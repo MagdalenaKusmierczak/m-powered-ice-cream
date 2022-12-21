@@ -29,12 +29,11 @@
     padding: 12px;
   }
 }
-
-.form__fieldset:has(.form__input:focus) {
+.form__fieldset:focus-within {
   border: 1px solid $mobile-menu-background;
 }
 
-.form__fieldset:has(.form__input:focus) .form__icon {
+.form__fieldset:focus-within .form__icon {
   fill: $mobile-menu-background;
 }
 
