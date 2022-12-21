@@ -1,61 +1,123 @@
 <!-- Custom reviews section -->
 
-<section class="container customer-reviews">
+<section class="container customer-reviews swiper">
   <!-- Unvisible header -->
 
   <h2 class="customer-reviews__header">Cutomers reviews</h2>
 
-  <!-- Review item -->
-
-  <img
+  <div class="swiper-wrapper">
+  <!-- Review 1 item -->
+  <div class="customer-reviews__customer swiper-slide">
+    <img
     alt="Reviewer's picture"
     class="customer-reviews__picture"
     src="./images/customer-reviews__customer1-all.png"
-    srcset="
-      ./images/customer-reviews__customer1-all.png     85w,
-      ./images/customer-reviews__customer1-all@2x.png 170w,
-      ./images/customer-reviews__customer2-all.png     85w,
-      ./images/customer-reviews__customer2-all@2x.png 170w,
+      srcset="
+        ./images/customer-reviews__customer1-all.png     85w,
+        ./images/customer-reviews__customer1-all@2x.png 170w
+      "
+      sizes="85px"
+    />
+    <div class="customer-reviews__review">
+      <div class="customer-reviews__linear-background">
+        <svg class="customer-reviews__quotation-icon" width="54" height="40">
+          <use href="./images/icons.svg#customer-reviews__icon-quotation-mark"></use>
+        </svg>
+        <p class="customer-reviews__text">
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+      </div>
+    </div>
+    <svg class="custom-reviews__dots-icon" width="32" height="4">
+      <use href="./images/icons.svg#customer-reviews__icon-3-red-dots"></use>
+    </svg>
+    <p class="customer-reviews__signature">Emily, Los Angeles</p>
+  </div>
+  <!-- Review 2 item -->
+  <div class="customer-reviews__customer swiper-slide">
+    <img
+    alt="Reviewer's picture"
+    class="customer-reviews__picture"
+      src="./images/customer-reviews__customer2-all.png"
+      srcset="
+        ./images/customer-reviews__customer2-all.png     85w,
+        ./images/customer-reviews__customer2-all@2x.png 170w
+        "
+        sizes="85px"
+        />
+        <div class="customer-reviews__review">
+          <div class="customer-reviews__linear-background">
+            <svg class="customer-reviews__quotation-icon" width="54" height="40">
+              <use href="./images/icons.svg#customer-reviews__icon-quotation-mark"></use>
+            </svg>
+            <p class="customer-reviews__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, recusandae
+              consectetur. Delectus corporis repellat dolor laborum non soluta accusantium obcaecati
+              assumenda harum! A harum iste reiciendis eius aliquid cumque quos?
+        </p>
+      </div>
+    </div>
+    <svg class="custom-reviews__dots-icon" width="32" height="4">
+      <use href="./images/icons.svg#customer-reviews__icon-3-red-dots"></use>
+    </svg>
+    <p class="customer-reviews__signature">Kate, Chicago</p>
+  </div>
+  <!-- Review 3 item -->
+  <div class="customer-reviews__customer swiper-slide">
+    <img
+      alt="Reviewer's picture"
+      class="customer-reviews__picture"
+      src="./images/customer-reviews__customer3-all.png"
+      srcset="
       ./images/customer-reviews__customer3-all.png     85w,
       ./images/customer-reviews__customer3-all@2x.png 170w
-    "
-    sizes="85px"
-  />
-  <div class="customer-reviews__review">
-    <div class="customer-reviews__linear-background">
-      <svg class="customer-reviews__quotation-icon" width="54" height="40">
-        <use href="./images/icons.svg#customer-reviews__icon-quotation-mark"></use>
-      </svg>
-      <p class="customer-reviews__text">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-        nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-      </p>
+      "
+      sizes="85px"
+      />
+    <div class="customer-reviews__review">
+      <div class="customer-reviews__linear-background">
+        <svg class="customer-reviews__quotation-icon" width="54" height="40">
+          <use href="./images/icons.svg#customer-reviews__icon-quotation-mark"></use>
+        </svg>
+        <p class="customer-reviews__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel illo deserunt
+          facilis, possimus, voluptatem pariatur obcaecati repellendus totam quis hic iure
+          asperiores magni eligendi.
+        </p>
+      </div>
     </div>
+    <svg class="custom-reviews__dots-icon" width="32" height="4">
+      <use href="./images/icons.svg#customer-reviews__icon-3-red-dots"></use>
+    </svg>
+    <p class="customer-reviews__signature">Anna, New York</p>
   </div>
-  <svg class="custom-reviews__dots-icon" width="32" height="4">
-    <use href="./images/icons.svg#customer-reviews__icon-3-red-dots"></use>
-  </svg>
-  <p class="customer-reviews__signature">Emily, Los Angeles</p>
-
-  <!-- Slider -->
-
+</div>
+</div>
+<!-- Slider -->
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+<!-- 
   <ul class="slider">
     <li class="slider__item">
-      <svg class="slider__icon slider__icon--active" width="12" height="12">
+      <div class="slider__item-icon demo" onclick="currentDiv(1)"></div> -->
+      <!-- <svg class="slider__icon slider__icon--active" width="12" height="12">
         <use href="./images/icons.svg#customer-reviews__icon-slider-home"></use>
-      </svg>
-    </li>
+      </svg> -->
+    <!-- </li>
     <li class="slider__item">
-      <svg class="slider__icon" width="12" height="12">
+      <div class="slider__item-icon demo" onclick="currentDiv(2)"></div> -->
+      <!-- <svg class="slider__icon" width="12" height="12">
         <use href="./images/icons.svg#customer-reviews__icon-slider-dot"></use>
-      </svg>
-    </li>
+      </svg> -->
+    <!-- </li>
     <li class="slider__item">
-      <svg class="slider__icon" width="12" height="12">
+      <div class="slider__item-icon demo" onclick="currentDiv(3)"></div> -->
+      <!-- <svg class="slider__icon" width="12" height="12">
         <use href="./images/icons.svg#customer-reviews__icon-slider-dot"></use>
-      </svg>
-    </li>
-  </ul>
-</section>
 
-<!-- End of Customer reviews section -->
+<!- End of Customer reviews section -->
+
+<!-- </li>
+</ul> -->
+</section>
