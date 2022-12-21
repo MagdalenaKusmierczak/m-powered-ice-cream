@@ -1,4 +1,4 @@
-<section class="cont">
+<div class="cont">
   <section id="contacts" class="contacts">
     <div class="container">
       <h2 class="contacts__title">Contacts</h2>
@@ -79,7 +79,7 @@
       </div>
     </div>
   </section>
-</section>
+</div>
 
 <!-- Our location modal -->
 
@@ -145,20 +145,20 @@
     <p class="pop-up-modal__text">
       Leave your contact information, we will answer as soon as possible
     </p>
-    <form class="form">
+    <div class="form">
       <form class="modal__form" name="modal-form">
         <label class="form__label">
           Name
-          <fieldset class="form__fieldset">
+          <span class="form__fieldset">
             <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
             <input class="form__input" type="text" name="name" minlength="2" maxlength="50" />
-          </fieldset>
+          </span>
         </label>
         <label class="form__label">
           Phone number
-          <fieldset class="form__fieldset">
+          <span class="form__fieldset">
             <svg class="form__icon" width="18" height="18" viewBox="0 0 18 18">
               <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
@@ -169,16 +169,16 @@
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
               title="Phone number type 123-456-789"
             />
-          </fieldset>
+          </span>
         </label>
         <label class="form__label">
           E-mail
-          <fieldset class="form__fieldset">
+          <span class="form__fieldset">
             <svg class="form__icon" width="18" height="18" viewBox="0 0 18 18">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
             <input class="form__input" type="email" name="mail" />
-          </fieldset>
+          </span>
         </label>
         <label class="form__label form__comment-field">
           Comment
@@ -199,6 +199,6 @@
         </fieldset>
         <button type="submit" class="button form__button">Send!</button>
       </form>
-    </form>
+    </div>
   </div>
 </div>
