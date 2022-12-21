@@ -47,6 +47,13 @@
     }
   }
 }
+.gallery__title {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+}
 .gallery__list {
   list-style-type: none;
   padding: 0;
