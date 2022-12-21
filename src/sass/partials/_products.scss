@@ -175,7 +175,7 @@
   transform: rotate(0);
   opacity: 1;
   border: 0;
-  transition-property: transform opacity;
+  transition-property: transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 
