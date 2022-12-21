@@ -40,7 +40,7 @@
   letter-spacing: 0.04em;
   text-align: center;
   margin: 0;
-  transition: transform 1s ease-in-out;
+  transition: transform 1100ms ease-in-out;
 
   @include tablet {
     font-size: 48px;
@@ -110,7 +110,7 @@
   text-align: center;
   padding-top: 161px;
   padding-bottom: 30px;
-  transition: transform 1s ease-in-out;
+  transition: transform 1100ms ease-in-out;
 
   @include tablet {
     padding-top: 152px;
@@ -130,6 +130,9 @@
   fill: $second-font-color;
 }
 .products__icon-box {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   display: flex;
   justify-content: center;
   cursor: auto;
@@ -172,7 +175,7 @@
   transform: rotate(0);
   opacity: 1;
   border: 0;
-  transition-property: transform opacity;
+  transition-property: transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 
@@ -272,13 +275,13 @@
   transform: translateY(0);
 }
 .products__button--two:hover + .products__overlay--two {
-  visibility: 1;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
 
 .products__button:hover + .products__overlay--three {
-  visibility: 1;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }

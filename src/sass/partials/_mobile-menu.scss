@@ -90,7 +90,7 @@
   margin-block: 0;
   border-top: 1px solid $second-border-color;
   border-bottom: 1px solid $second-border-color;
-  scale: 100%;
+  scale: 1;
   will-change: scale;
   transition-property: scale;
   transition-duration: 250ms;
@@ -107,7 +107,7 @@
 .mobile-menu__item:hover,
 .mobile-menu__item:active {
   will-change: scale;
-  scale: 120%;
+  scale: 1.2;
 }
 
 .mobile-menu__link {
