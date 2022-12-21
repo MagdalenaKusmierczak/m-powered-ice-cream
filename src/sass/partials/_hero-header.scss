@@ -244,14 +244,15 @@
 .header__left-bar-wrapper {
   display: none;
 }
-.header__btn-arrow {
+.header__button {
   display: none;
 }
+
 @include tablet {
   .header__background-image-circle {
     margin-right: -34px;
     top: 31px;
-    right: 189px;
+    right: 137px;
     width: 324px;
   }
   .header__background-image-ice-cream {
@@ -347,7 +348,7 @@
     font-size: 8px;
     line-height: 1.5;
     color: $second-font-color;
-    margin-left: -4px;
+    margin-left: 0;
     margin-right: 0;
     padding: 0px;
   }
@@ -358,46 +359,83 @@
     align-items: flex-end;
     padding-bottom: 28px;
   }
-  .header__btn-arrow {
-    display: flex;
-    padding-top: 7px;
-    padding-bottom: 9px;
-    margin-left: -4px;
-    width: 18px;
-  }
+
   .header__lorem-wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    padding-left: 10px;
+    padding-left: 6px;
+    overflow: hidden;
+    gap: 7px;
+    padding-bottom: 8px;
   }
-  // Overlay for milk
 
-  .overlaymilk {
+  .header__button {
+    display: block;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-image: url('../images/icon-arrow-in-circle-all.png');
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    padding: 0;
+    transform: rotate(0);
+    opacity: 1;
+    border: 0;
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+    z-index: 2;
+
+    @include mobile-retina {
+      background-image: url('../images/icon-arrow-in-circle-all@2x.png');
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+      background-image: linear-gradient(rgba(236, 235, 235, 0.3), rgba(236, 235, 235, 0.3)),
+        url('../images/icon-arrow-in-circle-all.png');
+      transform: rotate(-90deg);
+    }
+  }
+
+  .header__overlay {
     position: absolute;
-    display: flex;
-    width: 100px;
-    height: 60%;
-    transform: translateY(-200%);
-    transition: transform 1s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 67%;
     font-family: $second-font;
     font-size: 15px;
     color: $first-font-color;
     text-align: center;
-    cursor: default;
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+
+    &--one {
+      background-color: $overlay-color-one;
+      visibility: hidden;
+      opacity: 0;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: ease-in-out;
+    }
   }
 
-  .header__lorem-wrapper:hover .overlaymilk {
+  .header__button--one:hover + .header__overlay--one {
+    visibility: visible;
+    opacity: 1;
     transform: translateY(0);
   }
-  .header__lorem-wrapper:hover .header__describe-text {
-    opacity: 0;
-  }
-  .header__lorem-wrapper:hover .header__btn-arrow {
-    opacity: 0;
-  }
 }
+
 @include desktop {
   .header__burger {
     display: none;
@@ -554,6 +592,8 @@
     gap: 30px;
     max-width: 600px;
     padding-bottom: 45px;
+    margin-left: -38px;
+    margin-right: 38px;
   }
 
   .header__btn-arrow {
@@ -563,10 +603,19 @@
     margin-left: 0;
     width: 26px;
   }
-  // Overlay for milk
 
-  .overlaymilk {
-    font-size: 20px;
+  .header__overlay {
+    width: 100%;
+    height: 70%;
+    font-size: 21px;
+  }
+  .header__lorem-wrapper {
+    gap: 16px;
+    padding-bottom: 11px;
+  }
+  .header__button {
+    width: 26px;
+    height: 26px;
   }
 }
 
