@@ -88,7 +88,6 @@
 }
 
 .form__checkbox-fieldset {
-  margin-bottom: 30px;
   border: 0;
   padding: 0;
   font-family: $main-font;
@@ -98,7 +97,7 @@
   margin: 0 auto 30px;
   position: relative;
   display: flex;
-
+  justify-content: center;
   @include tablet {
     font-size: 14px;
   }
@@ -125,7 +124,9 @@
 }
 
 .form__button {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   font-family: $main-font;
   font-size: 16px;
   line-height: 1.25;
