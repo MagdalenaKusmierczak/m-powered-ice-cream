@@ -120,6 +120,7 @@
     width: 32px;
     height: 32px;
     background-color: $social-media-background;
+    transition: all 250ms ease-in-out;
 
     &:hover,
     &:focus {
