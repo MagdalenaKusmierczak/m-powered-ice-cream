@@ -275,13 +275,13 @@
   transform: translateY(0);
 }
 .products__button--two:hover + .products__overlay--two {
-  visibility: 1;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
 
 .products__button:hover + .products__overlay--three {
-  visibility: 1;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
