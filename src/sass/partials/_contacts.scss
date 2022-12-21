@@ -1,7 +1,7 @@
 .cont {
   background: linear-gradient(to bottom, $fifth-background 84px, $fourth-background 84px);
-  // /tablet? czy desktop/?/
-  @include desktop {
+
+  @include tablet {
     background: linear-gradient(to bottom, $fifth-background 78px, $fourth-background 78px);
   }
   @include desktop {
@@ -14,7 +14,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  @include mobile-retina {
+    background-size: 0px 0px;
+  }
+  @include tablet-retina {
+    background-size: 0px 0px;
+  }
   @include desktop {
     max-width: 100%;
     background-image: url('../images/contacts__background-desktop.png');
