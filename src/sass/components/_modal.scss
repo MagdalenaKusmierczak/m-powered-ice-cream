@@ -24,7 +24,7 @@
 .modal__content {
   position: relative;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
   background-color: $fourth-background;
   box-shadow: 0px 8px 30px $modal-box-shadow;
   border-radius: 24px;
@@ -33,6 +33,14 @@
   transition-property: transform;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
+
+  @include tablet {
+    padding: 30px;
+  }
+
+  @include desktop {
+    padding: 40px;
+  }
 }
 
 .modal__x-button {

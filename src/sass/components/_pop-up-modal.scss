@@ -1,5 +1,9 @@
 .pop-up-modal__content {
-  width: 450px;
+  width: auto;
+
+  @include tablet {
+    width: 450px;
+  }
 }
 
 .pop-up-modal__header {
