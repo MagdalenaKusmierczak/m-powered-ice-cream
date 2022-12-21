@@ -7,7 +7,7 @@
     position: absolute;
     bottom: 89px;
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 1px;
     background-color: $first-border-color;
 
@@ -120,6 +120,7 @@
     width: 32px;
     height: 32px;
     background-color: $social-media-background;
+    transition: all 250ms ease-in-out;
 
     &:hover,
     &:focus {

@@ -21,6 +21,13 @@
   visibility: hidden;
 }
 
+.customer-reviews__customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .customer-reviews__picture {
   margin-bottom: 29px;
 
