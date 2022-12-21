@@ -469,7 +469,7 @@
   .header__nav-element {
     display: block;
     padding-block: 0;
-    scale: 100%;
+    scale:1;
     will-change: scale;
     transition-property: scale;
     transition-duration: 250ms;
@@ -479,7 +479,7 @@
   .header__nav-element:hover,
   .header__nav-element:active {
     will-change: scale;
-    scale: 120%;
+    scale: 1.2;
   }
 
   .header__nav-link {
