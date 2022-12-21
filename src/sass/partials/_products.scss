@@ -130,6 +130,9 @@
   fill: $second-font-color;
 }
 .products__icon-box {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   display: flex;
   justify-content: center;
   cursor: auto;
