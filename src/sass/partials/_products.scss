@@ -207,14 +207,15 @@
 
 .products__overlay {
   position: absolute;
-  transform: translateY(-200%);
+  transform: translateZ(-200%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &--one {
     background-color: $overlay-color-one;
-
+    visibility: hidden;
+    opacity: 0;
     // transform: translateY(-100%);
     transition-property: all;
     transition-duration: 250ms;
@@ -253,27 +254,26 @@
   padding-top: 50%;
 }
 
-.products__button:hover + .products__overlay {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .shown {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateZ(0);
+}
+.products__button--one:hover + .products__overlay--one {
+  visibility: visible;
+  opacity: 1;
+  transform: translateZ(0);
 }
 .products__button--two:hover + .products__overlay--two {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateZ(0);
 }
 
 .products__button:hover + .products__overlay--three {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateZ(0);
 }
 
 .products__background {
