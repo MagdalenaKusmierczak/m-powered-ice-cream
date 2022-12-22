@@ -221,7 +221,19 @@
     @include tablet {
       display: flex;
       flex-direction: row;
+      align-items: center;
       gap: 3px;
     }
   }
+}
+
+.footer__copyright-list-element {
+  position: relative;
+}
+
+
+.footer__m-powered-logo {
+position: absolute;
+left: -25px;
+top: -2px
 }
