@@ -78,6 +78,7 @@
   max-width: 100%;
   height: auto;
   padding-top: 130px;
+  overflow: hidden;
 
   &:first-child {
     padding-top: 144px;
@@ -178,6 +179,7 @@
   transition-property: transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  z-index: 2;
 
   @include mobile-retina {
     background-image: url('../images/icon-arrow-in-circle-all@2x.png');
@@ -198,32 +200,22 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-radius: 24px;
   height: calc(100% - 90px);
   overflow: hidden;
 }
 
 .products__overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  padding-top: 161px;
-  border-radius: 24px;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
+  transform: translateZ(-200%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &--one {
     background-color: $overlay-color-one;
-
+    visibility: hidden;
+    opacity: 0;
     // transform: translateY(-100%);
     transition-property: all;
     transition-duration: 250ms;
@@ -259,31 +251,35 @@
   text-shadow: 0px 0px 5px $fifth-font-color;
   text-align: center;
   padding: 0 20px;
-}
-
-.products__background:has(.products__button:hover)
-  .products__overlay-background
-  .products__overlay {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+  padding-top: 150px;
+  @include tablet {
+    padding-top: 120px;
+  }
+  @include desktop {
+    padding-top: 50%;
+  }
 }
 
 .shown {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateZ(0);
+}
+.products__button--one:hover + .products__overlay--one {
+  visibility: visible;
+  opacity: 1;
+  transform: translateZ(0);
 }
 .products__button--two:hover + .products__overlay--two {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateZ(0);
 }
 
 .products__button:hover + .products__overlay--three {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateZ(0);
 }
 
 .products__background {
