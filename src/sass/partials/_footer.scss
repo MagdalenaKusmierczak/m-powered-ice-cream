@@ -225,15 +225,42 @@
       gap: 3px;
     }
   }
-}
 
-.footer__copyright-list-element {
-  position: relative;
-}
+  &__copyright-list-element {
+    position: relative;
+  }
 
+  &__m-powered-logo {
+    position: absolute;
+    left: -43px;
+    top: 11px;
+    scale: 0;
+    will-change: scale;
+    transition-property: scale;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.footer__m-powered-logo {
-position: absolute;
-left: -25px;
-top: -2px
+  &__copyright-list:hover &__m-powered-logo {
+    scale: 2.2;
+  }
+
+  @include tablet {
+    .footer__m-powered-logo {
+      left: -45px;
+      top: 0;
+    }
+    .footer__copyright-list:hover .footer__m-powered-logo {
+      scale: 2;
+    }
+  }
+  @include desktop {
+    .footer__m-powered-logo {
+      left: -40px;
+      top: -2px;
+    }
+    .footer__copyright-list:hover .footer__m-powered-logo {
+      scale: 1.25;
+    }
+  }
 }
