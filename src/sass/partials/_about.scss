@@ -362,8 +362,10 @@
 }
 
 .modal-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 35px;
+    padding-right: 35px;
   letter-spacing: 0.04em;
   line-height: 1.7;
   font-family: $main-font;
@@ -415,14 +417,3 @@
   padding-top: 430px;
 }
 
-.about-milk-icon-modal {
-  position: absolute;
-  bottom: 0px;
-  left: calc(50% - 17px);
-  transition: transform 1100ms ease-in-out;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
-  }
-}

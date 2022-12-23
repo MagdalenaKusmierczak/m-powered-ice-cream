@@ -18,7 +18,7 @@
 }
 
 .is-hidden {
-  transform: translatex(-100%);
+  transform: translateX(-100%);
 }
 
 .modal__content {
@@ -29,9 +29,9 @@
   box-shadow: 0px 8px 30px $modal-box-shadow;
   border-radius: 24px;
 
-  transform: translatex(0);
+  transform: translateX(0);
   transition-property: transform;
-  transition-duration: 500ms;
+  transition-duration: 400ms;
   transition-timing-function: ease-in-out;
 
   @include tablet {
@@ -47,11 +47,18 @@
   position: absolute;
   top: 23px;
   right: 23px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 0;
   background-color: $social-media-background;
   cursor: pointer;
+}
+
+.mobile-menu__icon {
+  max-width: 100%;
+  max-height: 100%;
 }
