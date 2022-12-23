@@ -362,8 +362,8 @@
 }
 
 .modal-text {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-left: 35px;
     padding-right: 35px;
   letter-spacing: 0.04em;
@@ -372,10 +372,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  @include tablet {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
   &__first {
     color: $first-button-hover;
