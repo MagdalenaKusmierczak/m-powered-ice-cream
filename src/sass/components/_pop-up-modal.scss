@@ -39,10 +39,16 @@
   text-align: center;
 }
 
-.pop-up-modal__content--location {
+.pop-up-modal__content--about {
   padding: 20px;
+  min-width: 320px;
+  max-width: 500px;
+  @include tablet {
+    min-width: 500px;
+    max-width: 600px;
+  }
   @include desktop {
-    width: 1000px;
+    max-width: 1000px;
     padding: 40px;
   }
 }
