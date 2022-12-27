@@ -2,6 +2,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
   z-index: 99;
@@ -35,11 +36,9 @@
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 
-  @media screen and (win-width: 321px) {
-    margin: auto;
-  }
   @include tablet {
     padding: 30px;
+    margin: auto;
   }
 
   @include desktop {
