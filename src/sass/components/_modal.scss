@@ -19,7 +19,7 @@
 }
 
 .is-hidden {
-  transform: translateX(-100%);
+  transform: translatex(-100%);
 }
 
 .modal__content {
@@ -30,7 +30,7 @@
   box-shadow: 0px 8px 30px $modal-box-shadow;
   border-radius: 24px;
 
-  transform: translateX(0);
+  transform: translatex(0);
   transition-property: transform;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
