@@ -20,7 +20,7 @@
 }
 
 .is-hidden {
-  transform: translateX(-100%);
+  transform: translatex(-100%);
 }
 
 .modal__content {
@@ -31,9 +31,9 @@
   box-shadow: 0px 8px 30px $modal-box-shadow;
   border-radius: 24px;
 
-  transform: translateX(0);
+  transform: translatex(0);
   transition-property: transform;
-  transition-duration: 400ms;
+  transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 
   @include tablet {
@@ -48,13 +48,9 @@
 
 .modal__x-button {
   position: absolute;
-
-  top: 23px;
-  right: 23px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  top: 15px;
+  right: 15px;
+  display: inline-block;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -66,9 +62,4 @@
     top: 20px;
     right: 20px;
   }
-}
-
-.mobile-menu__icon {
-  max-width: 100%;
-  max-height: 100%;
 }

@@ -1,5 +1,5 @@
 .pop-up-modal {
-  overflow: auto;
+  overflow: scroll;
 }
 
 .pop-up-modal__content {
@@ -39,16 +39,10 @@
   text-align: center;
 }
 
-.pop-up-modal__content--about {
+.pop-up-modal__content--location {
   padding: 20px;
-  min-width: 320px;
-  max-width: 500px;
-  @include tablet {
-    min-width: 500px;
-    max-width: 600px;
-  }
   @include desktop {
-    max-width: 1000px;
+    width: 1000px;
     padding: 40px;
   }
 }

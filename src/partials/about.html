@@ -52,22 +52,45 @@
     </div>
   </div>
 
-  <div class="background pop-up-modal none" data-modal-overlay>
-    <div class="modal__content pop-up-modal__content--about is-hidden" data-modal>
-      <button type="button" class="modal__x-button" data-modal-close>
-        <svg class="mobile-menu__icon" width="14" height="14" viewBox="0 0 32 32">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h2 class="pop-up-modal__header">TRADITION</h2>
-
-      <p class="pop-up-modal__text">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt.
-      </p>
+  <div class="none" data-modal-overlay>
+    <div class="backdrop">
+      <div class="modal is-hidden" data-modal>
+        <div class="about-milk-background-modal"></div>
+        <div>
+          <form name="ice-cream">
+            <button class="modal__x-button" type="reset" data-modal-close>
+              <svg class="modal__button-close-icon" width="14" height="14" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="modal__tittle modal__tittle-style">
+          <p class="modal__tittle-txt">TRADITION AND LOVE</p>
+        </div>
+        <div class="modal-text">
+          <p class="modal-text__first">
+            Fusce ut nvelit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="modal-text__second">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt.
+          </p>
+          <p class="modal-text__third">Aliquam erat volutpat. Aenean accumsan.</p>
+        </div>
+      </div>
+      <div class="about-milk-icon-box">
+        <img
+          width="34"
+          height="50"
+          class="about-milk-icon-modal"
+          src="./images/advantages__icon-milk-mobile.png"
+          alt="icon-milk"
+        />
+      </div>
     </div>
   </div>
-
   <script src="../modal.js"></script>
 </section>
