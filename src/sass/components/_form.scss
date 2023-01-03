@@ -18,6 +18,7 @@
   margin: 4px 0 10px;
   padding: 8px;
   border: 1px solid $social-media-background;
+  color: $fifth-font-color;
   border-radius: 24px;
   transition: border 250ms ease-in-out;
 
@@ -87,27 +88,37 @@
   }
 }
 
+.form__checkbox-label {
+display: flex;
+justify-content: center;
+align-content: center;
+gap: 3px;
+} 
+
 .form__checkbox-fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   border: 0;
   padding: 0;
   font-family: $main-font;
-  font-size: 12px;
+  font-size: 13px;
   color: $fifth-font-color;
   line-height: 1.71;
   margin: 0 auto 30px;
-  position: relative;
-  display: flex;
-  justify-content: center;
+  // position: relative;
+
   @include tablet {
     font-size: 14px;
   }
 }
 
 .form__checkbox {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin: 0;
+  // display: flex;
+  width: 20.5px;
+  height: 20.5px;
+  margin-right: 5px;
   cursor: pointer;
   visibility: visible;
   transition-property: visibility;
