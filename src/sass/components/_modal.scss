@@ -1,6 +1,8 @@
 .background {
   position: fixed;
   display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
   z-index: 99;
@@ -23,8 +25,8 @@
 
 .modal__content {
   position: relative;
-  margin: auto;
-  padding: 20px;
+  margin: 5px 10px auto 10px;
+  padding: 10px;
   background-color: $fourth-background;
   box-shadow: 0px 8px 30px $modal-box-shadow;
   border-radius: 24px;
@@ -36,6 +38,7 @@
 
   @include tablet {
     padding: 30px;
+    margin: auto;
   }
 
   @include desktop {
@@ -45,17 +48,24 @@
 
 .modal__x-button {
   position: absolute;
+
   top: 23px;
   right: 23px;
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 0;
   background-color: $social-media-background;
   cursor: pointer;
+
+  @include desktop {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .mobile-menu__icon {
